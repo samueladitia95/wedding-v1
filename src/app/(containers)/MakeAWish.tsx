@@ -48,7 +48,7 @@ export default async function MakeAWish() {
 
 						<button
 							type="submit"
-							className="rounded bg-secondary-darken text-white text-center w-full p-4 font-semibold"
+							className="rounded bg-secondary-darken text-white text-center w-full p-4 font-semibold shadow-lg"
 						>
 							SEND
 						</button>
@@ -67,7 +67,7 @@ export default async function MakeAWish() {
 					<div>
 						<button
 							type="submit"
-							className="rounded bg-primary border border-secondary text-center w-full p-4 font-semibold"
+							className="rounded bg-primary border border-secondary text-center w-full p-4 font-semibold shadow-lg"
 						>
 							SHOW MORE COMMENTS
 						</button>
