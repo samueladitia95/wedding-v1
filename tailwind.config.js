@@ -9,6 +9,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				circular: ["var(--font-circular)", ...defaultTheme.fontFamily.sans],
+				epilogue: ["var(--font-epilogue)", ...defaultTheme.fontFamily.sans],
 				safira: [...defaultTheme.fontFamily.serif],
 			},
 			colors: {

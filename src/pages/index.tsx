@@ -5,6 +5,7 @@ import MakeAWish from "@/containers/MakeAWish";
 import Rsvp from "@/containers/Rsvp";
 import Footer from "@/containers/Footer";
 import QrCode from "@/containers/QrCode";
+import TravelGuide from "@/containers/TravelGuide";
 
 type CommentResponse = {
 	status: string;
@@ -18,6 +19,7 @@ type Prop = {
 export const Home: NextPage<Prop> = ({ comments }) => {
 	return (
 		<div>
+			<TravelGuide />
 			<Rsvp />
 			<MakeAWish comments={comments} />
 			<QrCode />
