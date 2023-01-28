@@ -16,6 +16,7 @@ module.exports = {
 				secondary: "#726C5D",
 				"secondary-darken": "#8D8070",
 				"secondary-lighten": "#A59B8F",
+				"olive-darken": "#3F3931",
 			},
 			container: {
 				padding: "2rem",

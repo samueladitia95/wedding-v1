@@ -3,6 +3,7 @@ import { Comment } from "@/type";
 
 import MakeAWish from "@/containers/MakeAWish";
 import Rsvp from "@/containers/Rsvp";
+import Footer from "@/containers/Footer";
 
 type CommentResponse = {
 	status: string;
@@ -18,6 +19,7 @@ export const Home: NextPage<Prop> = ({ comments }) => {
 		<div>
 			<Rsvp />
 			<MakeAWish comments={comments} />
+			<Footer />
 		</div>
 	);
 };
