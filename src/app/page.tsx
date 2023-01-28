@@ -1,9 +1,11 @@
-// async function getTestData(): Promise<{ name: string }> {
-// 	const res: Response = await fetch(`${process.env.BASE_URL}/api/hello`);
-// 	return res.json();
-// }
+import MakeAWish from "./(containers)/MakeAWish";
 
 export default async function Home() {
-	// const testData = await getTestData();
-	return <div className="container"></div>;
+	return (
+		<div>
+			{/* Disable ts recommended by next js documentation */}
+			{/* @ts-expect-error Server Component */}
+			<MakeAWish />
+		</div>
+	);
 }
