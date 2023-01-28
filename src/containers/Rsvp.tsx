@@ -1,4 +1,4 @@
-export default function Rsvp() {
+const Rsvp = () => {
 	return (
 		<>
 			<div className="bg-secondary-lighten text-white font-circular">
@@ -83,4 +83,6 @@ export default function Rsvp() {
 			</div>
 		</>
 	);
-}
+};
+
+export default Rsvp;
