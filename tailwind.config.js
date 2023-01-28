@@ -14,7 +14,8 @@ module.exports = {
 			colors: {
 				primary: "#DBD4C7",
 				secondary: "#726C5D",
-				"secondary-lighten": "#8D8070",
+				"secondary-darken": "#8D8070",
+				"secondary-lighten": "#A59B8F",
 			},
 			container: {
 				padding: "2rem",

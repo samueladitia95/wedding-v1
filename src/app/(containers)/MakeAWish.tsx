@@ -34,21 +34,21 @@ export default async function MakeAWish() {
 
 					<form className="uppercase flex flex-col gap-6">
 						<div className="flex flex-col gap-1">
-							<p className="font-medium">full name</p>
-							<input className="w-full rounded bg-primary border border-secondary p-2 focus:outline-secondary-lighten" />
+							<p className="font-medium text-sm">full name</p>
+							<input className="w-full rounded bg-primary border border-secondary p-2 focus:outline-secondary-darken" />
 						</div>
 
 						<div className="flex flex-col gap-1">
-							<p className="font-medium">send your wishes</p>
+							<p className="font-medium text-sm">send your wishes</p>
 							<textarea
 								rows={4}
-								className="w-full rounded bg-primary border border-secondary p-2 focus:outline-secondary-lighten"
+								className="w-full rounded bg-primary border border-secondary p-2 focus:outline-secondary-darken"
 							></textarea>
 						</div>
 
 						<button
 							type="submit"
-							className="rounded bg-secondary-lighten text-white text-center w-full p-4 font-semibold"
+							className="rounded bg-secondary-darken text-white text-center w-full p-4 font-semibold"
 						>
 							SEND
 						</button>
