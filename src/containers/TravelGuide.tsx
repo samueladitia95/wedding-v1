@@ -4,13 +4,13 @@ const TravelGuide = () => {
 	return (
 		<>
 			<div className="bg-olive text-white font-circular">
-				<div className="container py-20 flex flex-col gap-14 md:w-narrow">
+				<div className="container py-20 flex flex-col gap-14 sm:w-wide">
 					<div className="uppercase">
 						<p className="font-serif text-center text-4xl">travel guide</p>
 					</div>
 
-					<div className="flex flex-col gap-20">
-						<div className="flex flex-col items-center gap-5 text-center font-medium">
+					<div className="flex flex-col gap-20 sm:flex-row sm:gap-14 sm:overflow-x-auto">
+						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium">
 							<Image
 								src="https://via.placeholder.com/64"
 								alt="QR Code"
@@ -24,7 +24,7 @@ const TravelGuide = () => {
 							</div>
 						</div>
 
-						<div className="flex flex-col items-center gap-5 text-center font-medium">
+						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium">
 							<Image
 								src="https://via.placeholder.com/64"
 								alt="QR Code"
@@ -46,7 +46,7 @@ const TravelGuide = () => {
 							</div>
 						</div>
 
-						<div className="flex flex-col items-center gap-5 text-center font-medium">
+						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium">
 							<Image
 								src="https://via.placeholder.com/64"
 								alt="QR Code"
