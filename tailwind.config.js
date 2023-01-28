@@ -17,6 +17,8 @@ module.exports = {
 				"secondary-darken": "#8D8070",
 				"secondary-lighten": "#A59B8F",
 				"olive-darken": "#3F3931",
+				"olive-lighten": "#D9D9D9",
+				olive: "#58534B",
 			},
 			container: {
 				padding: "2rem",
