@@ -1,25 +1,25 @@
-type Comment = {
-	name: string;
-	comment: string;
-	createdAt: string;
-};
+// type Comment = {
+// 	name: string;
+// 	comment: string;
+// 	createdAt: string;
+// };
 
-async function getComments() {
-	const res = await fetch(process.env.BASE_URL + "/api/comments");
-	// The return value is *not* serialized
-	// You can return Date, Map, Set, etc.
+// async function getComments() {
+// 	const res = await fetch(process.env.BASE_URL + "/api/comments");
+// 	// The return value is *not* serialized
+// 	// You can return Date, Map, Set, etc.
 
-	// Recommendation: handle errors
-	if (!res.ok) {
-		// This will activate the closest `error.js` Error Boundary
-		throw new Error("Failed to fetch data");
-	}
+// 	// Recommendation: handle errors
+// 	if (!res.ok) {
+// 		// This will activate the closest `error.js` Error Boundary
+// 		throw new Error("Failed to fetch data");
+// 	}
 
-	return res.json();
-}
+// 	return res.json();
+// }
 
-export default async function MakeAWish() {
-	const { comments }: { comments: Comment[] } = await getComments();
+export default function MakeAWish() {
+	// const { comments }: { comments: Comment[] } = await getComments();
 	return (
 		<>
 			<div className="bg-primary text-secondary font-circular">
@@ -54,7 +54,7 @@ export default async function MakeAWish() {
 						</button>
 					</form>
 
-					<div className="flex flex-col gap-8">
+					{/* <div className="flex flex-col gap-8">
 						{comments.map((el, index) => (
 							<div key={index} className="flex flex-col gap-3">
 								<p className="font-bold text-xl">{el.name}</p>
@@ -62,7 +62,7 @@ export default async function MakeAWish() {
 								<p className="font-extralight text-sm">{el.createdAt}</p>
 							</div>
 						))}
-					</div>
+					</div> */}
 
 					<div>
 						<button

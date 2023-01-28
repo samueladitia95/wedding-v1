@@ -1,4 +1,4 @@
-export default async function Rsvp() {
+export default function Rsvp() {
 	return (
 		<>
 			<div className="bg-secondary-lighten text-white font-circular">
