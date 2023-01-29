@@ -6,6 +6,7 @@ import Rsvp from "@/containers/Rsvp";
 import Footer from "@/containers/Footer";
 import QrCode from "@/containers/QrCode";
 import TravelGuide from "@/containers/TravelGuide";
+import QnA from "@/containers/QnA";
 
 type CommentResponse = {
 	status: string;
@@ -20,6 +21,7 @@ export const Home: NextPage<Prop> = ({ comments }) => {
 	return (
 		<div>
 			<TravelGuide />
+			<QnA />
 			<Rsvp />
 			<MakeAWish comments={comments} />
 			<QrCode />

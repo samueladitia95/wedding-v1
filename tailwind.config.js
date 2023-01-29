@@ -22,6 +22,7 @@ module.exports = {
 				"olive-darken": "#3F3931",
 				"olive-lighten": "#D9D9D9",
 				olive: "#58534B",
+				cream: "#EAE6E2",
 			},
 			container: {
 				padding: "2rem",
