@@ -9,8 +9,8 @@ const TravelGuide = () => {
 						<p className="font-serif text-center text-4xl">travel guide</p>
 					</div>
 
-					<div className="flex flex-col gap-20 sm:flex-row sm:gap-14 sm:overflow-x-auto sm:scrollbar-hide">
-						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium">
+					<div className="flex flex-col gap-20 sm:flex-row sm:gap-10 sm:overflow-x-auto sm:scrollbar-hide">
+						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium sm:w-80">
 							<Image
 								src="https://via.placeholder.com/64"
 								alt="QR Code"
@@ -24,7 +24,7 @@ const TravelGuide = () => {
 							</div>
 						</div>
 
-						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium">
+						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium sm:w-80">
 							<Image
 								src="https://via.placeholder.com/64"
 								alt="QR Code"
@@ -46,7 +46,7 @@ const TravelGuide = () => {
 							</div>
 						</div>
 
-						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium">
+						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium sm:w-80">
 							<Image
 								src="https://via.placeholder.com/64"
 								alt="QR Code"
