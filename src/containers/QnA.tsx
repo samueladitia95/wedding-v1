@@ -37,6 +37,42 @@ const QnA = () => {
 		<>
 			<div className="bg-cream text-secondary font-circular">
 				<div className="container py-20 flex flex-col items-center gap-14 md:w-narrow">
+					<div className="flex gap-2">
+						<div className="flex flex-col gap-4">
+							<Image
+								src="https://via.placeholder.com/250x300"
+								alt="QnA1"
+								width={250}
+								height={300}
+								className="rounded-xl"
+							/>
+							<Image
+								src="https://via.placeholder.com/250x400"
+								alt="QnA2"
+								width={250}
+								height={400}
+								className="rounded-xl"
+							/>
+						</div>
+
+						<div className="flex flex-col gap-4">
+							<Image
+								src="https://via.placeholder.com/250x450"
+								alt="QnA3"
+								width={250}
+								height={450}
+								className="rounded-xl"
+							/>
+							<Image
+								src="https://via.placeholder.com/250x250"
+								alt="QnA4"
+								width={250}
+								height={250}
+								className="rounded-xl"
+							/>
+						</div>
+					</div>
+
 					<div className="uppercase">
 						<p className="font-serif text-center text-4xl">
 							questions and answers
