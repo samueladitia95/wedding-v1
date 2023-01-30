@@ -32,44 +32,51 @@ const questions = [
 	},
 ];
 
+const images1 = [
+	"https://via.placeholder.com/400x800",
+	"https://via.placeholder.com/400x500",
+	"https://via.placeholder.com/400x600",
+];
+const images2 = [
+	"https://via.placeholder.com/400x400",
+	"https://via.placeholder.com/400x700",
+	"https://via.placeholder.com/400x800",
+];
+
 const QnA = () => {
 	return (
 		<>
 			<div className="bg-cream text-secondary font-circular">
 				<div className="container py-20 flex flex-col items-center gap-14 md:w-narrow">
-					<div className="flex gap-2">
-						<div className="flex flex-col gap-4">
-							<Image
-								src="https://via.placeholder.com/250x300"
-								alt="QnA1"
-								width={250}
-								height={300}
-								className="rounded-xl"
-							/>
-							<Image
-								src="https://via.placeholder.com/250x400"
-								alt="QnA2"
-								width={250}
-								height={400}
-								className="rounded-xl"
-							/>
+					<div className="flex h-narrow overflow-auto w-full gap-4 rounded-2xl scrollbar-hide">
+						<div className="flex flex-col gap-4 w-full ">
+							{images1.map((url, index) => (
+								<Image
+									key={index}
+									src={url}
+									alt={`photo${index + 1}`}
+									width="0"
+									height="0"
+									sizes="100vw"
+									style={{ width: "100%", height: "auto" }}
+									className="rounded-2xl"
+								/>
+							))}
 						</div>
 
-						<div className="flex flex-col gap-4">
-							<Image
-								src="https://via.placeholder.com/250x450"
-								alt="QnA3"
-								width={250}
-								height={450}
-								className="rounded-xl"
-							/>
-							<Image
-								src="https://via.placeholder.com/250x250"
-								alt="QnA4"
-								width={250}
-								height={250}
-								className="rounded-xl"
-							/>
+						<div className="flex flex-col gap-4 w-full ">
+							{images2.map((url, index) => (
+								<Image
+									key={index}
+									src={url}
+									alt={`photo${index + 1}`}
+									width="0"
+									height="0"
+									sizes="100vw"
+									style={{ width: "100%", height: "auto" }}
+									className="rounded-2xl"
+								/>
+							))}
 						</div>
 					</div>
 
@@ -102,11 +109,12 @@ const QnA = () => {
 											.fill(0)
 											.map((_, index) => (
 												<Image
-													src="https://via.placeholder.com/33"
-													alt="QR Code"
-													width={33}
-													height={33}
+													src="https://via.placeholder.com/40"
+													alt="color"
+													width={40}
+													height={40}
 													key={index}
+													className="rounded-full"
 												/>
 											))}
 									</div>
