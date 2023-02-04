@@ -4,7 +4,7 @@ const Gallery = () => {
 	return (
 		<>
 			<div className="bg-olive text-primary font-circular">
-				<div className="container py-20 flex flex-col items-center gap-14 md:w-wide">
+				<div className="container py-20 pb-0 lg:pb-20 flex flex-col items-center gap-14 md:w-wide">
 					<div className="grid grid-cols-8 gap-4 items-center justify-items-center">
 						<div className="hidden flex-col gap-4 lg:flex lg:col-span-2">
 							<Image
