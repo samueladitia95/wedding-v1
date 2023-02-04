@@ -54,8 +54,9 @@ const WeekendGuide = () => {
 	return (
 		<>
 			<div className="bg-olive font-circular flex flex-col items-center">
-				<div className="flex flex-col py-6 text-secondary text-center sm:w-wide">
-					<div className="bg-cream container pb-12 py-12 flex flex-col gap-4 items-center">
+				<div className="flex flex-col text-secondary text-center w-screen md:w-wide">
+					{/* TITLE */}
+					<div className="container bg-cream py-12 flex flex-col gap-4 items-center">
 						<div className="uppercase font-serif text-4xl font-medium">
 							<p>wedding</p>
 							<p>weekend guide</p>
@@ -71,7 +72,9 @@ const WeekendGuide = () => {
 						</div>
 					</div>
 
+					{/* Schedule */}
 					<div className="container flex flex-col gap-16 bg-primary text-secondary py-12">
+						{/* FRIDAY */}
 						<div className="flex flex-col gap-4 items-center">
 							<p className="font-baskervville italic text-brown">
 								Friday, June 2, 2023
@@ -99,6 +102,7 @@ const WeekendGuide = () => {
 							</div>
 						</div>
 
+						{/* SATURDAY */}
 						<div className="flex flex-col gap-4 items-center">
 							<p className="font-baskervville italic text-brown">
 								Saturday, June 3, 2023
