@@ -9,30 +9,23 @@ type Countdown = {
 	value: number;
 };
 
+const weddingDay = dayjs("2023-06-03", "yyyy-mm-dd");
 const Invitation = () => {
-	const weddingDay = dayjs("2023-06-03", "yyyy-mm-dd");
 	const [countdown, setCountdown] = useState<Countdown[]>();
 
 	useEffect(() => {
-		const currentTime = dayjs();
-		const diffTime = weddingDay.unix() - currentTime.unix();
-
-		let duration = dayjs.duration(diffTime * 1000, "milliseconds");
-		const interval = 1000;
-
 		setInterval(function () {
-			duration = dayjs.duration(
-				duration.asMilliseconds() - interval,
-				"milliseconds"
-			);
+			const currentTime = dayjs();
+			const duration = dayjs.duration(weddingDay.diff(currentTime));
+
 			setCountdown([
 				{ type: "day", value: duration.days() },
 				{ type: "hour", value: duration.hours() },
 				{ type: "minute", value: duration.minutes() },
 				{ type: "second", value: duration.seconds() },
 			]);
-		}, interval);
-	}, [weddingDay]);
+		}, 1000);
+	}, []);
 
 	return (
 		<>
