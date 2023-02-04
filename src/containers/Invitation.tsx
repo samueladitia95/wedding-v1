@@ -24,7 +24,7 @@ const Invitation = () => {
 			const duration = dayjs.duration(weddingDay.diff(currentTime));
 
 			setCountdown([
-				{ type: "day", value: duration.days() },
+				{ type: "day", value: Math.floor(duration.asDays()) },
 				{ type: "hour", value: duration.hours() },
 				{ type: "minute", value: duration.minutes() },
 				{ type: "second", value: duration.seconds() },
