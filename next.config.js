@@ -2,7 +2,7 @@
 const nextConfig = {
 	experimental: {
 		appDir: false,
-		optimizeCss: true,
+		optimizeCss: false,
 	},
 	reactStrictMode: true,
 	images: {
