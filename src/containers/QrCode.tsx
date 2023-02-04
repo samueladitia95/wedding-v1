@@ -22,6 +22,7 @@ const QrCode = () => {
 							alt="QR Code"
 							width={313}
 							height={313}
+							priority
 						/>
 						<div className="text-black text-center font-semibold uppercase text-sm">
 							<p>irwan thomas burhan</p>
