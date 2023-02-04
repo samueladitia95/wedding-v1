@@ -11,6 +11,7 @@ import WeekendGuide from "@/containers/WeekendGuide";
 import OurJourney from "@/containers/OurJourney";
 import Gallery from "@/containers/Gallery";
 import Invitation from "@/containers/Invitation";
+import Head from "next/head";
 
 type CommentResponse = {
 	status: string;
@@ -23,18 +24,24 @@ type Prop = {
 
 export const Home: NextPage<Prop> = ({ comments }) => {
 	return (
-		<div>
-			<Invitation />
-			<Gallery />
-			<OurJourney />
-			<WeekendGuide />
-			<TravelGuide />
-			<QnA />
-			<Rsvp />
-			<MakeAWish comments={comments} />
-			<QrCode />
-			<Footer />
-		</div>
+		<>
+			<Head>
+				<title>Irwan and Claudia</title>
+				<meta name="description" content="This is a wedding invitation" />
+			</Head>
+			<div>
+				<Invitation />
+				<Gallery />
+				<OurJourney />
+				<WeekendGuide />
+				<TravelGuide />
+				<QnA />
+				<Rsvp />
+				<MakeAWish comments={comments} />
+				<QrCode />
+				<Footer />
+			</div>
+		</>
 	);
 };
 
