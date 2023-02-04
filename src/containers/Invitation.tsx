@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 import duration from "dayjs/plugin/duration";
-import { useState, useMemo } from "react";
+import { useState, useEffect } from "react";
 
 dayjs.extend(duration);
 
@@ -13,7 +13,7 @@ const Invitation = () => {
 	const weddingDay = dayjs("2023-06-03", "yyyy-mm-dd");
 	const [countdown, setCountdown] = useState<Countdown[]>();
 
-	useMemo(() => {
+	useEffect(() => {
 		const currentTime = dayjs();
 		const diffTime = weddingDay.unix() - currentTime.unix();
 
