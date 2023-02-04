@@ -7,6 +7,7 @@ import Footer from "@/containers/Footer";
 import QrCode from "@/containers/QrCode";
 import TravelGuide from "@/containers/TravelGuide";
 import QnA from "@/containers/QnA";
+import WeekendGuide from "@/containers/WeekendGuide";
 
 type CommentResponse = {
 	status: string;
@@ -20,6 +21,7 @@ type Prop = {
 export const Home: NextPage<Prop> = ({ comments }) => {
 	return (
 		<div>
+			<WeekendGuide />
 			<TravelGuide />
 			<QnA />
 			<Rsvp />

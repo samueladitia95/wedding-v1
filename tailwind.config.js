@@ -12,6 +12,10 @@ module.exports = {
 			fontFamily: {
 				circular: ["var(--font-circular)", ...defaultTheme.fontFamily.sans],
 				epilogue: ["var(--font-epilogue)", ...defaultTheme.fontFamily.sans],
+				baskervville: [
+					"var(--font-baskervville)",
+					...defaultTheme.fontFamily.serif,
+				],
 				safira: [...defaultTheme.fontFamily.serif],
 			},
 			colors: {
@@ -23,6 +27,7 @@ module.exports = {
 				"olive-lighten": "#D9D9D9",
 				olive: "#58534B",
 				cream: "#EAE6E2",
+				brown: "#9D8452",
 			},
 			container: {
 				padding: "2rem",
