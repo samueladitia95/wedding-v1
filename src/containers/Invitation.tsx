@@ -11,7 +11,12 @@ type Countdown = {
 
 const weddingDay = dayjs("2023-06-03", "yyyy-mm-dd");
 const Invitation = () => {
-	const [countdown, setCountdown] = useState<Countdown[]>();
+	const [countdown, setCountdown] = useState<Countdown[]>([
+		{ type: "day", value: 0 },
+		{ type: "hour", value: 0 },
+		{ type: "minute", value: 0 },
+		{ type: "second", value: 0 },
+	]);
 
 	useEffect(() => {
 		setInterval(function () {
