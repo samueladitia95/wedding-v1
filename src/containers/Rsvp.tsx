@@ -9,18 +9,31 @@ const Rsvp = () => {
 
 					<form className="uppercase flex flex-col gap-6">
 						<div className="flex flex-col gap-1">
-							<p className="font-medium text-sm">full name</p>
-							<input className="w-full rounded bg-secondary-lighten border border-primary p-2 focus:outline-secondary-lighten" />
-						</div>
-
-						<div className="flex flex-col gap-1">
-							<p className="font-medium text-sm">phone number</p>
-							<input className="w-full rounded bg-secondary-lighten border border-primary p-2 focus:outline-secondary-lighten" />
-						</div>
-
-						<div className="flex flex-col gap-1">
-							<p className="font-medium text-sm">email</p>
+							<label htmlFor="full-name" className="font-medium text-sm">
+								full name
+							</label>
 							<input
+								id="full-name"
+								className="w-full rounded bg-secondary-lighten border border-primary p-2 focus:outline-secondary-lighten"
+							/>
+						</div>
+
+						<div className="flex flex-col gap-1">
+							<label htmlFor="phone-number" className="font-medium text-sm">
+								phone number
+							</label>
+							<input
+								id="phone-number"
+								className="w-full rounded bg-secondary-lighten border border-primary p-2 focus:outline-secondary-lighten"
+							/>
+						</div>
+
+						<div className="flex flex-col gap-1">
+							<label htmlFor="email" className="font-medium text-sm">
+								email
+							</label>
+							<input
+								id="email"
 								type="email"
 								className="w-full rounded bg-secondary-lighten border border-primary p-2 focus:outline-secondary-lighten"
 							/>
@@ -29,26 +42,51 @@ const Rsvp = () => {
 						<div className="flex flex-col gap-4">
 							<p className="font-medium text-sm">will you be attending?</p>
 							<div className="flex gap-2 items-center pl-2">
-								<input type="radio" className="w-5 h-5 accent-white" />
-								<p className="font-semibold text-sm">yes</p>
+								<input
+									id="attending-yes"
+									type="radio"
+									className="w-5 h-5 accent-white"
+								/>
+								<label
+									htmlFor="attending-yes"
+									className="font-semibold text-sm"
+								>
+									yes
+								</label>
 							</div>
 							<div className="flex gap-2 items-center pl-2">
-								<input type="radio" className="w-5 h-5 accent-white" />
-								<p className="font-semibold text-sm">
+								<input
+									id="attending-no"
+									type="radio"
+									className="w-5 h-5 accent-white"
+								/>
+								<label htmlFor="attending-no" className="font-semibold text-sm">
 									sorry, i can&apos;t make it
-								</p>
+								</label>
 							</div>
 						</div>
 
 						<div className="flex flex-col gap-4">
 							<p className="font-medium text-sm">are you bringing a +1?</p>
 							<div className="flex gap-2 items-center pl-2">
-								<input type="radio" className="w-5 h-5 accent-white" />
-								<p className="font-semibold text-sm">yes</p>
+								<input
+									id="plus-one-yes"
+									type="radio"
+									className="w-5 h-5 accent-white"
+								/>
+								<label htmlFor="plus-one-yes" className="font-semibold text-sm">
+									yes
+								</label>
 							</div>
 							<div className="flex gap-2 items-center pl-2">
-								<input type="radio" className="w-5 h-5 accent-white" />
-								<p className="font-semibold text-sm">no</p>
+								<input
+									id="plus-one-no"
+									type="radio"
+									className="w-5 h-5 accent-white"
+								/>
+								<label htmlFor="plus-one-no" className="font-semibold text-sm">
+									no
+								</label>
 							</div>
 							<input
 								placeholder="IF SO, PLEASE LET US KNOW WHO"
@@ -61,14 +99,24 @@ const Rsvp = () => {
 								do you need hotel accommodation?
 							</p>
 							<div className="flex gap-2 items-center pl-2">
-								<input type="radio" className="w-5 h-5 accent-white" />
-								<p className="font-semibold text-sm">yes</p>
+								<input
+									id="hotel-yes"
+									type="radio"
+									className="w-5 h-5 accent-white"
+								/>
+								<label htmlFor="hotel-yes" className="font-semibold text-sm">
+									yes
+								</label>
 							</div>
 							<div className="flex gap-2 items-center pl-2">
-								<input type="radio" className="w-5 h-5 accent-white" />
-								<p className="font-semibold text-sm">
-									sorry, i can&apos;t make it
-								</p>
+								<input
+									id="hotel-no"
+									type="radio"
+									className="w-5 h-5 accent-white"
+								/>
+								<label htmlFor="hotel-no" className="font-semibold text-sm">
+									no
+								</label>
 							</div>
 						</div>
 
