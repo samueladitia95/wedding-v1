@@ -19,13 +19,21 @@ const MakeAWish = ({ comments }: Prop) => {
 
 					<form className="uppercase flex flex-col gap-6">
 						<div className="flex flex-col gap-1">
-							<p className="font-medium text-sm">full name</p>
-							<input className="w-full rounded bg-primary border border-secondary p-2 focus:outline-secondary-darken" />
+							<label htmlFor="comment-name" className="font-medium text-sm">
+								full name
+							</label>
+							<input
+								id="comment-name"
+								className="w-full rounded bg-primary border border-secondary p-2 focus:outline-secondary-darken"
+							/>
 						</div>
 
 						<div className="flex flex-col gap-1">
-							<p className="font-medium text-sm">send your wishes</p>
+							<label htmlFor="comment" className="font-medium text-sm">
+								send your wishes
+							</label>
 							<textarea
+								id="comment"
 								rows={4}
 								className="w-full rounded bg-primary border border-secondary p-2 focus:outline-secondary-darken"
 							></textarea>
