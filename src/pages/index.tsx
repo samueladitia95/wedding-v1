@@ -9,6 +9,7 @@ import TravelGuide from "@/containers/TravelGuide";
 import QnA from "@/containers/QnA";
 import WeekendGuide from "@/containers/WeekendGuide";
 import OurJourney from "@/containers/OurJourney";
+import Gallery from "@/containers/Gallery";
 
 type CommentResponse = {
 	status: string;
@@ -22,6 +23,7 @@ type Prop = {
 export const Home: NextPage<Prop> = ({ comments }) => {
 	return (
 		<div>
+			<Gallery />
 			<OurJourney />
 			<WeekendGuide />
 			<TravelGuide />
