@@ -10,6 +10,7 @@ import QnA from "@/containers/QnA";
 import WeekendGuide from "@/containers/WeekendGuide";
 import OurJourney from "@/containers/OurJourney";
 import Gallery from "@/containers/Gallery";
+import Invitation from "@/containers/Invitation";
 
 type CommentResponse = {
 	status: string;
@@ -23,6 +24,7 @@ type Prop = {
 export const Home: NextPage<Prop> = ({ comments }) => {
 	return (
 		<div>
+			<Invitation />
 			<Gallery />
 			<OurJourney />
 			<WeekendGuide />
@@ -36,7 +38,7 @@ export const Home: NextPage<Prop> = ({ comments }) => {
 	);
 };
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps<Prop> = async () => {
 	const data = await fetch(process.env.BASE_URL + "/api/comments");
 	const result: CommentResponse = await data.json();
 
