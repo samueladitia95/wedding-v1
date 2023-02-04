@@ -9,7 +9,7 @@ const TravelGuide = () => {
 						<p className="font-serif text-center text-4xl">travel guide</p>
 					</div>
 
-					<div className="flex flex-col gap-20 sm:flex-row sm:gap-10 sm:overflow-x-auto sm:scrollbar-hide">
+					<div className="flex flex-col justify-center gap-20 sm:flex-row sm:gap-10 sm:overflow-x-auto sm:scrollbar-hide">
 						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium sm:w-80">
 							<Image
 								src="https://via.placeholder.com/64"
