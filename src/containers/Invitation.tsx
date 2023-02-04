@@ -1,31 +1,31 @@
 import dayjs from "dayjs";
-import duration from "dayjs/plugin/duration";
-import { useState, useEffect } from "react";
+// import duration from "dayjs/plugin/duration";
+// import { useState, useEffect } from "react";
 
-dayjs.extend(duration);
+// dayjs.extend(duration);
 
-type Countdown = {
-	type: string;
-	value: number;
-};
+// type Countdown = {
+// 	type: string;
+// 	value: number;
+// };
 
 const weddingDay = dayjs("2023-06-03", "yyyy-mm-dd");
 const Invitation = () => {
-	const [countdown, setCountdown] = useState<Countdown[]>();
+	// const [countdown, setCountdown] = useState<Countdown[]>();
 
-	useEffect(() => {
-		setInterval(function () {
-			const currentTime = dayjs();
-			const duration = dayjs.duration(weddingDay.diff(currentTime));
+	// useEffect(() => {
+	// 	setInterval(function () {
+	// 		const currentTime = dayjs();
+	// 		const duration = dayjs.duration(weddingDay.diff(currentTime));
 
-			setCountdown([
-				{ type: "day", value: duration.days() },
-				{ type: "hour", value: duration.hours() },
-				{ type: "minute", value: duration.minutes() },
-				{ type: "second", value: duration.seconds() },
-			]);
-		}, 1000);
-	}, []);
+	// 		setCountdown([
+	// 			{ type: "day", value: duration.days() },
+	// 			{ type: "hour", value: duration.hours() },
+	// 			{ type: "minute", value: duration.minutes() },
+	// 			{ type: "second", value: duration.seconds() },
+	// 		]);
+	// 	}, 1000);
+	// }, []);
 
 	return (
 		<>
@@ -50,12 +50,12 @@ const Invitation = () => {
 						</div>
 					</div>
 					<div className="grid grid-cols-2 grid-rows-2 gap-8 uppercase">
-						{countdown?.map((el, index) => (
+						{/* {countdown?.map((el, index) => (
 							<div className="flex flex-col gap-2 items-center" key={index}>
 								<div className="text-4xl text-brown font-bold">{el.value}</div>
 								<div className="font-medium">{el.type}(s)</div>
 							</div>
-						))}
+						))} */}
 					</div>
 				</div>
 			</div>
