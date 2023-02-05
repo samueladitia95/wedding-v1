@@ -34,13 +34,13 @@ const Invitation = () => {
 
 	return (
 		<>
-			<div className="bg-secondary-lighten py-10 text-secondary font-circular">
+			<div className="bg-secondary-lighten pb-10 text-secondary font-circular">
 				<div className="container py-10 bg-primary flex flex-col gap-14 rounded-b-3xl md:w-wide">
 					<div className="text-center flex flex-col gap-4 items-center">
 						<p className="uppercase font-medium text-brown text-sm">
 							#irwanclaudia
 						</p>
-						<p className="font-baskervville italic text-2xl md:w-72">
+						<p className="font-baskervville italic text-3xl md:w-72">
 							Here&apos;s to the beginning of our forever that we would like to
 							share with you!
 						</p>

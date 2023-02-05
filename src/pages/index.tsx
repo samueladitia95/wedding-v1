@@ -12,6 +12,7 @@ import OurJourney from "@/containers/OurJourney";
 import Gallery from "@/containers/Gallery";
 import Invitation from "@/containers/Invitation";
 import Head from "next/head";
+import Intro from "@/containers/Intro";
 
 type CommentResponse = {
 	status: string;
@@ -30,6 +31,7 @@ export const Home: NextPage<Prop> = ({ comments }) => {
 				<meta name="description" content="This is a wedding invitation" />
 			</Head>
 			<div>
+				<Intro />
 				<Invitation />
 				<Gallery />
 				<OurJourney />

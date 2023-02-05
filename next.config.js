@@ -6,7 +6,7 @@ const nextConfig = {
 	},
 	reactStrictMode: true,
 	images: {
-		domains: ["via.placeholder.com"],
+		domains: ["via.placeholder.com", "www.placekitten.com"],
 	},
 };
 

@@ -62,7 +62,7 @@ const schedules: Schedule[][] = [
 const WeekendGuide = () => {
 	return (
 		<>
-			<div className="bg-olive font-circular flex flex-col items-center">
+			<div className="bg-secondary font-circular flex flex-col items-center">
 				<div className="flex flex-col text-secondary text-center md:w-wide">
 					{/* TITLE */}
 					<div className="container bg-cream py-12 flex flex-col gap-4 items-center">

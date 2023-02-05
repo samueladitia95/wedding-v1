@@ -37,6 +37,10 @@ module.exports = {
 				narrow: "640px",
 				wide: "1300px",
 				"ultra-wide": "1440px",
+				tall: "1024px",
+			},
+			backgroundImage: {
+				intro: "url('https://placekitten.com/1445/1024')",
 			},
 		},
 	},
