@@ -43,7 +43,7 @@ module.exports = {
 				tall: "1024px",
 			},
 			backgroundImage: {
-				intro: "url('https://placekitten.com/1445/1024')",
+				intro: "url('https://placekitten.com/1450/1024')",
 			},
 		},
 	},

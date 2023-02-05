@@ -4,8 +4,8 @@ const Gallery = () => {
 	return (
 		<>
 			<div className="bg-soil11 lg:bg-soil8 text-soil1 font-circular">
-				<div className="container py-20 flex flex-col items-center gap-14 md:w-ultra-wide">
-					<div className="grid grid-cols-8 gap-4 items-center justify-items-center">
+				<div className="container md:px-0 py-20 flex flex-col items-center gap-14 md:w-ultra-wide">
+					<div className="grid grid-cols-8 gap-4 items-center justify-items-center w-full">
 						<div className="hidden flex-col gap-4 lg:flex lg:col-span-2">
 							<Image
 								src="https://via.placeholder.com/315x340"

@@ -63,7 +63,7 @@ const WeekendGuide = () => {
 	return (
 		<>
 			<div className="bg-soil13 font-circular flex flex-col items-center">
-				<div className="flex flex-col text-soil13 text-center md:w-wide">
+				<div className="flex flex-col text-soil13 text-center w-full">
 					{/* TITLE */}
 					<div className="container bg-soil2 py-12 flex flex-col gap-4 items-center">
 						<div className="uppercase font-serif text-4xl font-medium">
