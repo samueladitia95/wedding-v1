@@ -13,6 +13,7 @@ import Gallery from "@/containers/Gallery";
 import Invitation from "@/containers/Invitation";
 import Head from "next/head";
 import Intro from "@/containers/Intro";
+import BrideAndGroom from "@/containers/BrideAndGroom";
 
 type CommentResponse = {
 	status: string;
@@ -34,6 +35,7 @@ export const Home: NextPage<Prop> = ({ comments }) => {
 				<Intro />
 				<Invitation />
 				<Gallery />
+				<BrideAndGroom />
 				<OurJourney />
 				<WeekendGuide />
 				<TravelGuide />
