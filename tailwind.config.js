@@ -36,6 +36,7 @@ module.exports = {
 			spacing: {
 				narrow: "640px",
 				wide: "1300px",
+				"ultra-wide": "1440px",
 			},
 		},
 	},
