@@ -7,7 +7,7 @@ type Prop = {
 const MakeAWish = ({ comments }: Prop) => {
 	return (
 		<>
-			<div className="bg-primary text-secondary font-circular">
+			<div className="bg-soil1 text-soil13 font-circular">
 				<div className="container py-20 flex flex-col gap-14 md:w-narrow">
 					<div className="uppercase">
 						<p className="font-serif text-center text-4xl">make a wish</p>
@@ -24,7 +24,7 @@ const MakeAWish = ({ comments }: Prop) => {
 							</label>
 							<input
 								id="comment-name"
-								className="w-full rounded bg-primary border border-secondary p-2 focus:outline-secondary-darken"
+								className="w-full rounded bg-soil1 border border-soil13 p-2 focus:outline-soil7"
 							/>
 						</div>
 
@@ -35,13 +35,13 @@ const MakeAWish = ({ comments }: Prop) => {
 							<textarea
 								id="comment"
 								rows={4}
-								className="w-full rounded bg-primary border border-secondary p-2 focus:outline-secondary-darken"
+								className="w-full rounded bg-soil1 border border-soil13 p-2 focus:outline-soil7"
 							></textarea>
 						</div>
 
 						<button
 							type="submit"
-							className="rounded bg-secondary-darken text-white text-center w-full p-4 font-semibold shadow-lg"
+							className="rounded bg-soil7 text-white text-center w-full p-4 font-semibold shadow-lg"
 						>
 							SEND
 						</button>
@@ -60,7 +60,7 @@ const MakeAWish = ({ comments }: Prop) => {
 					<div>
 						<button
 							type="submit"
-							className="rounded bg-primary border border-secondary text-center w-full p-4 font-semibold shadow-lg"
+							className="rounded bg-soil1 border border-soil13 text-center w-full p-4 font-semibold shadow-lg"
 						>
 							SHOW MORE COMMENTS
 						</button>

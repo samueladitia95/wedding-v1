@@ -50,7 +50,7 @@ const images2 = [
 const QnA = () => {
 	return (
 		<>
-			<div className="bg-cream text-secondary font-circular">
+			<div className="bg-soil2 text-soil13 font-circular">
 				<div className="container py-20 flex flex-col items-center gap-14 md:w-narrow lg:flex-row lg:w-wide">
 					<div className="flex h-narrow overflow-auto w-full gap-4 rounded-2xl scrollbar-hide lg:h-wide lg:w-1/2 lg:overflow-y-auto">
 						<div className="flex flex-col gap-4 w-full ">
@@ -99,7 +99,7 @@ const QnA = () => {
 										What kind of outfit should shouldn&apos;t I wear?
 									</p>
 								</div>
-								<hr className="h-2 border-secondary" />
+								<hr className="h-2 border-soil13" />
 								<div className="text-sm flex flex-col gap-8 font-medium leading-8 tracking-wide">
 									<p>
 										Be handsome and beautiful, being ugly is not tolerated
@@ -137,7 +137,7 @@ const QnA = () => {
 										<p className="text-3xl font-bold">0{index + 2}</p>
 										<p className="text-sm font-medium">{el.question}</p>
 									</div>
-									<hr className="h-2 border-secondary" />
+									<hr className="h-2 border-soil13" />
 									<p className="font-medium leading-8 tracking-wide">
 										{el.answer}
 									</p>

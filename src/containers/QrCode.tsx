@@ -3,7 +3,7 @@ import Image from "next/image";
 const QrCode = () => {
 	return (
 		<>
-			<div className="bg-olive text-primary font-circular">
+			<div className="bg-soil11 text-soil1 font-circular">
 				<div className="container py-20 flex flex-col items-center gap-14 md:w-narrow">
 					<div className="uppercase">
 						<p className="font-serif text-center text-4xl">share love</p>
@@ -16,7 +16,7 @@ const QrCode = () => {
 						</p>
 					</div>
 
-					<div className="flex gap-4 flex-col items-center p-6 bg-olive-lighten rounded-3xl max-w-xs ">
+					<div className="flex gap-4 flex-col items-center p-6 bg-soil10 rounded-3xl max-w-xs ">
 						<Image
 							src="https://via.placeholder.com/400"
 							alt="QR Code"

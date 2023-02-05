@@ -3,7 +3,7 @@ import Image from "next/image";
 const Gallery = () => {
 	return (
 		<>
-			<div className="bg-olive lg:bg-secondary-lighten text-primary font-circular">
+			<div className="bg-soil11 lg:bg-soil8 text-soil1 font-circular">
 				<div className="container py-20 flex flex-col items-center gap-14 md:w-ultra-wide">
 					<div className="grid grid-cols-8 gap-4 items-center justify-items-center">
 						<div className="hidden flex-col gap-4 lg:flex lg:col-span-2">

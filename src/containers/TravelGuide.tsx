@@ -3,7 +3,7 @@ import Image from "next/image";
 const TravelGuide = () => {
 	return (
 		<>
-			<div className="bg-olive text-white font-circular">
+			<div className="bg-soil11 text-white font-circular">
 				<div className="container py-20 flex flex-col gap-14 sm:w-wide">
 					<div className="uppercase">
 						<p className="font-serif text-center text-4xl">travel guide</p>

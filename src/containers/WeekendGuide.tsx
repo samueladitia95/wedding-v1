@@ -62,10 +62,10 @@ const schedules: Schedule[][] = [
 const WeekendGuide = () => {
 	return (
 		<>
-			<div className="bg-secondary font-circular flex flex-col items-center">
-				<div className="flex flex-col text-secondary text-center md:w-wide">
+			<div className="bg-soil13 font-circular flex flex-col items-center">
+				<div className="flex flex-col text-soil13 text-center md:w-wide">
 					{/* TITLE */}
-					<div className="container bg-cream py-12 flex flex-col gap-4 items-center">
+					<div className="container bg-soil2 py-12 flex flex-col gap-4 items-center">
 						<div className="uppercase font-serif text-4xl font-medium">
 							<p>wedding</p>
 							<p>weekend guide</p>
@@ -76,23 +76,23 @@ const WeekendGuide = () => {
 							<p>to come to our wedding</p>
 						</div>
 
-						<div className="text-sm border border-secondary rounded-full p-4 w-48 italic">
+						<div className="text-sm border border-soil13 rounded-full p-4 w-48 italic">
 							*All times are in WITA
 						</div>
 					</div>
 
 					{/* Schedule */}
-					<div className="container flex flex-col gap-14 bg-primary text-secondary py-12">
+					<div className="container flex flex-col gap-14 bg-soil1 text-soil13 py-12">
 						{schedules.map((day, index) => (
 							<div
 								className="flex flex-col gap-10 items-center md:flex-row md:items-start md:grid md:grid-cols-3 md:gap-4 md:gap-y-14"
 								key={index}
 							>
 								<div className="flex flex-col gap-4 w-full">
-									<p className="font-baskervville italic text-brown">
+									<p className="font-baskervville italic text-soil12">
 										Saturday, June 3, 2023
 									</p>
-									<button className="uppercase p-4 border rounded border-brown w-full">
+									<button className="uppercase p-4 border rounded border-soil12 w-full">
 										add to calender
 									</button>
 								</div>
@@ -112,7 +112,7 @@ const WeekendGuide = () => {
 										{el.location && (
 											<p className="text-sm font-normal">{el.location}</p>
 										)}
-										<p className="text-brown text-sm font-medium">{el.time}</p>
+										<p className="text-soil12 text-sm font-medium">{el.time}</p>
 										{el.coordinate && (
 											<Link
 												href={el.coordinate}

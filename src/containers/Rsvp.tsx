@@ -1,7 +1,7 @@
 const Rsvp = () => {
 	return (
 		<>
-			<div className="bg-secondary-lighten text-white font-circular">
+			<div className="bg-soil8 text-white font-circular">
 				<div className="container py-20 flex flex-col gap-14 md:w-narrow">
 					<div className="uppercase">
 						<p className="font-serif text-center text-4xl">rsvp</p>
@@ -14,7 +14,7 @@ const Rsvp = () => {
 							</label>
 							<input
 								id="full-name"
-								className="w-full rounded bg-secondary-lighten border border-primary p-2 focus:outline-secondary-lighten"
+								className="w-full rounded bg-soil8 border border-soil1 p-2 focus:outline-soil8"
 							/>
 						</div>
 
@@ -24,7 +24,7 @@ const Rsvp = () => {
 							</label>
 							<input
 								id="phone-number"
-								className="w-full rounded bg-secondary-lighten border border-primary p-2 focus:outline-secondary-lighten"
+								className="w-full rounded bg-soil8 border border-soil1 p-2 focus:outline-soil8"
 							/>
 						</div>
 
@@ -35,7 +35,7 @@ const Rsvp = () => {
 							<input
 								id="email"
 								type="email"
-								className="w-full rounded bg-secondary-lighten border border-primary p-2 focus:outline-secondary-lighten"
+								className="w-full rounded bg-soil8 border border-soil1 p-2 focus:outline-soil8"
 							/>
 						</div>
 
@@ -90,7 +90,7 @@ const Rsvp = () => {
 							</div>
 							<input
 								placeholder="IF SO, PLEASE LET US KNOW WHO"
-								className="w-full rounded bg-secondary-lighten border border-primary p-2 focus:outline-secondary-lighten placeholder:text-primary placeholder:text-xs"
+								className="w-full rounded bg-soil8 border border-soil1 p-2 focus:outline-soil8 placeholder:text-soil1 placeholder:text-xs"
 							/>
 						</div>
 
@@ -122,7 +122,7 @@ const Rsvp = () => {
 
 						<button
 							type="submit"
-							className="rounded bg-secondary-darken text-white text-center w-full p-4 font-semibold shadow-md"
+							className="rounded bg-soil7 text-white text-center w-full p-4 font-semibold shadow-md"
 						>
 							SUBMIT
 						</button>
