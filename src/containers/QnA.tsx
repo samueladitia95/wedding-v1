@@ -33,18 +33,12 @@ const questions = [
 ];
 
 const images1 = [
-	"https://via.placeholder.com/400x800",
-	"https://via.placeholder.com/400x500",
-	"https://via.placeholder.com/400x600",
-	"https://via.placeholder.com/400x800",
-	"https://via.placeholder.com/400x400",
+	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/qa_images_1.jpg",
+	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/qa_images_3.jpg",
 ];
 const images2 = [
-	"https://via.placeholder.com/400x400",
-	"https://via.placeholder.com/400x700",
-	"https://via.placeholder.com/400x800",
-	"https://via.placeholder.com/400x800",
-	"https://via.placeholder.com/400x400",
+	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/qa_images_4.jpg",
+	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/qa_images_2.jpg",
 ];
 
 const QnA = () => {
