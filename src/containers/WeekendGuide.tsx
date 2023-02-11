@@ -12,46 +12,46 @@ type Schedule = {
 const schedules: Schedule[][] = [
 	[
 		{
-			icon: "https://via.placeholder.com/64",
+			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/welcome_dinner_icons.svg",
 			title: "family arrival & check in",
 			time: "14.00 onwards",
 		},
 		{
-			icon: "https://via.placeholder.com/64",
+			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/welcome_dinner_icons.svg",
 			title: "family welcome dinner",
 			time: "18.00",
 		},
 	],
 	[
 		{
-			icon: "https://via.placeholder.com/64",
+			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/holy_matrimony_icons.svg4",
 			title: "HOLY MATRIMONY",
 			location: "GEREJA KATOLIK SANTO SILVESTER",
 			time: "10.00",
 			coordinate: "www.google.com",
 		},
 		{
-			icon: "https://via.placeholder.com/64",
+			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/teapai_icons.svg",
 			title: "FAMILY TEA PAI CEREMONY",
 			location: "RADISSON BLU BALI, ULUWATU",
 			time: "13:00",
 			coordinate: "www.google.com",
 		},
 		{
-			icon: "https://via.placeholder.com/64",
+			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/cocktail_icons.svg",
 			title: "SUNSET COCKTAIL",
 			location: "KAMAYA, BALI",
 			time: "17:30",
 		},
 		{
-			icon: "https://via.placeholder.com/64",
+			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/cocktail_icons.svg",
 			title: "DINNER RECEPTION",
 			location: "KAMAYA, BALI",
 			time: "18:30",
 			coordinate: "www.google.com",
 		},
 		{
-			icon: "https://via.placeholder.com/64",
+			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/dance_icons.svg",
 			title: "LET’S DANCE!",
 			location: "KAMAYA, BALI",
 			time: "21:00",
