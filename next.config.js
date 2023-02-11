@@ -6,7 +6,11 @@ const nextConfig = {
 	},
 	reactStrictMode: true,
 	images: {
-		domains: ["via.placeholder.com", "www.placekitten.com"],
+		domains: [
+			"via.placeholder.com",
+			"www.placekitten.com",
+			"digital-invitation-1.s3.ap-southeast-1.amazonaws.com",
+		],
 	},
 };
 
