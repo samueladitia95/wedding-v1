@@ -12,7 +12,7 @@ const TravelGuide = () => {
 					<div className="flex flex-col justify-center gap-20 sm:flex-row sm:gap-10 sm:overflow-x-auto sm:scrollbar-hide">
 						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium sm:w-80">
 							<Image
-								src="https://via.placeholder.com/64"
+								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/plane_travel_guide_1_icons.svg"
 								alt="QR Code"
 								width={64}
 								height={64}
@@ -26,7 +26,7 @@ const TravelGuide = () => {
 
 						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium sm:w-80">
 							<Image
-								src="https://via.placeholder.com/64"
+								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/hotel_travel_guide_2_icons.svg"
 								alt="QR Code"
 								width={64}
 								height={64}
@@ -48,7 +48,7 @@ const TravelGuide = () => {
 
 						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium sm:w-80">
 							<Image
-								src="https://via.placeholder.com/64"
+								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/bus_travelguide_3_icons.svg"
 								alt="QR Code"
 								width={64}
 								height={64}
