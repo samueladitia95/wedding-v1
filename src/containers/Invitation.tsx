@@ -1,6 +1,8 @@
 import dayjs from "dayjs";
 import duration from "dayjs/plugin/duration";
 import { useState, useEffect } from "react";
+import Image from "next/image";
+import Vector from "../../public/vector-cut.png";
 
 dayjs.extend(duration);
 
@@ -34,6 +36,9 @@ const Invitation = () => {
 
 	return (
 		<>
+			<div className="h-24 lg:h-32 relative container md:w-wide -mt-28 lg:-mt-32">
+				<Image src={Vector} alt="background" fill />
+			</div>
 			<div className="bg-soil8 pb-10 text-soil13 font-circular">
 				<div className="container py-10 bg-soil1 flex flex-col gap-14 rounded-b-3xl md:w-wide">
 					<div className="text-center flex flex-col gap-4 items-center">
