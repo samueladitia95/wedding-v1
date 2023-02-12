@@ -41,6 +41,8 @@ const images2 = [
 	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/qa_images_2.jpg",
 ];
 
+const dressCodes = ["bg-soil1", "bg-soil4", "bg-soil5", "bg-soil6"];
+
 const QnA = () => {
 	return (
 		<>
@@ -104,18 +106,12 @@ const QnA = () => {
 									<div className="flex flex-col gap-2">
 										<p>Here are the color tone for your dress</p>
 										<div className="flex gap-4">
-											{Array(4)
-												.fill(0)
-												.map((_, index) => (
-													<Image
-														src="https://via.placeholder.com/40"
-														alt="color"
-														width={40}
-														height={40}
-														key={index}
-														className="rounded-full"
-													/>
-												))}
+											{dressCodes.map((bg, index) => (
+												<div
+													key={index}
+													className={`rounded-full h-10 w-10 ${bg}`}
+												></div>
+											))}
 										</div>
 									</div>
 									<p>
