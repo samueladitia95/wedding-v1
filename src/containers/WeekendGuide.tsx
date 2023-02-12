@@ -24,7 +24,7 @@ const schedules: Schedule[][] = [
 	],
 	[
 		{
-			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/holy_matrimony_icons.svg4",
+			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/holy_matrimony_icons.svg",
 			title: "HOLY MATRIMONY",
 			location: "GEREJA KATOLIK SANTO SILVESTER",
 			time: "10.00",
@@ -101,13 +101,9 @@ const WeekendGuide = () => {
 										key={index}
 										className="flex flex-col gap-4 items-center uppercase text-center"
 									>
-										<Image
-											src={el.icon}
-											alt="logo"
-											width={64}
-											height={64}
-											className="rounded"
-										/>
+										<div className="h-16 w-16 relative">
+											<Image src={el.icon} alt="logo" fill />
+										</div>
 										<p className="font-semibold">{el.title}</p>
 										{el.location && (
 											<p className="text-sm font-normal">{el.location}</p>
