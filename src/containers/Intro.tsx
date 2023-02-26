@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import And from "../../public/and.svg";
+import DownArrow from "../../public/down-arrow.svg";
 
 // ? RIBET JUGA YA ANIMASI, GA HAFAL GW INI URUTANNYA BENER DEH
 const Intro = () => {
@@ -65,8 +66,8 @@ const Intro = () => {
 									<div className="flex justify-center items-center mt-20">
 										<button>
 											<Image
-												src="https://via.placeholder.com/64"
-												alt="QR Code"
+												src={DownArrow}
+												alt="down arrow button"
 												width={64}
 												height={64}
 												className={`rounded-full transition-all duration-1000 ease-in ${

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import DownArrow from "../../public/down-arrow.svg";
 
 const BrideAndGroom = () => {
 	return (
@@ -21,8 +22,8 @@ const BrideAndGroom = () => {
 
 					<button>
 						<Image
-							src="https://via.placeholder.com/64"
-							alt="QR Code"
+							src={DownArrow}
+							alt="Down Arrow Button"
 							width={64}
 							height={64}
 							className="rounded-full"
