@@ -25,7 +25,7 @@ const Intro = () => {
 						}`}
 					>
 						<div className="container pb-0 flex flex-col items-center md:w-ultra-wide h-tall">
-							<div className="text-center pt-60 pb-52 flex flex-col gap-10 md:w-narrow">
+							<div className="text-center py-52 flex flex-col gap-10 md:w-narrow">
 								{/* <div
 									className={`uppercase font-safira text-4xl leading-9 transition-all duration-500 ease-out ${
 										!isIntro ? "opacity-0" : "opacity-100"
