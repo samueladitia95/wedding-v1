@@ -4,7 +4,7 @@ import {
 	Plus_Jakarta_Sans as plusJakartaSans,
 	Epilogue as epilogueFont,
 	Baskervville as baskervvilleFont,
-} from "@next/font/google";
+} from "next/font/google";
 
 // ? Circular Font
 const circular = plusJakartaSans({
