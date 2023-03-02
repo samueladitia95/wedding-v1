@@ -64,7 +64,7 @@ const Intro = () => {
 									</p>
 								)}
 								{forthAnimation && (
-									<div className="flex justify-center items-center mt-20">
+									<div className="flex justify-center items-center mt-72">
 										<Link href="#invitation" scroll={false}>
 											<button>
 												<Image
