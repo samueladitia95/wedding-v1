@@ -45,7 +45,7 @@ const Invitation = () => {
 						<p className="uppercase font-medium text-soil12 text-sm">
 							#irwanclaudia
 						</p>
-						<p className="font-baskervville italic text-3xl md:w-72">
+						<p className="font-baskervville italic text-3xl md:w-7 lg:w-96">
 							Here&apos;s to the beginning of our forever that we would like to
 							share with you!
 						</p>
