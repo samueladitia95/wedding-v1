@@ -31,7 +31,8 @@ module.exports = {
 				soil11: "#58534B",
 				soil12: "#9D8452",
 				soil13: "#726C5D",
-				soil14: "#2C2B2A"
+				soil14: "#2C2B2A",
+				soil15: "#1D1A17"
 			},
 			container: {
 				padding: "2rem",

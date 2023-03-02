@@ -3,7 +3,7 @@ import Image from "next/image";
 const OurJourney = () => {
 	return (
 		<>
-			<div className="bg-soil11 text-soil1 font-circular">
+			<div className="bg-soil15 text-white font-circular">
 				<div className="container py-20 flex flex-col items-center gap-14 md:w-narrow">
 					<div className="font-safira flex flex-col gap-4">
 						<div>
