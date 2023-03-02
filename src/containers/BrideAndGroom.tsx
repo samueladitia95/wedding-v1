@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import DownArrow from "../../public/down-arrow.svg";
 
 const BrideAndGroom = () => {
@@ -22,15 +23,17 @@ const BrideAndGroom = () => {
 								</p>
 							</div>
 
-							<button>
-								<Image
-									src={DownArrow}
-									alt="Down Arrow Button"
-									width={64}
-									height={64}
-									className="rounded-full"
-								/>
-							</button>
+							<Link href="#our-journey" scroll={false}>
+								<button>
+									<Image
+										src={DownArrow}
+										alt="Down Arrow Button"
+										width={64}
+										height={64}
+										className="rounded-full"
+									/>
+								</button>
+							</Link>
 						</div>
 					</div>
 				</div>

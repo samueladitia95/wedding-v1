@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import And from "../../public/and.svg";
 import DownArrow from "../../public/down-arrow.svg";
@@ -64,17 +65,19 @@ const Intro = () => {
 								)}
 								{forthAnimation && (
 									<div className="flex justify-center items-center mt-20">
-										<button>
-											<Image
-												src={DownArrow}
-												alt="down arrow button"
-												width={64}
-												height={64}
-												className={`rounded-full transition-all duration-1000 ease-in ${
-													!fifthAnimation ? "opacity-0" : "opacity-100"
-												}`}
-											/>
-										</button>
+										<Link href="#invitation" scroll={false}>
+											<button>
+												<Image
+													src={DownArrow}
+													alt="down arrow button"
+													width={64}
+													height={64}
+													className={`rounded-full transition-all duration-1000 ease-in ${
+														!fifthAnimation ? "opacity-0" : "opacity-100"
+													}`}
+												/>
+											</button>
+										</Link>
 									</div>
 								)}
 								{!forthAnimation && (

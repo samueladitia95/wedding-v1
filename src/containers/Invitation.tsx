@@ -36,7 +36,7 @@ const Invitation = () => {
 
 	return (
 		<>
-			<div className="h-24 lg:h-32 relative container md:w-wide -mt-28 lg:-mt-32">
+			<div id="invitation" className="h-24 lg:h-32 relative container md:w-wide -mt-28 lg:-mt-32">
 				<Image src={Vector} alt="background" fill />
 			</div>
 			<div className="bg-soil8 pb-10 text-soil13 font-circular">
