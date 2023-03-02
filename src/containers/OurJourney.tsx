@@ -62,11 +62,11 @@ const OurJourney = () => {
 									as high school
 								</p>
 							</div>
-							<div className="flex xl:gap-48 gap-14 items-center">
+							<div className="flex xl:gap-36 gap-14 mt-10">
 								<p className="text-justify text-7xl xl:text-9xl italic font-baskervville">
 									Sweethearts
 								</p>
-								<p className="text-left font-extralight font-epilogue text-md">
+								<p className="text-left font-extralight font-epilogue text-md pt-6">
 									We started off hanging out in the same group of friends{" "}
 									<span className="italic font-safira text-sm font-thin">
 										(you know who you are)
