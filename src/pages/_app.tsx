@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import {
 	Epilogue as epilogueFont,
-	Baskervville as baskervvilleFont,
+	// Baskervville as baskervvilleFont,
 } from "next/font/google";
 
 import localFont from "next/font/local";
