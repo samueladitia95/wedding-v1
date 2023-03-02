@@ -6,7 +6,7 @@ const TravelGuide = () => {
 			<div className="bg-soil11 text-white font-circular">
 				<div className="container py-20 flex flex-col gap-14 sm:w-wide">
 					<div className="uppercase">
-						<p className="font-serif text-center text-4xl">travel guide</p>
+						<p className="font-safira text-center text-6xl">travel guide</p>
 					</div>
 
 					<div className="flex flex-col justify-center gap-20 sm:flex-row sm:gap-10 sm:overflow-x-auto sm:scrollbar-hide">

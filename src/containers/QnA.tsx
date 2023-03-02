@@ -91,7 +91,7 @@ const QnA = () => {
 
 					<div className="flex flex-col gap-12 lg:w-1/2 lg:h-screen lg:overflow-y-auto scrollbar-hide">
 						<div className="uppercase">
-							<p className="font-serif text-center text-4xl text-soil14">
+							<p className="font-safira text-center text-4xl text-soil14">
 								questions and answers
 							</p>
 						</div>
