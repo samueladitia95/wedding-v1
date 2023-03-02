@@ -32,6 +32,7 @@ module.exports = {
 				soil16: "#312D28",
 				soil17: "#26231F",
 				soil18: "#9D9B99",
+				soil19: "#816B3F",
 				clothes1: "#D4C4AF",
 				clothes2: "#B48E53",
 				clothes3: "#764633",

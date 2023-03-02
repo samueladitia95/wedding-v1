@@ -94,7 +94,7 @@ const WeekendGuide = () => {
 									<p className="font-baskervville italic text-soil14 text-2xl font-light">
 										{index ? "Saturday, June 3, 2023" : "Friday, June 2, 2023"}
 									</p>
-									<button className="uppercase p-4 border rounded border-soil12 w-full">
+									<button className="uppercase p-4 border rounded border-soil12 w-full hover:bg-soil19 hover:text-soil1">
 										add to calender
 									</button>
 								</div>
