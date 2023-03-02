@@ -51,6 +51,7 @@ module.exports = {
 				wide: "1300px",
 				"ultra-wide": "1440px",
 				tall: "1024px",
+				"text-wide": "960px",
 			},
 			borderRadius: {
 				"4xl": "2rem",
