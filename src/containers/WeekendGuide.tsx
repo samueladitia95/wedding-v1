@@ -14,7 +14,7 @@ type Schedule = {
 const schedules: Schedule[][] = [
 	[
 		{
-			icon: Reception,
+			icon: Arrival,
 			title: "family arrival & check in",
 			time: "14.00 onwards",
 		},
@@ -46,7 +46,7 @@ const schedules: Schedule[][] = [
 			time: "17:30",
 		},
 		{
-			icon: Arrival,
+			icon: Reception,
 			title: "DINNER RECEPTION",
 			location: "SIX SENSES ULUWATU, BALI",
 			time: "18:30",
