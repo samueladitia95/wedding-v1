@@ -1,4 +1,5 @@
 import Image from "next/image";
+import IDo from "../../public/i-do.png";
 
 const OurJourney = () => {
 	return (
@@ -83,10 +84,8 @@ const OurJourney = () => {
 
 					<div className="flex flex-col gap-4 items-center">
 						<Image
-							src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/image_i_said_i_do_desktop.jpg"
+							src={IDo}
 							alt="QR Code"
-							width={313}
-							height={200}
 							className="rounded-full md:w-full lg:w-wide"
 						/>
 						<p className="text-center font-safira text-6xl italic">
