@@ -45,16 +45,16 @@ const Invitation = () => {
 						<p className="uppercase font-medium text-soil12 text-sm">
 							#irwanclaudia
 						</p>
-						<p className="font-baskervville italic text-3xl md:w-7 lg:w-96">
+						<p className="font-baskervville italic text-3xl md:w-7 lg:w-text-narrow md:text-5xl">
 							Here&apos;s to the beginning of our forever that we would like to
 							share with you!
 						</p>
 						<div className="border border-soil12 h-14 w-0"></div>
 						<div>
-							<p className="font-safira text-2xl uppercase">
+							<p className="font-safira text-2xl md:text-4xl uppercase">
 								{weddingDay.format("dddd, MMMM D, YYYY")}
 							</p>
-							<p className="uppercase font-medium text-soil12 text-sm">
+							<p className="uppercase font-medium text-soil12 text-sm md:text-lg">
 								KAMAYA BALI, ULUWATU, INDONESIA
 							</p>
 						</div>
