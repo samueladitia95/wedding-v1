@@ -106,10 +106,45 @@ const epilogue = epilogueFont({
 	subsets: ["latin"],
 	variable: "--font-epilogue",
 });
-const baskervville = baskervvilleFont({
-	subsets: ["latin"],
+// const baskervville = baskervvilleFont({
+// 	subsets: ["latin"],
+// 	variable: "--font-baskervville",
+// 	weight: "400",
+// });
+const baskervville = localFont({
+	src: [
+		{
+			path: "../../public/baskerville/Baskerville-01.ttf",
+			weight: "400",
+			style: "normal",
+		},
+		{
+			path: "../../public/baskerville/Baskerville-italic-03.ttf",
+			weight: "400",
+			style: "italic",
+		},
+		{
+			path: "../../public/baskerville/Baskerville-SemiBold-05.ttf",
+			weight: "600",
+			style: "normal",
+		},
+		{
+			path: "../../public/baskerville/Baskerville-SemiBoldItalic-06.ttf",
+			weight: "600",
+			style: "italic",
+		},
+		{
+			path: "../../public/baskerville/Baskerville-Bold-02.ttf",
+			weight: "700",
+			style: "normal",
+		},
+		{
+			path: "../../public/baskerville/Baskerville-BoldItalic-04.ttf",
+			weight: "700",
+			style: "normal",
+		},
+	],
 	variable: "--font-baskervville",
-	weight: "400",
 });
 
 export default function App({ Component, pageProps }: AppProps) {
