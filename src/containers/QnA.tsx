@@ -89,7 +89,7 @@ const QnA = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-col mb-14 lg:mb-0 lg:py-8 gap-12 lg:w-1/2 lg:h-qna lg:overflow-y-auto scrollbar-hide">
+					<div className="flex flex-col mb-14 lg:mb-0 lg:py-8 gap-12 lg:w-1/2 lg:h-qna-small xl:h-qna lg:overflow-y-auto scrollbar-hide">
 						<div className="uppercase">
 							<p className="font-safira text-left text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-soil14">
 								questions <br /> and answers

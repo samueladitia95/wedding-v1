@@ -54,6 +54,7 @@ module.exports = {
 				"text-wide": "960px",
 				"text-narrow": "550px",
 				qna: "900px",
+				"qna-small": "700px",
 			},
 			borderRadius: {
 				"4xl": "2rem",
