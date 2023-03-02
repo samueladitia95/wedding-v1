@@ -119,7 +119,7 @@ const baskervville = localFont({
 			style: "normal",
 		},
 		{
-			path: "../../public/baskerville/Baskerville-italic-03.ttf",
+			path: "../../public/baskerville/Baskerville-Italic-03.ttf",
 			weight: "400",
 			style: "italic",
 		},
