@@ -4,7 +4,7 @@ const TravelGuide = () => {
 	return (
 		<>
 			<div className="bg-soil11 text-white font-circular">
-				<div className="container py-20 flex flex-col gap-14 sm:w-wide">
+				<div className="container py-20 md:py-36 lg:py-64 xl:py-80 flex flex-col gap-14 sm:w-wide">
 					<div className="uppercase">
 						<p className="font-safira text-center text-6xl">travel guide</p>
 					</div>
