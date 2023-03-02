@@ -10,7 +10,7 @@ const MakeAWish = ({ comments }: Prop) => {
 			<div className="bg-soil1 text-soil13 font-circular">
 				<div className="container py-20 flex flex-col gap-14 md:w-narrow">
 					<div className="uppercase">
-						<p className="font-serif text-center text-4xl">make a wish</p>
+						<p className="font-safira text-center text-5xl">make a wish</p>
 						<p className="mt-4 text-center text-sm font-semibold">
 							It is an honor and pleasure for us, if you can attend and give us
 							your blessing
