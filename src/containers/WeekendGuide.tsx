@@ -92,7 +92,7 @@ const WeekendGuide = () => {
 							>
 								<div className="flex flex-col gap-4 w-full">
 									<p className="font-baskervville italic text-soil14 text-2xl font-light">
-										Saturday, June 3, 2023
+										{index ? "Saturday, June 3, 2023" : "Friday, June 2, 2023"}
 									</p>
 									<button className="uppercase p-4 border rounded border-soil12 w-full">
 										add to calender
