@@ -4,7 +4,7 @@ const Rsvp = () => {
 			<div className="bg-soil8 text-white font-circular">
 				<div className="container py-20 flex flex-col gap-14 md:w-narrow">
 					<div className="uppercase">
-						<p className="font-serif text-center text-4xl">rsvp</p>
+						<p className="font-safira text-center text-6xl">rsvp</p>
 					</div>
 
 					<form className="uppercase flex flex-col gap-6">
