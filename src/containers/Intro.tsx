@@ -42,6 +42,22 @@ const Intro = () => {
 							!firstAnimation ? "bg-opacity-100" : "bg-opacity-0"
 						}`}
 					>
+						<Image
+							src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/flower_left.png"
+							alt="QR Code"
+							width={313}
+							height={313}
+							priority
+							className="absolute bottom-0 left-0"
+						/>
+						<Image
+							src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/flower_right.png"
+							alt="QR Code"
+							width={313}
+							height={313}
+							priority
+							className="absolute bottom-0 right-0"
+						/>
 						<div className="container pb-0 flex flex-col items-center md:w-ultra-wide h-tall">
 							<div className="text-center py-52 flex flex-col gap-10 md:w-narrow">
 								{forthAnimation && (
