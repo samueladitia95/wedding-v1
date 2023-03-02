@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import Reception from "../../public/reception.svg";
+import Arrival from "../../public/arrival.svg";
 
 type Schedule = {
 	icon: string;
@@ -12,7 +14,7 @@ type Schedule = {
 const schedules: Schedule[][] = [
 	[
 		{
-			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/welcome_dinner_icons.svg",
+			icon: Reception,
 			title: "family arrival & check in",
 			time: "14.00 onwards",
 		},
@@ -33,27 +35,27 @@ const schedules: Schedule[][] = [
 		{
 			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/teapai_icons.svg",
 			title: "FAMILY TEA PAI CEREMONY",
-			location: "RADISSON BLU BALI, ULUWATU",
+			location: "SIX SENSES ULUWATU, BALI",
 			time: "13:00",
 			coordinate: "www.google.com",
 		},
 		{
 			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/cocktail_icons.svg",
 			title: "SUNSET COCKTAIL",
-			location: "KAMAYA, BALI",
+			location: "SIX SENSES ULUWATU, BALI",
 			time: "17:30",
 		},
 		{
-			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/cocktail_icons.svg",
+			icon: Arrival,
 			title: "DINNER RECEPTION",
-			location: "KAMAYA, BALI",
+			location: "SIX SENSES ULUWATU, BALI",
 			time: "18:30",
 			coordinate: "www.google.com",
 		},
 		{
 			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/dance_icons.svg",
 			title: "LET’S DANCE!",
-			location: "KAMAYA, BALI",
+			location: "SIX SENSES ULUWATU, BALI",
 			time: "21:00",
 		},
 	],
@@ -89,7 +91,7 @@ const WeekendGuide = () => {
 								key={index}
 							>
 								<div className="flex flex-col gap-4 w-full">
-									<p className="font-baskervville italic text-soil12">
+									<p className="font-baskervville italic text-soil14 text-2xl font-light">
 										Saturday, June 3, 2023
 									</p>
 									<button className="uppercase p-4 border rounded border-soil12 w-full">
@@ -104,7 +106,7 @@ const WeekendGuide = () => {
 										<div className="h-16 w-16 relative">
 											<Image src={el.icon} alt="logo" fill />
 										</div>
-										<p className="font-semibold">{el.title}</p>
+										<p className="font-medium text-soil14 ">{el.title}</p>
 										{el.location && (
 											<p className="text-sm font-normal">{el.location}</p>
 										)}
@@ -112,7 +114,7 @@ const WeekendGuide = () => {
 										{el.coordinate && (
 											<Link
 												href={el.coordinate}
-												className="text-sm underline font-medium"
+												className="text-sm underline font-medium text-soil14"
 											>
 												see venue map
 											</Link>
