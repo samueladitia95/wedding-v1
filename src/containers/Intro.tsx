@@ -94,9 +94,7 @@ const Intro = () => {
 												<Image
 													src={DownArrow}
 													alt="down arrow button"
-													width={64}
-													height={64}
-													className={`rounded-full transition-all duration-1000 ease-in ${
+													className={`rounded-full w-8 md:w-12 h-8 md:h-12 transition-all duration-1000 ease-in ${
 														!fifthAnimation ? "opacity-0" : "opacity-100"
 													}`}
 												/>

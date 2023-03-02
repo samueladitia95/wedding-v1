@@ -28,9 +28,7 @@ const BrideAndGroom = () => {
 									<Image
 										src={DownArrow}
 										alt="Down Arrow Button"
-										width={64}
-										height={64}
-										className="rounded-full"
+										className="rounded-full w-8 md:w-12 h-8 md:h-12 "
 									/>
 								</button>
 							</Link>
