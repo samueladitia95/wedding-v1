@@ -7,11 +7,21 @@ const OurJourney = () => {
 				<div className="container py-20 flex flex-col items-center gap-14 md:w-narrow">
 					<div className="font-safira flex flex-col gap-4">
 						<div>
-							<p className="text-center text-4xl uppercase">
-								Our journey started
-							</p>
-							<p className="text-center text-4xl uppercase">as high school</p>
-							<p className="text-center text-4xl italic font-baskervville">
+							<p className="text-left text-4xl uppercase">Our journey</p>
+							<div className="flex gap-2 items-center my-2">
+								<p className="text-center text-4xl uppercase">started</p>
+								<Image
+									src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/image_gif_dekstop.jpg"
+									alt={`photo our journey`}
+									width="0"
+									height="0"
+									sizes="100vw"
+									style={{ width: "146px", height: "auto" }}
+									className="rounded-full"
+								/>
+							</div>
+							<p className="text-left text-4xl uppercase">as high school</p>
+							<p className="text-left text-6xl italic font-baskervville">
 								Sweethearts
 							</p>
 						</div>
