@@ -10,7 +10,7 @@ const BrideAndGroom = () => {
 					<div className="bg-black bg-opacity-50">
 						<div className="container pb-0 flex flex-col items-center gap-14 md:w-ultra-wide h-tall">
 							<div className="text-center pt-48 pb-0 flex flex-col gap-10">
-								<div className="uppercase font-baskervville text-4xl leading-9 tracking-widest font-medium flex flex-col gap-2">
+								<div className="uppercase font-safira text-4xl leading-10 tracking-widest flex flex-col gap-2">
 									<p className="text-left ml-6">irwan</p>
 									<p>thomas</p>
 									<p className="text-left">burhan</p>
