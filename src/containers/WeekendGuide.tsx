@@ -78,7 +78,7 @@ const WeekendGuide = () => {
 							<p>to come to our wedding</p>
 						</div>
 
-						<div className="text-sm border border-soil13 rounded-full p-4 w-48 italic">
+						<div className="text-sm border font-baskervville border-soil13 rounded-full p-4 w-48 italic">
 							*All times are in WITA
 						</div>
 					</div>
