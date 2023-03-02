@@ -88,7 +88,7 @@ const OurJourney = () => {
 							alt="QR Code"
 							className="rounded-full md:w-full lg:w-wide"
 						/>
-						<p className="text-center font-safira text-6xl italic">
+						<p className="text-center font-baskervville text-6xl md:text-8xl italic">
 							I said &quot;I do&quot;
 						</p>
 						<p className="text-center font-extralight font-epilogue text-md leading-8">
