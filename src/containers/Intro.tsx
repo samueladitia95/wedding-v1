@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import And from "../../public/and.svg";
 import DownArrow from "../../public/down-arrow.svg";
+import FlowerLeft from "../../public/flowers-left.svg";
+import FlowerRight from "../../public/flowers-right.svg";
 
 // ? RIBET JUGA YA ANIMASI, GA HAFAL GW INI URUTANNYA BENER DEH
 const Intro = () => {
@@ -43,20 +45,26 @@ const Intro = () => {
 						}`}
 					>
 						<Image
-							src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/flower_left.png"
-							alt="QR Code"
-							width={313}
-							height={313}
+							// src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/flower_left.png"
+							src={FlowerLeft}
+							alt="Flower Left"
+							width={600}
+							height={600}
 							priority
-							className="absolute bottom-0 left-0"
+							className={`absolute bottom-0 left-0 transition-all duration-1000 ease-in ${
+								!firstAnimation ? "opacity-100" : "opacity-0"
+							}`}
 						/>
 						<Image
-							src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/flower_right.png"
-							alt="QR Code"
-							width={313}
-							height={313}
+							// src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/flower_right.png"
+							src={FlowerRight}
+							alt="Flower Right"
+							width={600}
+							height={600}
 							priority
-							className="absolute bottom-0 right-0"
+							className={`absolute bottom-0 right-0 transition-all duration-1000 ease-in ${
+								!firstAnimation ? "opacity-100" : "opacity-0"
+							}`}
 						/>
 						<div className="container pb-0 flex flex-col items-center md:w-ultra-wide h-tall">
 							<div className="text-center py-52 flex flex-col gap-10 md:w-narrow">
