@@ -47,7 +47,7 @@ const Rsvp = () => {
 										name="isAttending"
 										id="attending-yes"
 										type="radio"
-										className="w-5 h-5 appearance-none border-2 border-white rounded-full box-content  checked:bg-white"
+										className="w-4 h-4 appearance-none border-2 border-white rounded-full box-content  checked:bg-white"
 									/>
 									<label
 										htmlFor="attending-yes"
@@ -61,7 +61,7 @@ const Rsvp = () => {
 										name="isAttending"
 										id="attending-no"
 										type="radio"
-										className="w-5 h-5 appearance-none border-2 border-white rounded-full box-content  checked:bg-white"
+										className="w-4 h-4 appearance-none border-2 border-white rounded-full box-content  checked:bg-white"
 									/>
 									<label
 										htmlFor="attending-no"
@@ -83,7 +83,7 @@ const Rsvp = () => {
 										name="hotel"
 										id="hotel-yes"
 										type="radio"
-										className="w-5 h-5 appearance-none border-2 border-white rounded-full box-content  checked:bg-white"
+										className="w-4 h-4 appearance-none border-2 border-white rounded-full box-content  checked:bg-white"
 									/>
 									<label htmlFor="hotel-yes" className="font-semibold text-sm">
 										yes
@@ -94,7 +94,7 @@ const Rsvp = () => {
 										name="hotel"
 										id="hotel-no"
 										type="radio"
-										className="w-5 h-5 appearance-none border-2 border-white rounded-full box-content  checked:bg-white"
+										className="w-4 h-4 appearance-none border-2 border-white rounded-full box-content  checked:bg-white"
 									/>
 									<label htmlFor="hotel-no" className="font-semibold text-sm">
 										no
