@@ -41,30 +41,35 @@ const Rsvp = () => {
 
 						<div className="flex flex-col gap-4">
 							<p className="font-medium text-sm">will you be attending?</p>
-							<div className="flex gap-2 items-center pl-2">
-								<input
-									name="isAttending"
-									id="attending-yes"
-									type="radio"
-									className="w-5 h-5 appearance-none border-2 border-white rounded-full box-content  checked:bg-white"
-								/>
-								<label
-									htmlFor="attending-yes"
-									className="font-semibold text-sm"
-								>
-									yes
-								</label>
-							</div>
-							<div className="flex gap-2 items-center pl-2">
-								<input
-									name="isAttending"
-									id="attending-no"
-									type="radio"
-									className="w-5 h-5 appearance-none border-2 border-white rounded-full checked:bg-white"
-								/>
-								<label htmlFor="attending-no" className="font-semibold text-sm">
-									sorry, i can&apos;t make it
-								</label>
+							<div className="flex gap-4 md:gap-24 lg:gap-48">
+								<div className="flex gap-2 items-center">
+									<input
+										name="isAttending"
+										id="attending-yes"
+										type="radio"
+										className="w-5 h-5 appearance-none border-2 border-white rounded-full box-content  checked:bg-white"
+									/>
+									<label
+										htmlFor="attending-yes"
+										className="font-semibold text-sm"
+									>
+										yes
+									</label>
+								</div>
+								<div className="flex gap-2 items-center">
+									<input
+										name="isAttending"
+										id="attending-no"
+										type="radio"
+										className="w-5 h-5 appearance-none border-2 border-white rounded-full box-content  checked:bg-white"
+									/>
+									<label
+										htmlFor="attending-no"
+										className="font-semibold text-sm"
+									>
+										sorry, i can&apos;t make it
+									</label>
+								</div>
 							</div>
 						</div>
 
@@ -72,27 +77,29 @@ const Rsvp = () => {
 							<p className="font-medium text-sm">
 								do you need hotel accommodation?
 							</p>
-							<div className="flex gap-2 items-center pl-2">
-								<input
-									name="hotel"
-									id="hotel-yes"
-									type="radio"
-									className="w-5 h-5 appearance-none border-2 border-white rounded-full checked:bg-white"
-								/>
-								<label htmlFor="hotel-yes" className="font-semibold text-sm">
-									yes
-								</label>
-							</div>
-							<div className="flex gap-2 items-center pl-2">
-								<input
-									name="hotel"
-									id="hotel-no"
-									type="radio"
-									className="w-5 h-5 appearance-none border-2 border-white rounded-full checked:bg-white"
-								/>
-								<label htmlFor="hotel-no" className="font-semibold text-sm">
-									no
-								</label>
+							<div className="flex gap-4 md:gap-24 lg:gap-48">
+								<div className="flex gap-2 items-center">
+									<input
+										name="hotel"
+										id="hotel-yes"
+										type="radio"
+										className="w-5 h-5 appearance-none border-2 border-white rounded-full box-content  checked:bg-white"
+									/>
+									<label htmlFor="hotel-yes" className="font-semibold text-sm">
+										yes
+									</label>
+								</div>
+								<div className="flex gap-2 items-center">
+									<input
+										name="hotel"
+										id="hotel-no"
+										type="radio"
+										className="w-5 h-5 appearance-none border-2 border-white rounded-full box-content  checked:bg-white"
+									/>
+									<label htmlFor="hotel-no" className="font-semibold text-sm">
+										no
+									</label>
+								</div>
 							</div>
 						</div>
 
