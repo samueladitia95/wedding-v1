@@ -3,16 +3,16 @@ import Image from "next/image";
 const QrCode = () => {
 	return (
 		<>
-			<div className="bg-soil11 text-soil1 font-circular">
+			<div className="bg-soil16 text-white font-circular">
 				<div className="container py-20 flex flex-col items-center gap-14 md:w-narrow">
 					<div className="uppercase">
 						<p className="font-serif text-center text-4xl">share love</p>
 						<p className="mt-4 text-center text-sm font-semibold">
-							Your prayers & blessings at our wedding is enough as a gift
+							Your prayers is the best gift of all.
 						</p>
 						<p className="text-center text-sm font-semibold">
-							but if you want to give more, we are happy to receive it and it
-							will complement our happiness even more
+							However if you want to give something extra, we will be happy to
+							receive it
 						</p>
 					</div>
 
@@ -26,7 +26,7 @@ const QrCode = () => {
 						/>
 						<div className="text-black text-center font-semibold uppercase text-sm">
 							<p>irwan thomas burhan</p>
-							<p>bca</p>
+							<p>bank central asia</p>
 							<p>2611874148</p>
 						</div>
 					</div>
