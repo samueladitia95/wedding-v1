@@ -4,24 +4,23 @@ const OurJourney = () => {
 	return (
 		<>
 			<div id="our-journey" className="bg-soil15 text-white font-circular">
-				<div className="container py-20 flex flex-col items-center gap-14 md:w-narrow">
+				<div className="container py-20 flex flex-col items-center gap-14 md:w-wide">
 					<div className="font-safira flex flex-col gap-4">
 						<div>
-							<p className="text-left text-4xl uppercase">Our journey</p>
+							<p className="text-left text-4xl uppercase md:text-7xl">Our journey</p>
 							<div className="flex gap-2 items-center my-2">
-								<p className="text-center text-4xl uppercase">started</p>
+								<p className="text-center text-4xl uppercase md:text-7xl">started</p>
 								<Image
 									src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/image_gif_dekstop.jpg"
 									alt={`photo our journey`}
 									width="0"
 									height="0"
 									sizes="100vw"
-									style={{ width: "146px", height: "auto" }}
-									className="rounded-full"
+									className="rounded-full w-36 h-full md:w-80"
 								/>
 							</div>
-							<p className="text-left text-4xl uppercase">as high school</p>
-							<p className="text-left text-6xl italic font-baskervville">
+							<p className="text-left text-4xl uppercase md:text-7xl">as high school</p>
+							<p className="text-left text-6xl italic font-baskervville md:text-7xl">
 								Sweethearts
 							</p>
 						</div>
