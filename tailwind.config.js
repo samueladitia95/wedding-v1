@@ -16,7 +16,7 @@ module.exports = {
 					"var(--font-baskervville)",
 					...defaultTheme.fontFamily.serif,
 				],
-				safira: [...defaultTheme.fontFamily.serif],
+				safira: ["var(--font-safira)", ...defaultTheme.fontFamily.serif],
 			},
 			colors: {
 				soil1: "#DBD4C7",
@@ -52,11 +52,13 @@ module.exports = {
 				tall: "1024px",
 			},
 			borderRadius: {
-				'4xl': "2rem"
+				"4xl": "2rem",
 			},
 			backgroundImage: {
-				intro: "url('https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/image_landing_page_desktop.jpg')",
-				brideandgroom: "url('https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_3_desktop.jpg')"
+				intro:
+					"url('https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/image_landing_page_desktop.jpg')",
+				brideandgroom:
+					"url('https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_3_desktop.jpg')",
 			},
 		},
 	},

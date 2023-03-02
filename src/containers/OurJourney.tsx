@@ -11,7 +11,7 @@ const OurJourney = () => {
 								Our journey started
 							</p>
 							<p className="text-center text-4xl uppercase">as high school</p>
-							<p className="text-center text-4xl italic">Sweethearts</p>
+							<p className="text-center text-4xl italic font-baskervville">Sweethearts</p>
 						</div>
 						<p className="text-left font-epilogue text-md">
 							We started off hanging out in the same group of friends{" "}
