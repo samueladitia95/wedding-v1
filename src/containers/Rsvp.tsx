@@ -67,34 +67,6 @@ const Rsvp = () => {
 						</div>
 
 						<div className="flex flex-col gap-4">
-							<p className="font-medium text-sm">are you bringing a +1?</p>
-							<div className="flex gap-2 items-center pl-2">
-								<input
-									id="plus-one-yes"
-									type="radio"
-									className="w-5 h-5 accent-white"
-								/>
-								<label htmlFor="plus-one-yes" className="font-semibold text-sm">
-									yes
-								</label>
-							</div>
-							<div className="flex gap-2 items-center pl-2">
-								<input
-									id="plus-one-no"
-									type="radio"
-									className="w-5 h-5 accent-white"
-								/>
-								<label htmlFor="plus-one-no" className="font-semibold text-sm">
-									no
-								</label>
-							</div>
-							<input
-								placeholder="IF SO, PLEASE LET US KNOW WHO"
-								className="w-full rounded bg-soil8 border border-soil1 p-2 focus:outline-soil8 placeholder:text-soil1 placeholder:text-xs"
-							/>
-						</div>
-
-						<div className="flex flex-col gap-4">
 							<p className="font-medium text-sm">
 								do you need hotel accommodation?
 							</p>
