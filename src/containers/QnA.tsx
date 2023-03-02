@@ -56,9 +56,9 @@ const QnA = () => {
 	return (
 		<>
 			<div className="bg-soil2 text-soil13 font-circular">
-				<div className="container py-20 flex flex-col items-center lg:gap-14 md:w-narrow lg:flex-row lg:w-wide">
-					<div className="flex h-narrow overflow-auto w-full gap-4 rounded-2xl scrollbar-hide lg:h-screen lg:w-1/2 lg:overflow-y-auto">
-						<div className="flex flex-col gap-4 w-full ">
+				<div className="container py-20 flex flex-col items-center gap-10 lg:gap-14 md:w-narrow lg:flex-row lg:w-wide">
+					<div className="flex w-full gap-4 rounded-2xl scrollbar-hide lg:h-screen lg:w-1/2 lg:overflow-y-auto">
+						<div className="flex flex-col gap-4 w-full">
 							{images1.map((url, index) => (
 								<Image
 									key={index}
@@ -73,7 +73,7 @@ const QnA = () => {
 							))}
 						</div>
 
-						<div className="flex flex-col gap-4 w-full ">
+						<div className="flex flex-col gap-4 w-full">
 							{images2.map((url, index) => (
 								<Image
 									key={index}
