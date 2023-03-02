@@ -66,7 +66,7 @@ const OurJourney = () => {
 								<p className="text-justify text-7xl xl:text-9xl italic font-baskervville">
 									Sweethearts
 								</p>
-								<p className="text-left font-extralight font-epilogue text-md pt-6">
+								<p className="text-left font-extralight font-epilogue text-md pt-6 xl:pt-12">
 									We started off hanging out in the same group of friends{" "}
 									<span className="italic font-safira text-sm font-thin">
 										(you know who you are)
