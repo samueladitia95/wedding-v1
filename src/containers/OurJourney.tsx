@@ -27,7 +27,7 @@ const OurJourney = () => {
 
 					<div className="flex flex-col gap-4 items-center">
 						<Image
-							src="https://via.placeholder.com/400x200"
+							src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/image_i_said_i_do_desktop.jpg"
 							alt="QR Code"
 							width={313}
 							height={200}
