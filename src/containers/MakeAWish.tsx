@@ -60,7 +60,7 @@ const MakeAWish = ({ comments }: Prop) => {
 					<div>
 						<button
 							type="submit"
-							className="rounded bg-soil1 border border-soil13 text-center w-full p-4 font-semibold shadow-lg"
+							className="rounded bg-soil1 border border-soil13 text-center w-full p-4 font-semibold hover:bg-soil19 hover:text-soil1"
 						>
 							SHOW MORE COMMENTS
 						</button>
