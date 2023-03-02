@@ -91,7 +91,7 @@ const OurJourney = () => {
 						<p className="text-center font-safira text-6xl italic">
 							I said &quot;I do&quot;
 						</p>
-						<p className="text-left font-extralight font-epilogue text-md">
+						<p className="text-center font-extralight font-epilogue text-md leading-8">
 							As cheesy as it gets, we even went to prom together (LOL). Slowly
 							without realizing, throughout several paces in life, after tons of
 							happy moments, growing together and learning from each other,
