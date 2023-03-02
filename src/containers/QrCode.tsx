@@ -4,7 +4,7 @@ const QrCode = () => {
 	return (
 		<>
 			<div className="bg-soil16 text-white font-circular">
-				<div className="container py-20 flex flex-col items-center gap-14 md:w-narrow">
+				<div className="container py-20 flex flex-col items-center gap-14 md:w-wide">
 					<div className="uppercase">
 						<p className="font-serif text-center text-4xl">share love</p>
 						<p className="mt-4 text-center text-sm font-semibold">
