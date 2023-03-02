@@ -42,6 +42,9 @@ module.exports = {
 				"ultra-wide": "1440px",
 				tall: "1024px",
 			},
+			borderRadius: {
+				'4xl': "2rem"
+			},
 			backgroundImage: {
 				intro: "url('https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/image_landing_page_desktop.jpg')",
 				brideandgroom: "url('https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_3_desktop.jpg')"

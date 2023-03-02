@@ -59,7 +59,7 @@ const QnA = () => {
 									height="0"
 									sizes="100vw"
 									style={{ width: "100%", height: "auto" }}
-									className="rounded-2xl"
+									className="rounded-4xl"
 								/>
 							))}
 						</div>
@@ -74,7 +74,7 @@ const QnA = () => {
 									height="0"
 									sizes="100vw"
 									style={{ width: "100%", height: "auto" }}
-									className="rounded-2xl"
+									className="rounded-4xl"
 								/>
 							))}
 						</div>

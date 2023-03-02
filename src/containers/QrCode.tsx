@@ -16,7 +16,7 @@ const QrCode = () => {
 						</p>
 					</div>
 
-					<div className="flex gap-4 flex-col items-center p-6 bg-soil10 rounded-3xl max-w-xs ">
+					<div className="flex gap-4 flex-col items-center p-6 bg-soil10 rounded-4xl max-w-xs ">
 						<Image
 							src="https://via.placeholder.com/400"
 							alt="QR Code"

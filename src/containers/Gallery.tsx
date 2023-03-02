@@ -12,14 +12,14 @@ const Gallery = () => {
 								alt="gallery-side"
 								width={315}
 								height={340}
-								className="rounded-3xl"
+								className="rounded-4xl"
 							/>
 							<Image
 								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_4_desktop.jpg"
 								alt="gallery-side"
 								width={315}
 								height={470}
-								className="rounded-3xl"
+								className="rounded-4xl"
 							/>
 						</div>
 						<Image
@@ -27,7 +27,7 @@ const Gallery = () => {
 							alt="gallery-main"
 							width={660}
 							height={500}
-							className="rounded-3xl col-span-8 lg:col-span-4"
+							className="rounded-4xl col-span-8 lg:col-span-4"
 						/>
 						<div className="hidden flex-col gap-4 lg:flex lg:col-span-2">
 							<Image
@@ -35,14 +35,14 @@ const Gallery = () => {
 								alt="gallery-side"
 								width={315}
 								height={340}
-								className="rounded-3xl"
+								className="rounded-4xl"
 							/>
 							<Image
 								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_5_desktop.jpg"
 								alt="gallery-side"
 								width={315}
 								height={470}
-								className="rounded-3xl"
+								className="rounded-4xl"
 							/>
 						</div>
 					</div>
