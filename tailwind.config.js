@@ -21,9 +21,6 @@ module.exports = {
 			colors: {
 				soil1: "#DBD4C7",
 				soil2: "#EAE6E2",
-				soil4: "#BDB6AC",
-				soil5: "#A89A85",
-				soil6: "#959186",
 				soil7: "#8D8070",
 				soil8: "#A59B8F",
 				soil9: "#3F3931",
@@ -32,7 +29,15 @@ module.exports = {
 				soil12: "#9D8452",
 				soil13: "#726C5D",
 				soil14: "#2C2B2A",
-				soil15: "#1D1A17"
+				soil15: "#1D1A17",
+				clothes1: "#D4C4AF",
+				clothes2: "#B48E53",
+				clothes3: "#764633",
+				clothes4: "#8F8B70",
+				clothes5: "#D4C4AF",
+				clothes6: "#565A41",
+				clothes7: "#8A949B",
+				clothes8: "#2D2217",
 			},
 			container: {
 				padding: "2rem",

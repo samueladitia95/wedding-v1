@@ -41,7 +41,16 @@ const images2 = [
 	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/qa_images_2.jpg",
 ];
 
-const dressCodes = ["bg-soil1", "bg-soil4", "bg-soil5", "bg-soil6"];
+const dressCodes = [
+	"bg-clothes1",
+	"bg-clothes2",
+	"bg-clothes3",
+	"bg-clothes4",
+	"bg-clothes5",
+	"bg-clothes6",
+	"bg-clothes7",
+	"bg-clothes8",
+];
 
 const QnA = () => {
 	return (
@@ -82,7 +91,7 @@ const QnA = () => {
 
 					<div className="flex flex-col gap-12 lg:w-1/2 lg:h-screen lg:overflow-y-auto scrollbar-hide">
 						<div className="uppercase">
-							<p className="font-serif text-center text-4xl">
+							<p className="font-serif text-center text-4xl text-soil14">
 								questions and answers
 							</p>
 						</div>
@@ -105,7 +114,7 @@ const QnA = () => {
 									</p>
 									<div className="flex flex-col gap-2">
 										<p>Here are the color tone for your dress</p>
-										<div className="flex gap-4">
+										<div className="flex flex-wrap gap-4">
 											{dressCodes.map((bg, index) => (
 												<div
 													key={index}
