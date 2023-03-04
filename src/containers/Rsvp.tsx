@@ -2,7 +2,7 @@ const Rsvp = () => {
 	return (
 		<>
 			<div className="bg-soil8 text-white font-circular">
-				<div className="container py-20 flex flex-col gap-14 md:w-narrow">
+				<div className="container py-28 flex flex-col gap-14 md:w-narrow">
 					<div className="uppercase">
 						<p className="font-safira text-center text-8xl">rsvp</p>
 					</div>

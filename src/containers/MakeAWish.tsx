@@ -8,7 +8,7 @@ const MakeAWish = ({ comments }: Prop) => {
 	return (
 		<>
 			<div className="bg-soil1 text-soil13 font-circular">
-				<div className="container py-20 flex flex-col gap-14 items-center">
+				<div className="container py-28 flex flex-col gap-14 items-center">
 					<div className="uppercase">
 						<p className="font-safira text-center text-5xl md:text-8xl">
 							SHARE YOUR WISH
