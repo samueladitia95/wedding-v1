@@ -70,7 +70,11 @@ const Intro = () => {
 							<div className="text-center py-52 flex flex-col gap-10 lg:w-text-wide">
 								{forthAnimation && (
 									<div
-										className={`uppercase font-safira font-light text-4xl md:text-5xl lg:text-6xl transition-all duration-1000 ease-in tracking-wide ${
+										// ! harus di paksa pake style agar bisa priority
+										style={{
+											lineHeight: "1.3",
+										}}
+										className={`uppercase font-safira font-light text-3xl md:text-5xl lg:text-6xl transition-all duration-1000 ease-in tracking-wide ${
 											!fifthAnimation ? "opacity-0" : "opacity-100"
 										}`}
 									>
