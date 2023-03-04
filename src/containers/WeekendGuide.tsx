@@ -67,14 +67,16 @@ const WeekendGuide = () => {
 			<div className="bg-soil13 font-circular flex flex-col items-center">
 				<div className="flex flex-col text-soil13 text-center w-full">
 					{/* TITLE */}
-					<div className="container bg-soil2 py-12 flex flex-col gap-4 items-center">
+					<div className="container bg-soil2 py-12 md:py-14 flex flex-col gap-4 items-center z-10 rounded-b-full lg:pb-20">
 						<div className="uppercase font-safira text-6xl lg:text-8xl font-light text-soil14">
 							<p>wedding</p>
 							<p>weekend guide</p>
 						</div>
 
 						<div className="uppercase font-medium md:text-2xl">
-							<p className="whitespace-nowrap md:whitespace-normal">Hi there, here are the guide for you</p>
+							<p className="whitespace-nowrap md:whitespace-normal">
+								Hi there, here are the guide for you
+							</p>
 							<p>to come to our wedding</p>
 						</div>
 
@@ -84,7 +86,9 @@ const WeekendGuide = () => {
 					</div>
 
 					{/* Schedule */}
-					<div className="container flex flex-col gap-14 bg-soil1 text-soil13 py-12">
+					<div className="container flex flex-col gap-14 bg-soil1 text-soil13 py-12 rounded-t-full md:rounded-t-full -mt-40 md:-mt-96 pt-48 md:pt-80 lg:rounded-t-br-lg lg:-mt-bt-circle-lg lg:pt-96">
+						<br className="hidden md:block" />
+						<br className="hidden md:block" />
 						{schedules.map((day, index) => (
 							<div
 								className="flex flex-col gap-10 items-center md:flex-row md:items-start md:grid md:grid-cols-3 md:gap-4 md:gap-y-14"

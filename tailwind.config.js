@@ -55,9 +55,11 @@ module.exports = {
 				"text-narrow": "550px",
 				qna: "900px",
 				"qna-small": "700px",
+				"bt-circle-lg": "450px"
 			},
 			borderRadius: {
 				"4xl": "2rem",
+				"br-lg": "300px"
 			},
 			backgroundImage: {
 				intro:
