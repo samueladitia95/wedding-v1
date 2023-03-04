@@ -73,12 +73,12 @@ const WeekendGuide = () => {
 							<p>weekend guide</p>
 						</div>
 
-						<div className="uppercase font-medium">
+						<div className="uppercase font-medium text-2xl">
 							<p>Hi there, here are the guide for you</p>
 							<p>to come to our wedding</p>
 						</div>
 
-						<div className="text-sm border font-baskervville border-soil13 rounded-full p-4 w-48 italic">
+						<div className="text-2xl border font-baskervville border-soil13 rounded-full p-4 italic">
 							*All times are in WITA
 						</div>
 					</div>
