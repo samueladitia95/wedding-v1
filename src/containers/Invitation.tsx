@@ -36,22 +36,27 @@ const Invitation = () => {
 
 	return (
 		<>
-			<div id="invitation" className="h-24 lg:h-32 relative container md:w-wide -mt-28 lg:-mt-32">
+			<div
+				id="invitation"
+				className="h-24 lg:h-32 relative container md:w-wide -mt-28 lg:-mt-32"
+			>
 				<Image src={Vector} alt="background" fill />
 			</div>
 			<div className="bg-soil8 pb-10 text-soil13 font-circular">
 				<div className="container py-10 bg-soil1 flex flex-col gap-14 rounded-b-3xl md:w-wide">
-					<div className="text-center flex flex-col gap-4 items-center">
-						<p className="uppercase font-medium text-soil12 text-sm">
-							#irwanclaudia
-						</p>
-						<p className="font-baskervville italic text-3xl md:w-text-narrow md:text-6xl">
-							Here&apos;s to the beginning of our forever that we would like to
-							share with you!
-						</p>
-						<div className="border border-soil12 h-14 w-0"></div>
-						<div>
-							<p className="font-safira text-2xl md:text-5xl uppercase">
+					<div className="text-center flex flex-col gap-8 items-center">
+						<div className="flex flex-col gap-2">
+							<p className="uppercase font-medium text-soil12 text-sm">
+								#irwanclaudia
+							</p>
+							<p className="font-baskervville italic text-3xl md:w-text-narrow md:text-6xl">
+								Here&apos;s to the beginning of our forever that we would like
+								to share with you!
+							</p>
+						</div>
+						<div className="border border-soil12 h-20 w-0"></div>
+						<div className="flex flex-col gap-3">
+							<p className="font-safira text-2xl md:text-5xl lg:text-6xl uppercase">
 								{weddingDay.format("dddd, MMMM D, YYYY")}
 							</p>
 							<p className="uppercase font-medium text-soil12 text-sm md:text-xl">
