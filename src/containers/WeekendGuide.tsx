@@ -90,13 +90,17 @@ const WeekendGuide = () => {
 								className="flex flex-col gap-10 items-center md:flex-row md:items-start md:grid md:grid-cols-3 md:gap-4 md:gap-y-14"
 								key={index}
 							>
-								<div className="flex flex-col gap-4 w-full">
-									<p className="font-baskervville italic text-soil14 text-2xl font-light">
-										{index ? "Saturday, June 3, 2023" : "Friday, June 2, 2023"}
-									</p>
-									<button className="uppercase p-4 border rounded border-soil12 w-full hover:bg-soil19 hover:text-soil1">
-										add to calender
-									</button>
+								<div className="flex flex-col items-center w-full">
+									<div className="flex flex-col gap-4 items-center lg:items-start">
+										<p className="text-left font-baskervville italic text-soil14 text-2xl lg:text-3xl h-full">
+											{index
+												? "Saturday, June 3, 2023"
+												: "Friday, June 2, 2023"}
+										</p>
+										<button className="uppercase p-4 border rounded border-soil12 w-full hover:bg-soil19 hover:text-soil1 lg:w-72">
+											add to calender
+										</button>
+									</div>
 								</div>
 								{day.map((el, index) => (
 									<div
