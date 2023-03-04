@@ -42,7 +42,7 @@ const Invitation = () => {
 			>
 				<Image src={Vector} alt="background" fill />
 			</div>
-			<div className="bg-soil8 pb-10 text-soil13 font-circular">
+			<div className="bg-soil11 lg:bg-soil8 text-soil13 font-circular">
 				<div className="container py-10 bg-soil1 flex flex-col gap-14 rounded-b-3xl md:w-wide">
 					<div className="text-center flex flex-col gap-8 items-center">
 						<div className="flex flex-col gap-2">
