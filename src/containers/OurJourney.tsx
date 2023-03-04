@@ -5,7 +5,7 @@ const OurJourney = () => {
 	return (
 		<>
 			<div id="our-journey" className="bg-soil15 text-white font-circular">
-				<div className="container py-20 flex flex-col items-center gap-14 md:w-ultra-wide">
+				<div className="container py-28 flex flex-col items-center gap-14 lg:gap-48 md:w-ultra-wide">
 					{/* Mobile and Table */}
 					<div className="font-safira flex flex-col gap-4 lg:hidden">
 						<div>
@@ -82,7 +82,7 @@ const OurJourney = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-col gap-4 items-center">
+					<div className="flex flex-col gap-10 items-center">
 						<Image
 							src={IDo}
 							alt="QR Code"
