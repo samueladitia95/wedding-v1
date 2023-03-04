@@ -46,7 +46,7 @@ const Invitation = () => {
 				<div className="container py-10 bg-soil1 flex flex-col gap-14 rounded-b-3xl md:w-wide">
 					<div className="text-center flex flex-col gap-8 items-center">
 						<div className="flex flex-col gap-2">
-							<p className="uppercase font-medium text-soil12 text-sm">
+							<p className="uppercase font-medium text-soil12">
 								#irwanclaudia
 							</p>
 							<p className="font-baskervville italic text-3xl md:w-text-narrow md:text-6xl">
