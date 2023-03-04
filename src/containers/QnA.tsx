@@ -98,7 +98,7 @@ const QnA = () => {
 
 						<div className="flex flex-col gap-10">
 							<div className="flex flex-col gap-6">
-								<div className="flex gap-3 uppercase tracking-wider">
+								<div className="flex gap-4 items-center uppercase tracking-wider">
 									<p className="text-3xl font-bold">01</p>
 									<p className="text-sm font-medium">
 										What kind of outfit should shouldn&apos;t I wear?
