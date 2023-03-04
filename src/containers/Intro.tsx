@@ -70,7 +70,7 @@ const Intro = () => {
 							<div className="text-center py-52 flex flex-col gap-10 lg:w-text-wide">
 								{forthAnimation && (
 									<div
-										className={`uppercase font-safira text-4xl md:text-5xl lg:text-6xl transition-all duration-1000 ease-in tracking-wide ${
+										className={`uppercase font-safira font-light text-4xl md:text-5xl lg:text-6xl transition-all duration-1000 ease-in tracking-wide ${
 											!fifthAnimation ? "opacity-0" : "opacity-100"
 										}`}
 									>
@@ -80,7 +80,7 @@ const Intro = () => {
 								)}
 								{forthAnimation && (
 									<p
-										className={`italic font-baskervville text-lg transition-all duration-1000 ease-in ${
+										className={`italic font-baskervville text-3xl transition-all duration-1000 ease-in ${
 											!fifthAnimation ? "opacity-0" : "opacity-100"
 										}`}
 									>
