@@ -60,7 +60,7 @@ const Invitation = () => {
 								{weddingDay.format("dddd, MMMM D, YYYY")}
 							</p>
 							<p className="uppercase font-medium text-soil12 text-sm md:text-xl">
-								KAMAYA BALI, ULUWATU, INDONESIA
+								six senses, ULUWATU, bali
 							</p>
 						</div>
 					</div>
