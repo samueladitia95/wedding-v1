@@ -45,6 +45,7 @@ const schedules: Schedule[][] = [
 			title: "SUNSET COCKTAIL",
 			location: "SIX SENSES ULUWATU, BALI",
 			time: "17:30",
+			coordinate: "www.google.com",
 		},
 		{
 			icon: Reception,
@@ -58,6 +59,7 @@ const schedules: Schedule[][] = [
 			title: "LET’S DANCE!",
 			location: "SIX SENSES ULUWATU, BALI",
 			time: "21:00",
+			coordinate: "www.google.com",
 		},
 	],
 ];
