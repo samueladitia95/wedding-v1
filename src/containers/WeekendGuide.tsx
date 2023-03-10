@@ -3,6 +3,9 @@ import Link from "next/link";
 import Reception from "../../public/reception.svg";
 import Arrival from "../../public/arrival.svg";
 
+const sixSensesCoordinate =
+	"https://www.google.com/maps/place/Six+Senses+Uluwatu,+Bali/@-8.8442773,115.1276315,17z/data=!4m20!1m10!3m9!1s0x2dd25ae5f63a6c85:0xbae86c51d49b37c8!2sSix+Senses+Uluwatu,+Bali!5m2!4m1!1i2!8m2!3d-8.8442826!4d115.1298202!16s%2Fg%2F11c1vrfvfj!3m8!1s0x2dd25ae5f63a6c85:0xbae86c51d49b37c8!5m2!4m1!1i2!8m2!3d-8.8442826!4d115.1298202!16s%2Fg%2F11c1vrfvfj";
+
 type Schedule = {
 	icon: string;
 	title: string;
@@ -38,28 +41,28 @@ const schedules: Schedule[][] = [
 			title: "FAMILY TEA PAI CEREMONY",
 			location: "SIX SENSES ULUWATU, BALI",
 			time: "13:00",
-			coordinate: "www.google.com",
+			coordinate: sixSensesCoordinate,
 		},
 		{
 			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/cocktail_icons.svg",
 			title: "SUNSET COCKTAIL",
 			location: "SIX SENSES ULUWATU, BALI",
 			time: "17:30",
-			coordinate: "www.google.com",
+			coordinate: sixSensesCoordinate,
 		},
 		{
 			icon: Reception,
 			title: "DINNER RECEPTION",
 			location: "SIX SENSES ULUWATU, BALI",
 			time: "18:30",
-			coordinate: "www.google.com",
+			coordinate: sixSensesCoordinate,
 		},
 		{
 			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/dance_icons.svg",
 			title: "LET’S DANCE!",
 			location: "SIX SENSES ULUWATU, BALI",
 			time: "21:00",
-			coordinate: "www.google.com",
+			coordinate: sixSensesCoordinate,
 		},
 	],
 ];
@@ -118,14 +121,17 @@ const WeekendGuide = () => {
 											<Image src={el.icon} alt="logo" fill />
 										</div>
 										<p className="font-medium text-soil14 ">{el.title}</p>
-										{el.location && (
+										{el.location ? (
 											<p className="text-sm font-normal">{el.location}</p>
+										) : (
+											<br />
 										)}
 										<p className="text-soil12 text-sm font-medium">{el.time}</p>
 										{el.coordinate && (
 											<Link
 												href={el.coordinate}
 												className="text-sm underline font-medium text-soil14"
+												target="_blank"
 											>
 												see venue map
 											</Link>
