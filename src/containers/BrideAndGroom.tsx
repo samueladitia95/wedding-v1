@@ -19,7 +19,7 @@ const BrideAndGroom = () => {
 									<p className="text-right mr-6">Narmada</p>
 								</div>
 								<p className="italic font-baskervville text-2xl md:text-3xl">
-									Let’s us tell you our classic love story
+									Let’s us tell you our classic journey
 								</p>
 							</div>
 
