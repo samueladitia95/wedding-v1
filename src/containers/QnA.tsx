@@ -9,22 +9,17 @@ const questions = [
 	{
 		question: "Will the wedding be indoor or outdoor",
 		answer:
-			"Holy matrimony will be held in an indoor church, reception & after party will be held outdoors with an amazing cliff top view.",
+			"Holy matrimony will be held in an indoor church, reception will be held outdoors, and after party will be held indoor.",
 	},
 	{
 		question: "WHAT ACCOMODATIONS ARE PROVIDED?",
 		answer:
-			"Flight ticket will not be provided. Hotel will be provided. Round trip shuttle bus from hotel.",
-	},
-	{
-		question: "Will masks be required? Will they be provided?",
-		answer:
-			"Mask is mandatory to be used during holy matrimony inside the church. Let’s take our mask off and show your beautiful faces during reception & after party. Masks will not be provided, so please bring yours.",
+			"Flight ticket will not be provided. Hotel and round trip shuttle bus will be provided. Please check out the “Travel Guide” section.",
 	},
 	{
 		question: "What type of wedding gift should I bring?",
 		answer:
-			"A Your presence at our wedding is the greatest gift of all. However, if you wish to honor us with a special something, a cash gift would be very welcome.",
+			"Your presence at our wedding is the greatest gift of all. However, if you wish to honor us with a special something, a cash / “angpao” as gift would be very welcome.",
 	},
 	{
 		question: "Whom should I reach for further questions?",
@@ -46,7 +41,7 @@ const dressCodes = [
 	"bg-clothes2",
 	"bg-clothes3",
 	"bg-clothes4",
-	"bg-clothes5",
+	// "bg-clothes5",
 	"bg-clothes6",
 	"bg-clothes7",
 	"bg-clothes8",
@@ -101,19 +96,19 @@ const QnA = () => {
 								<div className="flex gap-4 items-center uppercase tracking-wider">
 									<p className="text-3xl font-bold">01</p>
 									<p className="text-sm font-medium">
-										What kind of outfit should shouldn&apos;t I wear?
+										What kind of outfit should / shouldn&apos;t I wear?
 									</p>
 								</div>
 								<hr className="h-2 border-soil13" />
 								<div className="text-sm flex flex-col gap-8 font-medium leading-8 tracking-wide">
 									<p>
-										Be handsome and beautiful, being ugly is not tolerated
-										(LOL). Calling all Ladies! Long dresses are preferred and
+										Be handsome and beautiful, being ugly is not tolerated (Just
+										Kidding). Calling all Ladies! Long dresses are preferred and
 										please wear comfortable shoes. Get ready to be dancing all
 										night with booze involved.
 									</p>
 									<div className="flex flex-col gap-2">
-										<p>Here are the color tone for your dress</p>
+										<p>Here are the color options for your dress</p>
 										<div className="flex flex-wrap gap-4">
 											{dressCodes.map((bg, index) => (
 												<div
@@ -125,7 +120,7 @@ const QnA = () => {
 									</div>
 									<p>
 										For Gentlemen, suit up. <br /> Kindly leave your batik,
-										jeans, t-shirt, slippers at home.
+										jeans, t-shirt, and slippers at home.
 									</p>
 								</div>
 							</div>
