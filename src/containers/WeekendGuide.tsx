@@ -16,6 +16,7 @@ const schedules: Schedule[][] = [
 		{
 			icon: Arrival,
 			title: "family arrival & check in",
+			location: "radisson blu bali, uluwatu",
 			time: "14.00 onwards",
 		},
 		{
@@ -102,7 +103,7 @@ const WeekendGuide = () => {
 												: "Friday, June 2, 2023"}
 										</p>
 										<button className="uppercase p-4 border rounded border-soil12 w-full hover:bg-soil19 hover:text-soil1 lg:w-72">
-											add to calender
+											add to calendar
 										</button>
 									</div>
 								</div>
