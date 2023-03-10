@@ -144,7 +144,7 @@ const Intro = () => {
 											/>
 										</div>
 										<p
-											className={`text-5xl transition-all duration-1000 ease-in ${
+											className={`mt-4 text-5xl transition-all duration-1000 ease-in ${
 												!secondAnimation ? "opacity-0" : "opacity-100"
 											}`}
 										>
