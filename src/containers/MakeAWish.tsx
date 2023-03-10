@@ -17,7 +17,7 @@ const MakeAWish = ({ comments }: Prop) => {
 							Let&apos;s share some love
 						</p>
 						<p className="text-center text-sm md:text-xl">
-							and can&apos;t wait to see you on our big day!
+							and we can&apos;t wait to see you on our big day!
 						</p>
 					</div>
 					<div className="flex flex-col gap-14 md:w-narrow">
@@ -66,7 +66,7 @@ const MakeAWish = ({ comments }: Prop) => {
 								type="submit"
 								className="rounded bg-soil1 border border-soil13 text-center w-full p-4 font-semibold hover:bg-soil19 hover:text-soil1"
 							>
-								SHOW MORE COMMENTS
+								SHOW MORE WISHES
 							</button>
 						</div>
 					</div>
