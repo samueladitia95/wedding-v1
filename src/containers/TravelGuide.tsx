@@ -36,13 +36,18 @@ const TravelGuide = () => {
 							</p>
 							<div className="text-sm font-epilogue flex flex-col gap-2">
 								<p>Friends</p>
-								<p>Four Points by Sheraton bali, ungasan</p>
+								<p>Four Points by Sheraton Bali, Ungasan</p>
 								<p>1 Night (June 3 - June 4, 2023)</p>
 							</div>
 							<div className="text-sm font-epilogue flex flex-col gap-2">
 								<p>Family</p>
-								<p>Radisson blu bali, uluwatu</p>
+								<p>Radisson Blu Bali, Uluwatu</p>
 								<p>2 Nights (June 2 - June 4, 2023)</p>
+							</div>
+							<div className="text-sm font-epilogue flex flex-col gap-2">
+								<p>Colleagues</p>
+								<p>Radisson Blu Bali, Uluwatu</p>
+								<p>1 Nights (June 3 - June 4, 2023)</p>
 							</div>
 						</div>
 
@@ -62,7 +67,7 @@ const TravelGuide = () => {
 								<p>by 9:30, our wedding organizer will guide you</p>
 							</div>
 							<div className="text-sm font-epilogue flex flex-col gap-2">
-								<p>Hotel - Kamaya Bali - Hotel</p>
+								<p>Hotel - Six Senses Uluwatu, Bali - Hotel</p>
 								<p>Please be ready at the hotel lobby by 17:00,</p>
 								<p>our wedding organizer will guide you</p>
 							</div>
