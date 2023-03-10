@@ -6,6 +6,9 @@ import Arrival from "../../public/arrival.svg";
 const sixSensesCoordinate =
 	"https://www.google.com/maps/place/Six+Senses+Uluwatu,+Bali/@-8.8442773,115.1276315,17z/data=!4m20!1m10!3m9!1s0x2dd25ae5f63a6c85:0xbae86c51d49b37c8!2sSix+Senses+Uluwatu,+Bali!5m2!4m1!1i2!8m2!3d-8.8442826!4d115.1298202!16s%2Fg%2F11c1vrfvfj!3m8!1s0x2dd25ae5f63a6c85:0xbae86c51d49b37c8!5m2!4m1!1i2!8m2!3d-8.8442826!4d115.1298202!16s%2Fg%2F11c1vrfvfj";
 
+const silvesterChurch =
+	"https://www.google.com/maps/place/Gereja+Katolik+Santo+Silvester+Pecatu+Dreamland/@-8.8188277,115.1358748,17z/data=!4m6!3m5!1s0x2dd25ad56bd433eb:0x1a3f5d7cdf6113c7!8m2!3d-8.818833!4d115.1403595!16s%2Fg%2F11g02091dl";
+
 type Schedule = {
 	icon: string;
 	title: string;
@@ -34,7 +37,7 @@ const schedules: Schedule[][] = [
 			title: "HOLY MATRIMONY",
 			location: "GEREJA KATOLIK SANTO SILVESTER",
 			time: "10.00",
-			coordinate: "www.google.com",
+			coordinate: silvesterChurch,
 		},
 		{
 			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/teapai_icons.svg",
