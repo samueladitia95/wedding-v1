@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 
 const Gallery = () => {
 	const [isFinished, setIsFinished] = useState<boolean>(false);
-	const [ratio, setRatio] = useState<number>(1);
+	const [ratio, setRatio] = useState<number>(100);
 	const { ref } = useInView({
 		threshold: [
 			0.31, 0.32, 0.33, 0.34, 0.35, 0.36, 0.37, 0.38, 0.39, 0.4, 0.41, 0.42,
@@ -53,8 +53,8 @@ const Gallery = () => {
 						<Image
 							src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_3_desktop.jpg"
 							alt="gallery-main"
-							width={isFinished ? 660 : (1220 * ratio) / 100}
-							height={isFinished ? 500 : (1000 * ratio) / 100}
+							width={isFinished ? 660 : (1620 * ratio) / 100}
+							height={isFinished ? 500 : (1400 * ratio) / 100}
 							className="rounded-4xl transition-all ease-in duration-100"
 						/>
 						<div
