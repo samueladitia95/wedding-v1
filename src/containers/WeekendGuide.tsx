@@ -9,6 +9,12 @@ const sixSensesCoordinate =
 const silvesterChurch =
 	"https://www.google.com/maps/place/Gereja+Katolik+Santo+Silvester+Pecatu+Dreamland/@-8.8188277,115.1358748,17z/data=!4m6!3m5!1s0x2dd25ad56bd433eb:0x1a3f5d7cdf6113c7!8m2!3d-8.818833!4d115.1403595!16s%2Fg%2F11g02091dl";
 
+const holyMatrimonyCalendar =
+	"https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=M2R1NXZkcGFlNHExcHFtNzYwNjZsZW5nNXYgaXJ3YW5jbGF1ZGlhd2VkZGluZ0Bt&tmsrc=irwanclaudiawedding%40gmail.com";
+
+const familyDinnerCalendar =
+	"https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NTY2MmRoY2JzZ21laGJtaHE3MWw2ZDBmNWkgaXJ3YW5jbGF1ZGlhd2VkZGluZ0Bt&tmsrc=irwanclaudiawedding%40gmail.com";
+
 type Schedule = {
 	icon: string;
 	title: string;
@@ -110,9 +116,16 @@ const WeekendGuide = () => {
 												? "Saturday, June 3, 2023"
 												: "Friday, June 2, 2023"}
 										</p>
-										<button className="uppercase p-4 border rounded border-soil12 w-full hover:bg-soil19 hover:text-soil1 lg:w-72">
-											add to calendar
-										</button>
+										<Link
+											target="_blank"
+											href={
+												index ? holyMatrimonyCalendar : familyDinnerCalendar
+											}
+										>
+											<button className="uppercase p-4 border rounded border-soil12 w-full hover:bg-soil19 hover:text-soil1 lg:w-72">
+												add to calendar
+											</button>
+										</Link>
 									</div>
 								</div>
 								{day.map((el, index) => (
