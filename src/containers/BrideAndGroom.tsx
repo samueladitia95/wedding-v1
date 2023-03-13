@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import DownArrow from "../../public/down-arrow.svg";
+import BrideAndGroomGif from "../../public/bridengroom.gif";
 
 const BrideAndGroom = () => {
 	return (
@@ -10,7 +11,7 @@ const BrideAndGroom = () => {
 					<div className="bg-black bg-opacity-50">
 						<div className="container pb-0 flex flex-col items-center gap-14 md:w-ultra-wide h-tall">
 							<div className="text-center pt-48 pb-0 flex flex-col gap-10">
-								<div className="md:w-text-narrow uppercase font-safira text-4xl md:text-6xl leading-10 tracking-widest flex flex-col gap-2">
+								<div className="md:w-text-narrow uppercase font-safira text-4xl md:text-6xl leading-10 tracking-widest flex flex-col gap-2 md:hidden">
 									<p className="text-left ml-6">irwan</p>
 									<p>thomas</p>
 									<p className="text-left">burhan</p>
@@ -18,6 +19,14 @@ const BrideAndGroom = () => {
 									<p className="text-right">Claudia</p>
 									<p className="text-right mr-6">Narmada</p>
 								</div>
+								<Image
+									src={BrideAndGroomGif}
+									alt="Bride and groom"
+									width={9000}
+									height={9000}
+									priority
+									className="z-10 w-screen hidden md:block"
+								/>
 								<p className="italic font-baskervville text-2xl md:text-3xl">
 									Let’s us tell you our classic journey
 								</p>
