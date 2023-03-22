@@ -55,17 +55,20 @@ module.exports = {
 				"text-narrow": "550px",
 				qna: "900px",
 				"qna-small": "700px",
-				"bt-circle-lg": "450px"
+				"bt-circle-lg": "450px",
 			},
 			borderRadius: {
 				"4xl": "2rem",
-				"br-lg": "300px"
+				"br-lg": "300px",
 			},
 			backgroundImage: {
 				intro:
 					"url('https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/image_landing_page_desktop.jpg')",
 				brideandgroom:
 					"url('https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_3_desktop.jpg')",
+			},
+			transitionDuration: {
+				5000: "5000ms",
 			},
 		},
 	},
