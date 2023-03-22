@@ -28,7 +28,7 @@ const BrideAndGroom = () => {
 									className="z-10 w-screen hidden md:block"
 								/>
 								<p className="italic font-baskervville text-2xl md:text-3xl lg:-mt-24 xl:-mt-36">
-									Let’s us tell you our classic journey
+									Let’s us tell you our love journey
 								</p>
 							</div>
 
