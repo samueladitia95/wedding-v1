@@ -29,7 +29,7 @@ const Invitation = () => {
 			if (inView) {
 				const ratio = Number(entry.intersectionRatio.toFixed(2));
 
-				if (ratio >= 0.8 && ratio <= 1) {
+				if (ratio >= 0.8) {
 					setBgAnimation(true);
 					setTimeout(() => {
 						setTextAnimation(true);

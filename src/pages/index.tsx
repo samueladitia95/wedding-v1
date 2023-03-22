@@ -14,6 +14,7 @@ import Invitation from "@/containers/Invitation";
 import Head from "next/head";
 import Intro from "@/containers/Intro";
 import BrideAndGroom from "@/containers/BrideAndGroom";
+import { useEffect } from "react";
 
 type CommentResponse = {
 	status: string;
@@ -25,6 +26,10 @@ type Prop = {
 };
 
 export const Home: NextPage<Prop> = ({ comments }) => {
+	useEffect(() => {
+		window.history.scrollRestoration = "manual";
+	}, []);
+
 	return (
 		<>
 			<Head>
