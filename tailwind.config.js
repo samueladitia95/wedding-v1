@@ -68,7 +68,7 @@ module.exports = {
 					"url('https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_3_desktop.jpg')",
 			},
 			transitionDuration: {
-				5000: "5000ms",
+				10000: "10000ms",
 			},
 		},
 	},

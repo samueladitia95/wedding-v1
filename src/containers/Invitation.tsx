@@ -33,7 +33,7 @@ const Invitation = () => {
 					setBgAnimation(true);
 					setTimeout(() => {
 						setTextAnimation(true);
-					}, 1000);
+					}, 2000);
 				}
 			}
 		},
@@ -63,7 +63,7 @@ const Invitation = () => {
 			</div>
 			<div className="bg-soil11 lg:bg-soil8 text-soil13 font-circular">
 				<div
-					className={`container pt-10 pb-20 bg-soil1 rounded-b-3xl md:w-wide transition-all duration-5000 ease-out ${
+					className={`container pt-10 pb-20 bg-soil1 rounded-b-3xl md:w-wide transition-all duration-10000 ease-out ${
 						bgAnimation ? "max-h-ultra-wide" : "max-h-0"
 					}`}
 				>
