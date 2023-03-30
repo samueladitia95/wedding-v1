@@ -40,7 +40,7 @@ export const Home: NextPage<Prop> = ({ comments }) => {
 				<Intro />
 				<Invitation />
 				<Gallery />
-				<BrideAndGroom />
+				{/* <BrideAndGroom /> */}
 				<OurJourney />
 				<WeekendGuide />
 				<TravelGuide />
