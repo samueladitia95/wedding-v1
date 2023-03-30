@@ -21,14 +21,17 @@ const Gallery = () => {
 					setTimeout(() => {
 						setIsTextDisplay(true);
 					}, 500);
-				}, 2000);
+				}, 1000);
 			}
 		},
 	});
 
 	return (
 		<>
-			<div ref={ref} className="bg-soil11 lg:bg-soil8 text-soil1 font-circular">
+			<div
+				ref={ref}
+				className="bg-soil11 lg:bg-soil8 text-soil1 font-circular hidden lg:block"
+			>
 				<div className="py-20">
 					<div
 						className={`bg-cover bg-center bg-no-repeat h-screen ${
@@ -36,14 +39,14 @@ const Gallery = () => {
 						}`}
 					>
 						<div
-							className={`bg-black transition-all duration-1000 ease-in h-screen ${
+							className={`bg-black transition-all duration-200 ease-in h-screen ${
 								isBackgroundOverlay ? "bg-opacity-50" : "bg-opacity-0"
 							}`}
 						>
 							<div className="container md:px-0 flex flex-col items-center gap-14 lg:w-ultra-wide xl:max-w-none">
 								<div className="flex justify-center gap-4 items-center justify-items-center w-full">
 									<div
-										className={`flex-col gap-4 transition-all duration-2000 ease-in hidden lg:flex ${
+										className={`flex-col gap-4 transition-all duration-1000 ease-in hidden lg:flex ${
 											isBackgroundFull ? "-translate-x-full" : "translate-x-0"
 										}`}
 									>
@@ -66,14 +69,14 @@ const Gallery = () => {
 										<Image
 											src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_3_desktop.jpg"
 											alt="gallery-main"
-											width={!isBackgroundFull ? 660 : 2620}
-											height={!isBackgroundFull ? 500 : 2400}
-											className={`transition-all ease-in duration-2000 rounded-4xl 
+											width={!isBackgroundFull ? 660 : 3620}
+											height={!isBackgroundFull ? 500 : 3400}
+											className={`transition-all ease-in duration-1000 rounded-4xl 
 										${isBackgroundFull ? "lg:rounded-none" : ""}
 										${
 											isBackgroundOverlay
-												? "lg:opacity-0 duration-500"
-												: "lg:opacity-100 duration-2000"
+												? "lg:opacity-0 duration-100"
+												: "lg:opacity-100 duration-1000"
 										}
 										${isTextDisplay ? "hidden" : "block"}
 										`}
@@ -114,7 +117,7 @@ const Gallery = () => {
 										</div>
 									</div>
 									<div
-										className={`flex-col gap-4 transition-all duration-2000 ease-in hidden lg:flex ${
+										className={`flex-col gap-4 transition-all duration-1000 ease-in hidden lg:flex ${
 											isBackgroundFull ? "translate-x-full" : "translate-x-0"
 										}`}
 									>
@@ -134,6 +137,24 @@ const Gallery = () => {
 										/>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className="bg-soil11 lg:bg-soil8 text-soil1 font-circular block lg:hidden">
+				<div className="py-10">
+					<div className="container md:px-0 flex flex-col items-center gap-14">
+						<div className="flex justify-center gap-4 items-center justify-items-center w-full">
+							<div>
+								<Image
+									src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_3_desktop.jpg"
+									alt="gallery-main"
+									width={660}
+									height={500}
+									className="rounded-4xl"
+								/>
 							</div>
 						</div>
 					</div>
