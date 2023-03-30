@@ -5,6 +5,7 @@ import And from "../../public/and.svg";
 import DownArrow from "../../public/down-arrow.svg";
 import FlowerLeft from "../../public/flowers-left.svg";
 import FlowerRight from "../../public/flowers-right.svg";
+// import IntroGif from "../../public/intro.gif";
 
 // ? RIBET JUGA YA ANIMASI, GA HAFAL GW INI URUTANNYA BENER DEH
 const Intro = () => {
@@ -151,6 +152,16 @@ const Intro = () => {
 											claudia
 										</p>
 									</div>
+									// <div>
+									// 	<Image
+									// 		src={IntroGif}
+									// 		alt="Bride and groom"
+									// 		width={900}
+									// 		height={900}
+									// 		priority
+									// 		className="z-10 w-screen"
+									// 	/>
+									// </div>
 								)}
 							</div>
 						</div>
