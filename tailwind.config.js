@@ -71,6 +71,10 @@ module.exports = {
 				2000: "2000ms",
 				10000: "10000ms",
 			},
+			fontSize: {
+				xxs: ["8px", "8px"],
+				xsm: ["10px", "12px"],
+			},
 		},
 	},
 	plugins: [

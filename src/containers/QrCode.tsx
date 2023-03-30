@@ -1,11 +1,9 @@
-import Image from "next/image";
-
 const QrCode = () => {
 	return (
 		<>
 			<div className="bg-soil16 text-white font-circular">
-				<div className="container py-20 md:py-48 flex flex-col items-center gap-14 md:w-wide">
-					<div className="uppercase">
+				<div className="container py-20 md:py-48 md:w-wide">
+					<div className="uppercase flex items-center flex-col gap-2">
 						<p className="font-safira text-center text-5xl md:text-7xl lg:text-8xl tracking-wide">
 							wedding gift
 						</p>
@@ -17,20 +15,28 @@ const QrCode = () => {
 							received it
 						</p>
 					</div>
-
-					<div className="flex gap-4 flex-col items-center p-6 bg-soil10 rounded-4xl max-w-xs ">
-						<Image
-							src="https://via.placeholder.com/400"
-							alt="QR Code"
-							width={313}
-							height={313}
-							priority
-						/>
-						<div className="text-black text-center font-semibold uppercase text-sm">
-							<p>irwan thomas burhan</p>
-							<p>bank central asia</p>
-							<p>2611874148</p>
+					<div className="flex flex-col mt-28 md:mt-32 lg:mt-36 xl:mt-48 gap-1 md:gap-2 lg:gap-3 xl:gap-4">
+						<div className="flex justify-between uppercase items-start">
+							<p className="font-safira text-xsm md:text-xl lg:text-3xl tracking-wide">
+								IRWAN THOMAS BURHAN
+							</p>
+							<p className="font-safira text-xxs md:text-base lg:text-xl tracking-wide">
+								BCA - 2611874148 (IDR)
+							</p>
 						</div>
+
+						<hr></hr>
+
+						<div className="flex justify-between uppercase items-start">
+							<p className="font-safira text-xsm md:text-xl lg:text-3xl tracking-wide">
+								CLAUDIA NARMADA
+							</p>
+							<p className="font-safira text-xxs md:text-base lg:text-xl tracking-wide">
+								DBS - 2711120640 (SGD) / PAYNOW - 90536601 (SGD)
+							</p>
+						</div>
+
+						<hr></hr>
 					</div>
 				</div>
 			</div>
