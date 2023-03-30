@@ -6,11 +6,13 @@ const TravelGuide = () => {
 			<div className="bg-soil11 text-white font-circular">
 				<div className="container py-20 md:py-36 lg:py-64 xl:py-80 flex flex-col gap-14 sm:w-wide md:pl-20 lg:pl-48">
 					<div className="uppercase">
-						<p className="font-safira text-left text-6xl">travel guide</p>
+						<p className="font-safira text-center md:text-left text-6xl">
+							travel guide
+						</p>
 					</div>
 
-					<div className="flex flex-col justify-start gap-20 sm:flex-row sm:gap-10 sm:overflow-x-auto w-narrow xl:w-tall">
-						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium sm:w-80">
+					<div className="flex flex-col justify-start gap-20 sm:flex-row sm:gap-10 sm:overflow-x-auto md:w-narrow xl:w-tall">
+						<div className="flex flex-col flex-shrink-0 items-center md:items-stretch gap-5 text-center md:text-left font-medium sm:w-80">
 							<Image
 								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/plane_travel_guide_1_icons.svg"
 								alt="QR Code"
@@ -24,34 +26,34 @@ const TravelGuide = () => {
 							</div>
 						</div>
 
-						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium sm:w-80">
+						<div className="flex flex-col flex-shrink-0 items-center md:items-stretch gap-5 text-center md:text-left font-medium sm:w-80">
 							<Image
 								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/hotel_travel_guide_2_icons.svg"
 								alt="QR Code"
 								width={64}
 								height={64}
 							/>
-							<p className="uppercase text-xl tracking-widest">
+							<p className="uppercase text-xl tracking-widest text-center md:text-left">
 								COMPLIMENTARY <br /> ACCOMODATION
 							</p>
-							<div className="text-sm font-epilogue flex flex-col gap-2">
+							<div className="text-sm font-epilogue flex flex-col gap-2 text-center md:text-left">
 								<p>Friends</p>
 								<p>Four Points by Sheraton Bali, Ungasan</p>
 								<p>1 Night (June 3 - June 4, 2023)</p>
 							</div>
-							<div className="text-sm font-epilogue flex flex-col gap-2">
+							<div className="text-sm font-epilogue flex flex-col gap-2 text-center md:text-left">
 								<p>Family</p>
 								<p>Radisson Blu Bali, Uluwatu</p>
 								<p>2 Nights (June 2 - June 4, 2023)</p>
 							</div>
-							<div className="text-sm font-epilogue flex flex-col gap-2">
+							<div className="text-sm font-epilogue flex flex-col gap-2 text-center md:text-left">
 								<p>Colleagues</p>
 								<p>Radisson Blu Bali, Uluwatu</p>
 								<p>1 Nights (June 3 - June 4, 2023)</p>
 							</div>
 						</div>
 
-						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium sm:w-80">
+						<div className="flex flex-col flex-shrink-0 items-center md:items-stretch gap-5 text-center md:text-left font-medium sm:w-80">
 							<Image
 								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/bus_travelguide_3_icons.svg"
 								alt="QR Code"
