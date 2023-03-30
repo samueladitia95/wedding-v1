@@ -13,7 +13,7 @@ import Gallery from "@/containers/Gallery";
 import Invitation from "@/containers/Invitation";
 import Head from "next/head";
 import Intro from "@/containers/Intro";
-import BrideAndGroom from "@/containers/BrideAndGroom";
+// import BrideAndGroom from "@/containers/BrideAndGroom";
 import { useEffect } from "react";
 
 type CommentResponse = {
