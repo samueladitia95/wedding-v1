@@ -6,6 +6,7 @@ import IDo from "../../public/i-do.png";
 const OurJourney = () => {
 	const [firstElement, setFirstElement] = useState<boolean>(false);
 	const [secondElement, setSecondElement] = useState<boolean>(false);
+	const [thirdElement, setThirdElement] = useState<boolean>(false);
 
 	const { ref: ref1 } = useInView({
 		threshold: [0.8],
@@ -23,12 +24,26 @@ const OurJourney = () => {
 			}
 		},
 	});
+
+	const { ref: ref3 } = useInView({
+		threshold: [0.8],
+		onChange(inView) {
+			if (inView) {
+				setThirdElement(true);
+			}
+		},
+	});
 	return (
 		<>
 			<div id="our-journey" className="bg-soil15 text-white font-circular">
 				<div className="container py-28 flex flex-col items-center gap-14 lg:gap-48 md:w-ultra-wide">
 					{/* Mobile and Table */}
-					<div className="font-safira flex flex-col gap-4 lg:hidden">
+					<div
+						ref={ref3}
+						className={`font-safira flex flex-col gap-4 lg:hidden duration-500 transition-all ease-in ${
+							thirdElement ? "opacity-100" : "opacity-0"
+						}`}
+					>
 						<div>
 							<p className="text-left text-4xl uppercase md:text-7xl">
 								Our journey
