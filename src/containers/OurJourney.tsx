@@ -1,7 +1,28 @@
 import Image from "next/image";
+import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import IDo from "../../public/i-do.png";
 
 const OurJourney = () => {
+	const [firstElement, setFirstElement] = useState<boolean>(false);
+	const [secondElement, setSecondElement] = useState<boolean>(false);
+
+	const { ref: ref1 } = useInView({
+		threshold: [0.8],
+		onChange(inView) {
+			if (inView) {
+				setFirstElement(true);
+			}
+		},
+	});
+	const { ref: ref2 } = useInView({
+		threshold: [0.8],
+		onChange(inView) {
+			if (inView) {
+				setSecondElement(true);
+			}
+		},
+	});
 	return (
 		<>
 			<div id="our-journey" className="bg-soil15 text-white font-circular">
@@ -45,7 +66,12 @@ const OurJourney = () => {
 					</div>
 
 					{/* Desktop */}
-					<div className="font-safira flex-col gap-4 hidden lg:flex">
+					<div
+						ref={ref1}
+						className={`font-safira flex-col gap-4 hidden lg:flex duration-500 transition-all ease-in ${
+							firstElement ? "opacity-100" : "opacity-0"
+						}`}
+					>
 						<div>
 							<p className="text-7xl xl:text-9xl uppercase text-justify whitespace-nowrap">
 								Our journey started
@@ -82,7 +108,12 @@ const OurJourney = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-col gap-10 items-center">
+					<div
+						ref={ref2}
+						className={`flex flex-col gap-10 items-center duration-500 transition-all ease-in ${
+							secondElement ? "opacity-100" : "opacity-0"
+						}`}
+					>
 						<Image
 							src={IDo}
 							alt="QR Code"
