@@ -4,12 +4,12 @@ const TravelGuide = () => {
 	return (
 		<>
 			<div className="bg-soil11 text-white font-circular">
-				<div className="container py-20 md:py-36 lg:py-64 xl:py-80 flex flex-col gap-14 sm:w-wide">
+				<div className="container py-20 md:py-36 lg:py-64 xl:py-80 flex flex-col gap-14 sm:w-wide md:pl-20 lg:pl-48">
 					<div className="uppercase">
-						<p className="font-safira text-center text-6xl">travel guide</p>
+						<p className="font-safira text-left text-6xl">travel guide</p>
 					</div>
 
-					<div className="flex flex-col justify-center gap-20 sm:flex-row sm:gap-10 sm:overflow-x-auto sm:scrollbar-hide">
+					<div className="flex flex-col justify-start gap-20 sm:flex-row sm:gap-10 sm:overflow-x-auto w-narrow xl:w-tall">
 						<div className="flex flex-col flex-shrink-0 items-center gap-5 text-center font-medium sm:w-80">
 							<Image
 								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/plane_travel_guide_1_icons.svg"
