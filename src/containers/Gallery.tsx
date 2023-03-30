@@ -46,9 +46,10 @@ const Gallery = () => {
 							<div className="container md:px-0 flex flex-col items-center gap-14 lg:w-ultra-wide xl:max-w-none">
 								<div className="flex justify-center gap-4 items-center justify-items-center w-full">
 									<div
-										className={`flex-col gap-4 transition-all duration-1000 ease-in hidden lg:flex ${
+										className={`flex-col gap-4 transition-all duration-1000 ease-in ${
 											isBackgroundFull ? "-translate-x-full" : "translate-x-0"
-										}`}
+										}
+										${isTextDisplay ? "hidden" : "lg:flex"}`}
 									>
 										<Image
 											src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_1_desktop.jpg"
@@ -97,10 +98,10 @@ const Gallery = () => {
 											<Image
 												src={BrideAndGroomGif}
 												alt="Bride and groom"
-												width={900}
-												height={900}
+												width={1000}
+												height={1000}
 												priority
-												className={`z-10 w-screen hidden md:block`}
+												className={`z-10 hidden md:block`}
 											/>
 											<p className="italic font-baskervville text-2xl md:text-3xl lg:-mt-24 xl:-mt-36">
 												Let’s us tell you our love journey
@@ -117,9 +118,11 @@ const Gallery = () => {
 										</div>
 									</div>
 									<div
-										className={`flex-col gap-4 transition-all duration-1000 ease-in hidden lg:flex ${
+										className={`flex-col gap-4 transition-all duration-1000 ease-in ${
 											isBackgroundFull ? "translate-x-full" : "translate-x-0"
-										}`}
+										}
+										${isTextDisplay ? "hidden" : "lg:flex"}
+										`}
 									>
 										<Image
 											src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_2_desktop.jpg"
