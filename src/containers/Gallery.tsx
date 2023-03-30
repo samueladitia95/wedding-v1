@@ -31,12 +31,12 @@ const Gallery = () => {
 			<div ref={ref} className="bg-soil11 lg:bg-soil8 text-soil1 font-circular">
 				<div className="py-20">
 					<div
-						className={`lg:bg-cover bg-center bg-no-repeat lg:h-screen ${
+						className={`bg-cover bg-center bg-no-repeat h-screen ${
 							isBackgroundOverlay ? "bg-brideandgroom" : ""
 						}`}
 					>
 						<div
-							className={`bg-black transition-all duration-1000 ease-in lg:h-screen ${
+							className={`bg-black transition-all duration-1000 ease-in h-screen ${
 								isBackgroundOverlay ? "bg-opacity-50" : "bg-opacity-0"
 							}`}
 						>
@@ -68,19 +68,19 @@ const Gallery = () => {
 											alt="gallery-main"
 											width={!isBackgroundFull ? 660 : 2620}
 											height={!isBackgroundFull ? 500 : 2400}
-											className={`transition-all ease-in duration-2000 rounded-4xl
+											className={`transition-all ease-in duration-2000 rounded-4xl 
 										${isBackgroundFull ? "lg:rounded-none" : ""}
 										${
 											isBackgroundOverlay
 												? "lg:opacity-0 duration-500"
 												: "lg:opacity-100 duration-2000"
 										}
-										${isTextDisplay ? "md:hidden" : "md:block"}
+										${isTextDisplay ? "hidden" : "block"}
 										`}
 										/>
 										<div
-											className={`text-center hidden lg:flex flex-col gap-10 ${
-												isTextDisplay ? "md:block" : "hidden"
+											className={`text-center flex flex-col gap-10 ${
+												isTextDisplay ? "block" : "hidden"
 											}`}
 										>
 											<div className="md:w-text-narrow uppercase font-safira text-4xl md:text-6xl leading-10 tracking-widest flex flex-col gap-2 md:hidden">
