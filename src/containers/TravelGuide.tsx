@@ -11,7 +11,7 @@ const TravelGuide = () => {
 						</p>
 					</div>
 
-					<div className="flex flex-col justify-start gap-20 sm:flex-row sm:gap-10 sm:overflow-x-auto md:w-narrow xl:w-tall">
+					<div className="flex flex-col justify-start gap-20 sm:flex-row sm:gap-10 sm:overflow-x-auto md:w-narrow xl:w-tall scrollbar-hide">
 						<div className="flex flex-col flex-shrink-0 items-center md:items-stretch gap-5 text-center md:text-left font-medium sm:w-80">
 							<Image
 								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/plane_travel_guide_1_icons.svg"
