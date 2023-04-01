@@ -15,25 +15,31 @@ const QrCode = () => {
 							received it
 						</p>
 					</div>
-					<div className="flex flex-col mt-28 md:mt-32 lg:mt-36 xl:mt-48 gap-1 md:gap-2 lg:gap-3 xl:gap-4">
-						<div className="flex justify-between uppercase items-start">
-							<p className="font-safira text-xsm md:text-xl lg:text-3xl tracking-wide">
+					<div className="flex flex-col mt-28 md:mt-32 lg:mt-36 xl:mt-48 gap-4">
+						<div className="uppercase flex flex-col items-stretch text-center md:justify-between md:flex-row">
+							<p className="font-safira text-xl md:text-xl lg:text-3xl tracking-wide">
 								IRWAN THOMAS BURHAN
 							</p>
-							<p className="font-safira text-xxs md:text-base lg:text-xl tracking-wide">
+							<p className="font-safira text-lg md:text-base lg:text-xl tracking-wide font-bold">
 								BCA - 2611874148 (IDR)
 							</p>
 						</div>
 
 						<hr></hr>
 
-						<div className="flex justify-between uppercase items-start">
-							<p className="font-safira text-xsm md:text-xl lg:text-3xl tracking-wide">
+						<div className="uppercase flex flex-col items-stretch text-center md:justify-between md:flex-row">
+							<p className="font-safira text-xl md:text-xl lg:text-3xl tracking-wide">
 								CLAUDIA NARMADA
 							</p>
-							<p className="font-safira text-xxs md:text-base lg:text-xl tracking-wide">
-								DBS - 2711120640 (SGD) / PAYNOW - 90536601 (SGD)
-							</p>
+							<div className="font-safira text-lg md:text-base lg:text-xl md:text-right tracking-wide font-bold">
+								<span className="lg:hidden">
+									<p>DBS - 2711120640 (SGD)</p>
+									<p>PAYNOW - 90536601 (SGD)</p>
+								</span>
+								<span className="hidden lg:inline">
+									DBS - 2711120640 (SGD) / PAYNOW - 90536601 (SGD)
+								</span>
+							</div>
 						</div>
 
 						<hr></hr>
