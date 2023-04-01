@@ -58,7 +58,7 @@ const OurJourney = () => {
 									width="0"
 									height="0"
 									sizes="100vw"
-									className="rounded-full w-36 h-full md:w-80"
+									className="rounded-full w-36 h-full md:w-80 md:pl-8"
 								/>
 							</div>
 							<p className="text-left text-4xl uppercase md:text-7xl">
