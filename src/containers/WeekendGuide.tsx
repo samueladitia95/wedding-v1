@@ -113,26 +113,27 @@ const WeekendGuide = () => {
 			<div className="bg-soil13 font-circular flex flex-col items-center">
 				<div className="flex flex-col text-soil13 text-center w-full">
 					{/* TITLE */}
-					<div
-						ref={ref1}
-						className={`container bg-soil2 py-12 md:py-14 flex flex-col gap-4 items-center z-10 rounded-b-full lg:pb-20 xl:py-36 transition-all duration-500 ease-in ${
-							firstElement ? "opacity-100" : "opacity-0"
-						}`}
-					>
-						<div className="uppercase font-safira text-6xl lg:text-8xl font-light text-soil14">
-							<p>wedding</p>
-							<p>weekend guide</p>
-						</div>
+					<div ref={ref1} className="container bg-soil2 rounded-b-full z-10">
+						<div
+							className={`flex flex-col gap-4 py-12 items-center md:py-14 lg:pb-20 xl:py-36 transition-all duration-500 ease-in ${
+								firstElement ? "opacity-100" : "opacity-0"
+							}`}
+						>
+							<div className="uppercase font-safira text-6xl lg:text-8xl font-light text-soil14">
+								<p>wedding</p>
+								<p>weekend guide</p>
+							</div>
 
-						<div className="uppercase font-medium md:text-2xl">
-							<p className="whitespace-nowrap md:whitespace-normal">
-								Hi there, here is the guide for you
-							</p>
-							<p>to come to our wedding</p>
-						</div>
+							<div className="uppercase font-medium md:text-2xl">
+								<p className="whitespace-nowrap md:whitespace-normal">
+									Hi there, here is the guide for you
+								</p>
+								<p>to come to our wedding</p>
+							</div>
 
-						<div className="text-lg md:text-2xl border font-baskervville m-4 italic">
-							*All times are in WITA
+							<div className="text-lg md:text-2xl border font-baskervville m-4 italic">
+								*All times are in WITA
+							</div>
 						</div>
 					</div>
 
@@ -185,7 +186,7 @@ const WeekendGuide = () => {
 										{el.coordinate && (
 											<Link
 												href={el.coordinate}
-												className="text-sm underline font-medium text-soil14"
+												className="text-sm underline font-medium text-soil14 pt-6"
 												target="_blank"
 											>
 												see venue map
