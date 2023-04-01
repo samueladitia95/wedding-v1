@@ -166,6 +166,11 @@ const WeekendGuide = () => {
 												add to calendar
 											</button>
 										</Link>
+										{!index && (
+											<p className="font-medium uppercase md:text-left md:w-full">
+												*Family Only
+											</p>
+										)}
 									</div>
 								</div>
 								{day.map((el, index) => (
