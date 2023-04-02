@@ -54,9 +54,11 @@ const MakeAWish = ({ comments }: Prop) => {
 						<div className="flex flex-col gap-8">
 							{comments.map((el, index) => (
 								<div key={index} className="flex flex-col gap-3">
-									<p className="font-bold text-xl">{el.name}</p>
-									<p>{el.comment}</p>
-									<p className="font-extralight text-sm">{el.createdAt}</p>
+									<p className="font-circular font-medium text-xl">{el.name}</p>
+									<p className="font-circular font-medium">{el.comment}</p>
+									<p className="font-circular font-thin text-sm">
+										{el.createdAt}
+									</p>
 								</div>
 							))}
 						</div>
@@ -64,7 +66,7 @@ const MakeAWish = ({ comments }: Prop) => {
 						<div>
 							<button
 								type="submit"
-								className="rounded bg-soil1 border border-soil13 text-center w-full p-4 font-semibold hover:bg-soil19 hover:text-soil1"
+								className="rounded bg-soil1 border border-soil13 text-center w-full p-4 font-medium hover:bg-soil19 hover:text-soil1"
 							>
 								SHOW MORE WISHES
 							</button>
