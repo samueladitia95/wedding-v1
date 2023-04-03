@@ -134,7 +134,7 @@ const OurJourney = () => {
 							alt="QR Code"
 							className="rounded-full md:w-full lg:w-wide"
 						/>
-						<p className="text-left w-full lg:text-center font-baskervville text-7xl md:text-8xl italic">
+						<p className="text-left w-full lg:text-center font-baskervville text-7xl md:text-9xl italic">
 							I said &quot;I do&quot;
 						</p>
 						<p className="text-left w-full lg:text-center font-extralight font-epilogue leading-8 max-w-5xl">
