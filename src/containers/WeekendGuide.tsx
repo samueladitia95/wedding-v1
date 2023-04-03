@@ -143,9 +143,11 @@ const WeekendGuide = () => {
 						<br className="hidden md:block" />
 						{schedules.map((day, index) => (
 							<div
-								className={`flex flex-col gap-10 items-center md:flex-row md:items-start md:grid md:grid-cols-3 md:gap-4 md:gap-y-14 transition-all duration-500 ease-in 
+								className={`flex flex-col gap-10 items-center md:flex-row md:items-start md:grid md:grid-cols-3 md:gap-4 md:gap-y-20 transition-all duration-500 ease-in 
 								${index === 0 && secondElement ? "opacity-100" : "opacity-0"}
-								${index === 1 && thirdElement ? "opacity-100" : "opacity-0"}`}
+								${index === 1 && thirdElement ? "opacity-100" : "opacity-0"}
+								${index ? "pt-24" : ""}
+								`}
 								key={index}
 								ref={index === 0 ? ref2 : ref3}
 							>
