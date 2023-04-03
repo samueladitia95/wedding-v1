@@ -134,10 +134,10 @@ const OurJourney = () => {
 							alt="QR Code"
 							className="rounded-full md:w-full lg:w-wide"
 						/>
-						<p className="text-center md:text-left md:w-full lg:text-center font-baskervville text-6xl md:text-8xl italic">
+						<p className="text-left w-full lg:text-center font-baskervville text-7xl md:text-8xl italic">
 							I said &quot;I do&quot;
 						</p>
-						<p className="text-center md:text-left md:w-full lg:text-center font-extralight font-epilogue leading-8 max-w-5xl">
+						<p className="text-left w-full lg:text-center font-extralight font-epilogue leading-8 max-w-5xl">
 							As cheesy as it gets, we even went to prom together (LOL). Slowly
 							without realizing, throughout several paces in life, after tons of
 							happy moments, growing together and learning from each other,
