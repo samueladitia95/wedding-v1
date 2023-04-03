@@ -10,7 +10,7 @@
 		"prefer-const": "error",
 		"camelcase": "error",
 		"dot-notation": "error",
-		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/no-explicit-any": "error",
 		"@typescript-eslint/array-type": "error"
 	}
 }

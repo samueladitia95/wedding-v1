@@ -1,10 +1,8 @@
+import { useHorizontalScroll } from "@/utils/useHorizontalScroll";
 import Image from "next/image";
-import { useRef } from "react";
-import { useDraggable } from "react-use-draggable-scroll";
 
 const TravelGuide = () => {
-	const ref = useRef<any>(); // We will use React useRef hook to reference the wrapping div:
-	const { events } = useDraggable(ref); // Now we pass the reference to the useDraggable hook:
+	const scrollRef = useHorizontalScroll();
 
 	return (
 		<>
@@ -15,10 +13,8 @@ const TravelGuide = () => {
 							travel guide
 						</p>
 					</div>
-
 					<div
-						{...events}
-						ref={ref}
+						ref={scrollRef}
 						className="flex flex-col justify-start gap-20 sm:flex-row sm:gap-10 sm:overflow-x-auto md:w-narrow xl:w-tall scrollbar-hide"
 					>
 						<div className="flex flex-col flex-shrink-0 items-center md:items-stretch gap-5 text-center md:text-left font-medium sm:w-80">
