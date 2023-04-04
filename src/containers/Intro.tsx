@@ -32,7 +32,7 @@ const Intro = () => {
 				animate={{ opacity: 1, y: [1000, 0] }}
 				transition={{ delay: 2, duration: 0.7 }}
 			>
-				<div className="z-10 h-screen w-screen absolute">
+				<div className="z-10 h-screen w-full absolute">
 					<Image
 						src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/image_landing_page_desktop.jpg"
 						alt="Background"
