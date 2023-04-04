@@ -22,6 +22,7 @@ const Invitation = () => {
 	]);
 	const [bgAnimation, setBgAnimation] = useState<boolean>(false);
 	const [textAnimation, setTextAnimation] = useState<boolean>(false);
+	const [topAnimation, setTopAnimation] = useState<boolean>(false);
 
 	const { ref } = useInView({
 		threshold: [0.8, 1],
@@ -51,13 +52,19 @@ const Invitation = () => {
 				{ type: "second", value: duration.seconds() },
 			]);
 		}, 1000);
+
+		setTimeout(() => {
+			setTopAnimation(true);
+		}, 3000);
 	}, []);
 
 	return (
 		<div ref={ref}>
 			<div
 				id="invitation"
-				className="h-24 lg:h-32 relative container md:w-wide -mt-28 lg:-mt-32"
+				className={`h-24 lg:h-32 relative container md:w-wide -mt-24 lg:-mt-32 z-50 transition-all duration-500 ease-in ${
+					topAnimation ? "opacity-100" : "opacity-0"
+				}`}
 			>
 				<Image src={Vector} alt="background" fill />
 			</div>
