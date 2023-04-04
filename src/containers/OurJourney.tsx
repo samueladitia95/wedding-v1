@@ -35,7 +35,10 @@ const OurJourney = () => {
 	});
 	return (
 		<>
-			<div id="our-journey" className="bg-soil15 text-white font-circular">
+			<div
+				id="our-journey"
+				className="bg-soil15 text-white font-circular pt-24"
+			>
 				<div className="container py-28 flex flex-col items-center gap-14 lg:gap-48 md:w-ultra-wide">
 					{/* Mobile and Table */}
 					<div
