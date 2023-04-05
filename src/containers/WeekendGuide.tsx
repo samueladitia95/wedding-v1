@@ -79,32 +79,13 @@ const schedules: Schedule[][] = [
 ];
 
 const WeekendGuide = () => {
-	const [firstElement, setFirstElement] = useState<boolean>(false);
-	const [secondElement, setSecondElement] = useState<boolean>(false);
-	const [thirdElement, setThirdElement] = useState<boolean>(false);
+	const [isShown, setIsShown] = useState<boolean>(false);
 
 	const { ref: ref1 } = useInView({
 		threshold: [0.8],
 		onChange(inView) {
 			if (inView) {
-				setFirstElement(true);
-			}
-		},
-	});
-	const { ref: ref2 } = useInView({
-		threshold: [0.8],
-		onChange(inView) {
-			if (inView) {
-				setSecondElement(true);
-			}
-		},
-	});
-
-	const { ref: ref3 } = useInView({
-		threshold: [0.4],
-		onChange(inView) {
-			if (inView) {
-				setThirdElement(true);
+				setIsShown(true);
 			}
 		},
 	});
@@ -116,7 +97,7 @@ const WeekendGuide = () => {
 					<div ref={ref1} className="container bg-soil2 rounded-b-full z-10">
 						<div
 							className={`flex flex-col gap-4 py-12 items-center md:py-14 lg:pb-20 xl:py-36 transition-all duration-500 ease-in ${
-								firstElement ? "opacity-100" : "opacity-0"
+								isShown ? "opacity-100" : "opacity-0"
 							}`}
 						>
 							<div className="uppercase font-safira text-6xl lg:text-8xl font-light text-soil14">
@@ -144,12 +125,10 @@ const WeekendGuide = () => {
 						{schedules.map((day, index) => (
 							<div
 								className={`flex flex-col gap-10 items-center md:flex-row md:items-start md:grid md:grid-cols-3 md:gap-4 md:gap-y-20 transition-all duration-500 ease-in 
-								${index === 0 && secondElement ? "opacity-100" : "opacity-0"}
-								${index === 1 && thirdElement ? "opacity-100" : "opacity-0"}
+								${isShown ? "opacity-100" : "opacity-0"}
 								${index ? "pt-24" : ""}
 								`}
 								key={index}
-								ref={index === 0 ? ref2 : ref3}
 							>
 								<div className="flex flex-col items-center w-full">
 									<div className="flex flex-col gap-4 items-center lg:items-start">
