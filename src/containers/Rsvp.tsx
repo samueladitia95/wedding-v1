@@ -157,7 +157,6 @@ const Rsvp = () => {
 							<div className="flex gap-4 md:gap-24 lg:gap-48">
 								<div className="flex gap-2 items-center">
 									<input
-										defaultValue={""}
 										name="isNeedAccomodation"
 										id="hotel-yes"
 										type="radio"
@@ -177,7 +176,6 @@ const Rsvp = () => {
 								</div>
 								<div className="flex gap-2 items-center">
 									<input
-										defaultValue={""}
 										name="isNeedAccomodation"
 										id="hotel-no"
 										type="radio"
