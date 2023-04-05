@@ -7,27 +7,27 @@ import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 
 const Gallery = () => {
 	const [ratio, setRatio] = useState<number>(1);
-	const [translateRatio1, setTranslateRatio1] = useState<string>("");
-	const [translateRatio2, setTranslateRatio2] = useState<string>("");
 	const [isFullScreen, setIsFullScreen] = useState<boolean>(false);
 	const [isText, setIsText] = useState<boolean>(false);
+	const [translate, setTranslate] = useState<number>(0);
+	const [width, setWidth] = useState<number>(300);
 
 	const refGallery = useRef(null);
 	const { scrollYProgress } = useScroll({
 		target: refGallery,
-		offset: ["0.75 1", "0.90 1"],
+		offset: ["0.6 1", "0.80 1"],
 	});
 
 	useMotionValueEvent(scrollYProgress, "change", (latest) => {
-		setRatio(latest * 2 + 1);
-		const rem = Math.floor(latest * 20);
-		setTranslateRatio1(`-translate-x-[${Math.floor(latest * 20)}rem]`);
-		setTranslateRatio2(`translate-x-[${Math.floor(latest * 20)}rem]`);
+		setRatio(latest * 1.8 + 1);
+		const rem = Math.floor(latest * 10);
+		setTranslate(Math.floor(latest * 2));
+		setWidth(300 - latest * 300);
 
-		if (rem >= 20 && !isFullScreen) {
+		if (rem >= 10 && !isFullScreen) {
 			setTimeout(() => setIsFullScreen(true), 500);
 			setTimeout(() => setIsText(true), 1500);
-		} else if (rem < 20 && isFullScreen) {
+		} else if (rem < 10) {
 			setTimeout(() => setIsFullScreen(false), 50);
 			setTimeout(() => setIsText(false), 50);
 		}
@@ -37,28 +37,32 @@ const Gallery = () => {
 		<>
 			<div
 				ref={refGallery}
-				className="bg-soil11 lg:bg-soil8 text-soil1 font-circular hidden lg:block min-h-screen w-full"
+				className="bg-soil11 lg:bg-soil8 text-soil1 font-circular hidden lg:block min-h-screen w-full transition-all duration-1000 ease-in"
 			>
 				<div className="py-20">
 					<div className="flex justify-center items-center">
 						<div
-							className={`flex flex-col gap-4 transition-all duration-1000 ease-in ${translateRatio1} ${
-								isFullScreen ? "w-0 pr-0" : "pr-12"
+							className={`flex flex-col gap-4 transition-all duration-1000 ease-in ${
+								isFullScreen ? "pr-0" : "pr-12"
 							}`}
+							style={{
+								transform: `translateX(-${Math.floor(translate * 20)}rem)`,
+								width: width,
+							}}
 						>
 							<Image
 								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_2_desktop.jpg"
 								alt="gallery-side"
-								width={315}
+								width={315 / ratio}
 								height={340}
-								className="rounded-4xl"
+								className="rounded-4xl transition-all duration-1000 ease-in"
 							/>
 							<Image
 								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_5_desktop.jpg"
 								alt="gallery-side"
-								width={315}
+								width={315 / ratio}
 								height={340}
-								className="rounded-4xl"
+								className="rounded-4xl transition-all duration-1000 ease-in"
 							/>
 						</div>
 						<motion.div className="flex justify-center items-center min-h-screen">
@@ -67,7 +71,9 @@ const Gallery = () => {
 								alt="Background"
 								height={1000}
 								width={700 * ratio}
-								className="object-cover max-h-screen rounded-4xl transition-all duration-1000 ease-in"
+								className={`object-cover max-h-screen  transition-all duration-1000 ease-in ${
+									isFullScreen ? "rounded-none" : "rounded-4xl"
+								}`}
 							/>
 							<div
 								className={`absolute bg-black z-20 h-screen w-full transition-all duration-1000 ease-in ${
@@ -79,14 +85,6 @@ const Gallery = () => {
 									isText ? "opacity-100" : "opacity-0"
 								}`}
 							>
-								{/* <div className="md:w-text-narrow uppercase font-safira text-4xl md:text-6xl leading-10 tracking-widest flex flex-col gap-2 md:hidden">
-									<p className="text-left ml-6">irwan</p>
-									<p>thomas</p>
-									<p className="text-left">burhan</p>
-									<p>&</p>
-									<p className="text-right">Claudia</p>
-									<p className="text-right mr-6">Narmada</p>
-								</div> */}
 								<Image
 									src={BrideAndGroomGif}
 									alt="Bride and groom"
@@ -111,23 +109,27 @@ const Gallery = () => {
 						</motion.div>
 
 						<div
-							className={`flex flex-col gap-4 transition-all duration-1000 ease-in ${translateRatio2} ${
-								isFullScreen ? "w-0 pl-0" : "pl-12"
+							className={`flex flex-col gap-4 transition-all duration-1000 ease-in ${
+								isFullScreen ? "pl-0" : "pl-12"
 							}`}
+							style={{
+								transform: `translateX(${Math.floor(translate * 20)}rem)`,
+								width: width,
+							}}
 						>
 							<Image
 								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_2_desktop.jpg"
 								alt="gallery-side"
-								width={315}
+								width={315 / ratio}
 								height={340}
-								className="rounded-4xl"
+								className="rounded-4xl transition-all duration-1000 ease-in"
 							/>
 							<Image
 								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_5_desktop.jpg"
 								alt="gallery-side"
-								width={315}
+								width={315 / ratio}
 								height={340}
-								className="rounded-4xl"
+								className="rounded-4xl transition-all duration-1000 ease-in"
 							/>
 						</div>
 					</div>
