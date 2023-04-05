@@ -62,7 +62,7 @@ const Invitation = () => {
 		<div id="invitation-container" ref={ref}>
 			<div
 				id="invitation"
-				className={`h-24 lg:h-32 relative container md:w-wide -mt-24 lg:-mt-32 z-50 transition-all duration-500 ease-in ${
+				className={`h-24 lg:h-32 relative container md:w-wide -mt-24 lg:-mt-32 z-40 transition-all duration-500 ease-in ${
 					topAnimation ? "opacity-100" : "opacity-0"
 				}`}
 			>
