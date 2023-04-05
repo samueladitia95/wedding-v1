@@ -1,10 +1,70 @@
-import { Comment } from "@/type";
+import { Comment, WishlistData } from "@/type";
+import { useEffect, useState } from "react";
+import { useFetch } from "../hooks/useFetch";
+import { useRouter } from "next/router";
 
 type Prop = {
 	comments: Comment[];
 };
 
 const MakeAWish = ({ comments }: Prop) => {
+	const [wishLimit, setWishLimit] = useState<number>(10);
+	const [wishlist, setWishlist] = useState<Comment[]>(comments);
+	const [isShowMore, setShowMore] = useState<boolean>(false);
+	const [submitWish, setSubmitWish] = useState<Comment>({
+		comment: "",
+		name: "",
+		createdAt: "",
+	});
+
+	// fetch functionality
+	const { data, error } = useFetch<WishlistData>(
+		`/api/comments?limit=${wishLimit}`,
+		isShowMore
+	);
+
+	useEffect(() => {
+		if (data && data.comments && !error) {
+			setWishlist(data.comments);
+		}
+	}, [data]);
+
+	// post functionality
+	const router = useRouter();
+
+	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+		setSubmitWish({
+			...submitWish,
+			[event.target.name]: event.target.value,
+		});
+	};
+
+	const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+		event.preventDefault();
+
+		try {
+			const response = await fetch("/api/comments", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify(submitWish),
+			});
+			if (response.ok) {
+				setWishLimit(10);
+				setShowMore(true);
+				setSubmitWish({
+					name: "",
+					comment: "",
+					createdAt: "",
+				});
+				router.push("/#item-0");
+			} else {
+				console.error("Error:", response.statusText);
+			}
+		} catch (error) {
+			console.error("Error:", error);
+		}
+	};
+
 	return (
 		<>
 			<div className="bg-soil1 text-soil13 font-circular">
@@ -21,14 +81,20 @@ const MakeAWish = ({ comments }: Prop) => {
 						</p>
 					</div>
 					<div className="flex flex-col gap-14 md:w-narrow">
-						<form className="uppercase flex flex-col gap-6">
+						<form
+							onSubmit={handleSubmit}
+							className="uppercase flex flex-col gap-6"
+						>
 							<div className="flex flex-col gap-1">
 								<label htmlFor="comment-name" className="font-medium text-sm">
 									full name
 								</label>
 								<input
 									id="comment-name"
+									name="name"
 									className="w-full rounded bg-soil1 border border-soil13 p-2 focus:outline-soil7"
+									value={submitWish.name}
+									onChange={handleChange}
 								/>
 							</div>
 
@@ -38,22 +104,30 @@ const MakeAWish = ({ comments }: Prop) => {
 								</label>
 								<textarea
 									id="comment"
+									name="comment"
 									rows={4}
 									className="w-full rounded bg-soil1 border border-soil13 p-2 focus:outline-soil7"
+									value={submitWish.comment}
+									onChange={handleChange}
 								></textarea>
 							</div>
 
 							<button
 								type="submit"
 								className="rounded bg-soil7 text-white text-center w-full p-4 font-semibold shadow-lg"
+								onClick={() => setShowMore(false)}
 							>
 								SEND
 							</button>
 						</form>
 
-						<div className="flex flex-col gap-8">
-							{comments.map((el, index) => (
-								<div key={index} className="flex flex-col gap-3">
+						<div id="wishlist" className="flex flex-col gap-8">
+							{wishlist.map((el, index) => (
+								<div
+									id={`item-${index}`}
+									key={index}
+									className="flex flex-col gap-3"
+								>
 									<p className="font-circular font-medium text-xl">{el.name}</p>
 									<p className="font-circular font-medium">{el.comment}</p>
 									<p className="font-circular font-thin text-sm">
@@ -66,6 +140,12 @@ const MakeAWish = ({ comments }: Prop) => {
 						<div>
 							<button
 								type="submit"
+								onClick={() => {
+									if (wishLimit < 50) {
+										setWishLimit(wishLimit + 10);
+									}
+									setShowMore(true);
+								}}
 								className="rounded bg-soil1 border border-soil13 text-center w-full p-4 font-medium hover:bg-soil19 hover:text-soil1"
 							>
 								SHOW MORE WISHES
