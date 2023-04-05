@@ -91,7 +91,7 @@ const Gallery = () => {
 									width={1000}
 									height={1000}
 									priority
-									className={`z-10 hidden md:block`}
+									className={`z-10 max-w-lg xl:max-w-6xl`}
 								/>
 								<p className="italic font-baskervville text-2xl md:text-3xl lg:-mt-24 xl:-mt-36">
 									Let’s us tell you our love journey
@@ -136,19 +136,41 @@ const Gallery = () => {
 				</div>
 			</div>
 
-			<div className="bg-soil11 lg:bg-soil8 text-soil1 font-circular block lg:hidden">
-				<div className="py-10">
-					<div className="container md:px-0 flex flex-col items-center gap-14">
-						<div className="flex justify-center gap-4 items-center justify-items-center w-full">
-							<div>
+			<div className="bg-soil8 text-soil2 font-circular lg:hidden">
+				<div className="bg-brideandgroom bg-cover bg-center bg-no-repeat">
+					<div className="bg-black bg-opacity-50">
+						<div className="container pb-0 flex flex-col items-center gap-14 md:w-ultra-wide h-tall">
+							<div className="text-center pt-48 md:pt-0 2xl:-mt-20 pb-0 flex flex-col gap-10">
+								<div className="md:w-text-narrow uppercase font-safira text-4xl md:text-6xl leading-10 tracking-widest flex flex-col gap-2 md:hidden">
+									<p className="text-left ml-6">irwan</p>
+									<p>thomas</p>
+									<p className="text-left">burhan</p>
+									<p>&</p>
+									<p className="text-right">Claudia</p>
+									<p className="text-right mr-6">Narmada</p>
+								</div>
 								<Image
-									src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_3_desktop.jpg"
-									alt="gallery-main"
-									width={660}
-									height={500}
-									className="rounded-4xl"
+									src={BrideAndGroomGif}
+									alt="Bride and groom"
+									width={900}
+									height={900}
+									priority
+									className="z-10 w-screen hidden md:block"
 								/>
+								<p className="italic font-baskervville text-2xl md:text-3xl">
+									Let’s us tell you our love journey
+								</p>
 							</div>
+
+							<Link href="#our-journey" scroll={false}>
+								<button>
+									<Image
+										src={DownArrow}
+										alt="Down Arrow Button"
+										className="rounded-full w-8 md:w-12 h-8 md:h-12 "
+									/>
+								</button>
+							</Link>
 						</div>
 					</div>
 				</div>
