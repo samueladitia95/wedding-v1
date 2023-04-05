@@ -7,6 +7,7 @@ import FlowerLeft from "../../public/flowers-left.svg";
 import FlowerRight from "../../public/flowers-right.svg";
 import IntroGif from "../../public/intro.gif";
 import { motion } from "framer-motion";
+import PlayButton from "@/components/PlayButton";
 
 const duration = 2;
 
@@ -26,6 +27,7 @@ const Intro = () => {
 
 	return (
 		<>
+			<PlayButton />
 			{/* Background Animation */}
 			<motion.div
 				initial={{ opacity: 0 }}
