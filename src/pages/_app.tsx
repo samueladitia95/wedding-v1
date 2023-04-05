@@ -10,6 +10,11 @@ import localFont from "next/font/local";
 const circular = localFont({
 	src: [
 		{
+			path: "../../public/circular/CircularStd-Book.ttf",
+			weight: "100",
+			style: "normal",
+		},
+		{
 			path: "../../public/circular/CircularStd-Medium.ttf",
 			weight: "400",
 			style: "normal",
