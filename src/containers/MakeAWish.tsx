@@ -32,7 +32,9 @@ const MakeAWish = ({ comments }: Prop) => {
 	// post functionality
 	const router = useRouter();
 
-	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+	const handleChange = (
+		event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+	) => {
 		setSubmitWish({
 			...submitWish,
 			[event.target.name]: event.target.value,
