@@ -1,6 +1,6 @@
 export default function PlayButton({ isPlaying = true }) {
 	return (
-		<div className="h-10 w-10 bg-soil20 rounded-full fixed left-5 bottom-12 z-50 flex justify-center items-center">
+		<div className="h-10 w-10 bg-soil20 rounded-full fixed left-5 bottom-9 z-50 flex justify-center items-center">
 			{isPlaying ? (
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
