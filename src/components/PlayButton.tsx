@@ -1,7 +1,37 @@
-export default function PlayButton({ isPlaying = true }) {
+import { useState } from "react";
+// import audio from "../../public/audio.mp3";
+
+// import audio from "../../public/audio.mp3";
+
+export default function PlayButton() {
+	const [isPlaying] = useState<boolean>(true);
+	// const [play, { stop }] = useSound("/audio.mp3");
+
+	// useEffect(() => {
+	// 	console.log(`Masuk`);
+	// 	play();
+	// }, []);
+
+	const handleClick = () => {
+		// console.log(document.getElementById("musicplayer"));
+		// const music: HTMLElement | null = document.getElementById("musicplayer");
+		// if (music) {
+		// 	if (isPlaying) {
+		// 		music.pause();
+		// 		setIsPlaying(false);
+		// 	} else {
+		// 		music.play();
+		// 		setIsPlaying(true);
+		// 	}
+		// }
+	};
+
 	return (
-		<div className="h-10 w-10 bg-soil20 rounded-full fixed left-5 bottom-9 z-50 flex justify-center items-center">
-			{isPlaying ? (
+		<div
+			onClick={handleClick}
+			className="h-10 w-10 bg-soil20 rounded-full fixed left-5 bottom-9 z-50 flex justify-center items-center"
+		>
+			{!isPlaying ? (
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
@@ -32,6 +62,7 @@ export default function PlayButton({ isPlaying = true }) {
 					/>
 				</svg>
 			)}
+			<audio id="musicplayer" src="/audio.mp3" autoPlay />
 		</div>
 	);
 }
