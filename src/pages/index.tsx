@@ -13,8 +13,7 @@ import Gallery from "@/containers/Gallery";
 import Invitation from "@/containers/Invitation";
 import Head from "next/head";
 import Intro from "@/containers/Intro";
-// import BrideAndGroom from "@/containers/BrideAndGroom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 type CommentResponse = {
 	status: string;
@@ -26,6 +25,7 @@ type Prop = {
 };
 
 export const Home: NextPage<Prop> = ({ comments }) => {
+	const [introAnimation, setIntroAnimation] = useState<boolean>(false);
 	useEffect(() => {
 		window.history.scrollRestoration = "manual";
 	}, []);
@@ -37,10 +37,12 @@ export const Home: NextPage<Prop> = ({ comments }) => {
 				<meta name="description" content="This is a wedding invitation" />
 			</Head>
 			<div>
-				<Intro />
-				<Invitation />
+				<Intro
+					introAnimation={introAnimation}
+					setIntroAnimation={setIntroAnimation}
+				/>
+				<Invitation introAnimation={introAnimation} />
 				<Gallery />
-				{/* <BrideAndGroom /> */}
 				<OurJourney />
 				<WeekendGuide />
 				<TravelGuide />

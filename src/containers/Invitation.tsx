@@ -13,7 +13,7 @@ type Countdown = {
 };
 
 const weddingDay = dayjs("2023-06-03", "yyyy-mm-dd");
-const Invitation = () => {
+const Invitation = ({ introAnimation = false }) => {
 	const [countdown, setCountdown] = useState<Countdown[]>([
 		{ type: "day", value: 0 },
 		{ type: "hour", value: 0 },
@@ -22,7 +22,6 @@ const Invitation = () => {
 	]);
 	const [bgAnimation, setBgAnimation] = useState<boolean>(false);
 	const [textAnimation, setTextAnimation] = useState<boolean>(false);
-	const [topAnimation, setTopAnimation] = useState<boolean>(false);
 
 	const { ref } = useInView({
 		threshold: [0.8, 1],
@@ -52,18 +51,14 @@ const Invitation = () => {
 				{ type: "second", value: duration.seconds() },
 			]);
 		}, 1000);
-
-		setTimeout(() => {
-			setTopAnimation(true);
-		}, 3000);
 	}, []);
 
 	return (
 		<div id="invitation-container" ref={ref}>
 			<div
 				id="invitation"
-				className={`h-24 lg:h-32 relative container md:w-wide -mt-24 lg:-mt-32 z-40 transition-all duration-500 ease-in ${
-					topAnimation ? "opacity-100" : "opacity-0"
+				className={`h-24 lg:h-32 relative container md:w-wide -mt-24 lg:-mt-32 z-40 transition-all duration-1000 ease-in ${
+					introAnimation ? "opacity-100" : "opacity-0"
 				}`}
 			>
 				<Image src={Vector} alt="background" fill />
