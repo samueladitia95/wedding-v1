@@ -93,7 +93,7 @@ const Gallery = () => {
 									priority
 									className={`z-10 max-w-lg xl:max-w-6xl`}
 								/>
-								<p className="italic font-baskervville text-2xl md:text-3xl lg:-mt-24 xl:-mt-36">
+								<p className="italic font-baskervville text-2xl md:text-3xl lg:-mt-24 xl:-mt-36 text-white">
 									Let’s us tell you our love journey
 								</p>
 								<button onClick={() => exportIntoView("our-journey")}>
@@ -155,7 +155,7 @@ const Gallery = () => {
 									priority
 									className="z-10 w-screen hidden md:block"
 								/>
-								<p className="italic font-baskervville text-2xl md:text-3xl">
+								<p className="italic font-baskervville text-2xl md:text-3xl text-white">
 									Let’s us tell you our love journey
 								</p>
 							</div>
