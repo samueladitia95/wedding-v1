@@ -1,7 +1,7 @@
 import { Comment, WishlistData } from "@/type";
 import { useEffect, useState } from "react";
 import { useFetch } from "../hooks/useFetch";
-import { useRouter } from "next/router";
+import { exportIntoView } from "@/utils/scrollIntoView";
 
 type Prop = {
 	comments: Comment[];
@@ -30,8 +30,6 @@ const MakeAWish = ({ comments }: Prop) => {
 	}, [data, error]);
 
 	// post functionality
-	const router = useRouter();
-
 	const handleChange = (
 		event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
 	) => {
@@ -58,7 +56,7 @@ const MakeAWish = ({ comments }: Prop) => {
 					comment: "",
 					createdAt: "",
 				});
-				router.push("/#item-0");
+				exportIntoView("item-0");
 			} else {
 				console.error("Error:", response.statusText);
 			}

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import DownArrow from "../../public/down-arrow.svg";
 import BrideAndGroomGif from "../../public/bridengroom.gif";
+import { exportIntoView } from "@/utils/scrollIntoView";
 
 const BrideAndGroom = () => {
 	return (
@@ -32,15 +32,13 @@ const BrideAndGroom = () => {
 								</p>
 							</div>
 
-							<Link href="#our-journey" scroll={false}>
-								<button>
-									<Image
-										src={DownArrow}
-										alt="Down Arrow Button"
-										className="rounded-full w-8 md:w-12 h-8 md:h-12 "
-									/>
-								</button>
-							</Link>
+							<button onScroll={() => exportIntoView("our-journey")}>
+								<Image
+									src={DownArrow}
+									alt="Down Arrow Button"
+									className="rounded-full w-8 md:w-12 h-8 md:h-12 "
+								/>
+							</button>
 						</div>
 					</div>
 				</div>

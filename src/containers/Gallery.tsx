@@ -2,8 +2,8 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 import BrideAndGroomGif from "../../public/bridengroom.gif";
 import DownArrow from "../../public/down-arrow.svg";
-import Link from "next/link";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { exportIntoView } from "@/utils/scrollIntoView";
 
 const Gallery = () => {
 	const [ratio, setRatio] = useState<number>(1);
@@ -96,15 +96,13 @@ const Gallery = () => {
 								<p className="italic font-baskervville text-2xl md:text-3xl lg:-mt-24 xl:-mt-36">
 									Let’s us tell you our love journey
 								</p>
-								<Link href="#our-journey" scroll={false}>
-									<button>
-										<Image
-											src={DownArrow}
-											alt="Down Arrow Button"
-											className="rounded-full w-8 md:w-12 h-8 md:h-12 "
-										/>
-									</button>
-								</Link>
+								<button onClick={() => exportIntoView("our-journey")}>
+									<Image
+										src={DownArrow}
+										alt="Down Arrow Button"
+										className="rounded-full w-8 md:w-12 h-8 md:h-12 "
+									/>
+								</button>
 							</div>
 						</motion.div>
 
@@ -161,16 +159,13 @@ const Gallery = () => {
 									Let’s us tell you our love journey
 								</p>
 							</div>
-
-							<Link href="#our-journey" scroll={false}>
-								<button>
-									<Image
-										src={DownArrow}
-										alt="Down Arrow Button"
-										className="rounded-full w-8 md:w-12 h-8 md:h-12 "
-									/>
-								</button>
-							</Link>
+							<button onClick={() => exportIntoView("our-journey")}>
+								<Image
+									src={DownArrow}
+									alt="Down Arrow Button"
+									className="rounded-full w-12 h-12"
+								/>
+							</button>
 						</div>
 					</div>
 				</div>

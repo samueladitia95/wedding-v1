@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import And from "../../public/and.svg";
 import DownArrow from "../../public/down-arrow.svg";
@@ -8,6 +7,7 @@ import FlowerRight from "../../public/flowers-right.svg";
 import IntroGif from "../../public/intro.gif";
 import { motion } from "framer-motion";
 import PlayButton from "@/components/PlayButton";
+import { exportIntoView } from "@/utils/scrollIntoView";
 
 const duration = 2;
 
@@ -172,15 +172,13 @@ const Intro = ({
 								<p className="italic font-baskervville text-2xl mb-40">
 									Philippians 1:7
 								</p>
-								<Link href="#invitation" scroll={false}>
-									<button>
-										<Image
-											src={DownArrow}
-											alt="down arrow button"
-											className="rounded-full w-12 md:w-12 h-12 md:h-12"
-										/>
-									</button>
-								</Link>
+								<button onClick={() => exportIntoView("invitation")}>
+									<Image
+										src={DownArrow}
+										alt="down arrow button"
+										className="rounded-full w-12 md:w-12 h-12 md:h-12"
+									/>
+								</button>
 							</motion.div>
 						)}
 					</div>
