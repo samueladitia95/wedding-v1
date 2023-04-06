@@ -1,7 +1,7 @@
 import { Comment, WishlistData } from "@/type";
 import { useEffect, useState } from "react";
 import { useFetch } from "../hooks/useFetch";
-import { exportIntoView } from "@/utils/scrollIntoView";
+// import { exportIntoView } from "@/utils/scrollIntoView";
 
 type Prop = {
 	comments: Comment[];
@@ -56,7 +56,7 @@ const MakeAWish = ({ comments }: Prop) => {
 					comment: "",
 					createdAt: "",
 				});
-				exportIntoView("item-0");
+				// exportIntoView("item-0");
 			} else {
 				console.error("Error:", response.statusText);
 			}
