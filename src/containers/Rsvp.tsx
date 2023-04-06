@@ -22,16 +22,19 @@ const Rsvp = () => {
 	const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 
+		const body = {
+			...submitRsvp,
+			isAttending: submitRsvp.isAttending === "true",
+			isNeedAccomodation: submitRsvp.isNeedAccomodation === "true",
+		};
+
 		try {
 			const response = await fetch("/api/rsvp", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify({
-					...submitRsvp,
-					isAttending: submitRsvp.isAttending === "true",
-					isNeedAccomodation: submitRsvp.isNeedAccomodation === "true",
-				}),
+				body: JSON.stringify(body),
 			});
+
 			if (response.ok) {
 				setSubmitRsvp({
 					name: "",
@@ -39,6 +42,17 @@ const Rsvp = () => {
 					email: "",
 					isAttending: "",
 					isNeedAccomodation: "",
+				});
+
+				await fetch("https://api.sheetmonkey.io/form/hi4Pry5cpnMjDNpZb49Wbv", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({
+						...body,
+						createdAt: "x-sheetmonkey-current-date-time",
+					}),
 				});
 			} else {
 				console.error("Error:", response.statusText);
