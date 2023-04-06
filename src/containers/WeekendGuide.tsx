@@ -119,7 +119,7 @@ const WeekendGuide = () => {
 					</div>
 
 					{/* Schedule */}
-					<div className="container flex flex-col gap-14 bg-soil1 text-soil13 py-12 rounded-t-full md:rounded-t-full -mt-40 md:-mt-96 pt-48 md:pt-80 lg:rounded-t-br-lg lg:-mt-bt-circle-lg lg:pt-96">
+					<div className="container flex flex-col gap-14 bg-soil1 text-soil13 py-12 rounded-t-full md:rounded-t-full -mt-40 md:-mt-96 pt-48 md:pt-80 lg:rounded-t-br-lg lg:-mt-bt-circle-lg lg:pt-96 lg:pb-28">
 						<br className="hidden md:block" />
 						<br className="hidden md:block" />
 						{schedules.map((day, index) => (
