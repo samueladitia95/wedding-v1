@@ -106,7 +106,7 @@ const Intro = ({
 								alt="and symbol"
 								height={200}
 								width={150}
-								className={`${introAnimation ? "opacity-0" : ""}`}
+								className={`${introAnimation ? "opacity-0" : ""} w-32 lg:w-40`}
 							/>
 							<motion.button
 								initial={{ rotate: 0, scale: 0 }}
