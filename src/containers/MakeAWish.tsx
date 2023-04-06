@@ -114,7 +114,7 @@ const MakeAWish = ({ comments }: Prop) => {
 
 							<button
 								type="submit"
-								className="rounded bg-soil7 text-white text-center w-full p-4 font-semibold shadow-lg"
+								className="rounded bg-soil7 text-white text-center w-full p-4 font-semibold shadow-lg hover:bg-soil21 transition-colors ease-in duration-50"
 								onClick={() => setShowMore(false)}
 							>
 								SEND
