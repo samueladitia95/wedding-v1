@@ -11,7 +11,6 @@ export default async function handler(
 	if (method === "POST") {
 		try {
 			const { name, phone, email, isAttending, isNeedAccomodation } = body;
-			console.log(name);
 			const { status, statusText } = await supabase.from("rsvp").insert([
 				{
 					name,
