@@ -34,7 +34,7 @@ const Intro = ({
 
 	return (
 		<>
-			<PlayButton />
+			<PlayButton initPlaying={introAnimation} />
 			{/* Background Animation */}
 			{introAnimation && (
 				<motion.div

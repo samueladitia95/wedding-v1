@@ -27,7 +27,7 @@ const MakeAWish = ({ comments }: Prop) => {
 		if (data && data.comments && !error) {
 			setWishlist(data.comments);
 		}
-	}, [data]);
+	}, [data, error]);
 
 	// post functionality
 	const router = useRouter();
