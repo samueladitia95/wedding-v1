@@ -9,6 +9,7 @@ import PlayButton from "@/components/PlayButton";
 import { exportIntoView } from "@/utils/scrollIntoView";
 import { useScrollBlock } from "@/hooks/useScrollBlock";
 
+const musicUrl = "/audio.mp3";
 const duration = 2;
 
 const Intro = ({
@@ -20,6 +21,7 @@ const Intro = ({
 }) => {
 	const [andText, setAndText] = useState<boolean>(true);
 	const [gifText, setGifText] = useState<boolean>(true);
+	const [isPlaying, setIsPlaying] = useState<boolean>(false);
 	const [allowScroll] = useScrollBlock();
 
 	useEffect(() => {
@@ -33,9 +35,27 @@ const Intro = ({
 		}
 	}, [introAnimation]);
 
+	useEffect(() => {
+		const music = document.getElementById("music-player");
+		const player = music as HTMLMediaElement;
+		if (music) {
+			if (isPlaying && introAnimation) {
+				player.muted = false;
+				player.play();
+			} else {
+				player.pause();
+			}
+		}
+	}, [isPlaying, introAnimation]);
+
 	return (
 		<>
-			<PlayButton initPlaying={introAnimation} />
+			<audio id="music-player" src={musicUrl}></audio>
+			<PlayButton
+				initPlaying={introAnimation}
+				setIsPlaying={setIsPlaying}
+				isPlaying={isPlaying}
+			/>
 			{/* Background Animation */}
 			{introAnimation && (
 				<motion.div
@@ -132,6 +152,7 @@ const Intro = ({
 								onClick={() => {
 									allowScroll();
 									setIntroAnimation(true);
+									setIsPlaying(true);
 								}}
 							>
 								Open Invitation
