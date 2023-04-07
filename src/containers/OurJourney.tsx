@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
-import IDo from "../../public/i-do.png";
 
 const OurJourney = () => {
 	const [firstElement, setFirstElement] = useState<boolean>(false);
@@ -39,7 +38,7 @@ const OurJourney = () => {
 				id="our-journey"
 				className="bg-soil15 text-white font-circular pt-24"
 			>
-				<div className="container lg:pb-28 lg:pt-2 flex flex-col items-center gap-14 lg:gap-48 md:w-ultra-wide">
+				<div className="container pb-28 lg:pt-2 flex flex-col items-center gap-14 lg:gap-44 md:w-ultra-wide">
 					{/* Mobile and Table */}
 					<div
 						ref={ref3}
@@ -133,9 +132,11 @@ const OurJourney = () => {
 						}`}
 					>
 						<Image
-							src={IDo}
-							alt="QR Code"
+							src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/image_i_said_i_do_desktop.jpg"
+							alt="I said I do"
 							className="rounded-full md:w-full lg:w-wide"
+							width={1440}
+							height={570}
 						/>
 						<p className="text-left w-full lg:text-center font-baskervville text-7xl md:text-9xl italic">
 							I said &quot;I do&quot;
