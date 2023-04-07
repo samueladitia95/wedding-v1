@@ -4,7 +4,6 @@ import And from "../../public/and.svg";
 import DownArrow from "../../public/down-arrow.svg";
 import FlowerLeft from "../../public/flowers-left.svg";
 import FlowerRight from "../../public/flowers-right.svg";
-import IntroGif from "../../public/intro.gif";
 import { motion } from "framer-motion";
 import PlayButton from "@/components/PlayButton";
 import { exportIntoView } from "@/utils/scrollIntoView";
@@ -29,7 +28,7 @@ const Intro = ({
 				setAndText(false);
 				setTimeout(() => {
 					setGifText(false);
-				}, 3700);
+				}, 5000);
 			}, 500);
 		}
 	}, [introAnimation]);
@@ -143,20 +142,21 @@ const Intro = ({
 						{!andText && (
 							<motion.div
 								initial={{ opacity: 0 }}
-								animate={{ opacity: [0, 1, 0] }}
+								animate={{ opacity: [0, 1, 1, 1, 0] }}
 								transition={{
-									duration: 2.7,
+									duration: 4.5,
 									delay: 0.7,
 								}}
-								className={`justify-center items-center z-20 ${
+								className={`justify-center items-center z-20 -mt-20 ${
 									!andText && gifText ? "flex" : "hidden"
 								}`}
 							>
 								<Image
-									src={IntroGif}
-									alt="and symbol"
-									height={2000}
-									width={1500}
+									src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/first_title.gif"
+									alt="intro gif"
+									height={900}
+									width={500}
+									className=""
 								/>
 							</motion.div>
 						)}
