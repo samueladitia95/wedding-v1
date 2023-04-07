@@ -39,7 +39,7 @@ const Gallery = () => {
 				ref={refGallery}
 				className="bg-soil11 lg:bg-soil8 text-soil1 font-circular hidden lg:block min-h-screen w-full transition-all duration-1000 ease-in"
 			>
-				<div className="py-20">
+				<div className="pt-20">
 					<div className="flex justify-center items-center">
 						<div
 							className={`flex flex-col gap-4 transition-all duration-1000 ease-in ${
