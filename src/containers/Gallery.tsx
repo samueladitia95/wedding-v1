@@ -180,7 +180,7 @@ const Gallery = () => {
 						width={1000}
 						height={1000}
 						priority
-						className={`z-10 max-w-sm`}
+						className={`z-10 max-w-sm md:max-w-xl`}
 					/>
 					<p className="italic font-baskervville text-2xl md:text-3xl lg:-mt-24 xl:-mt-36 text-white">
 						Let’s us tell you our love journey
