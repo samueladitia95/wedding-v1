@@ -8,15 +8,15 @@ export const useScrollBlock = () => {
 	const { body } = safeDocument;
 
 	const allowScroll = () => {
-		if (!body || !body.style || !scrollBlocked.current) return;
+		if (!body || !body.style) return;
 
-		html.classList.remove("relative");
+		// html.classList.remove("relative");
 		html.classList.remove("overflow-hidden");
-		body.classList.remove("relative");
+		// body.classList.remove("relative");
 		body.classList.remove("overflow-hidden");
 
 		scrollBlocked.current = false;
 	};
 
-	return { allowScroll };
+	return [allowScroll];
 };

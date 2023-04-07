@@ -21,7 +21,7 @@ const Intro = ({
 }) => {
 	const [andText, setAndText] = useState<boolean>(true);
 	const [gifText, setGifText] = useState<boolean>(true);
-	const { allowScroll } = useScrollBlock();
+	const [allowScroll] = useScrollBlock();
 
 	useEffect(() => {
 		if (introAnimation) {
