@@ -119,7 +119,11 @@ const Intro = ({
 									damping: 20,
 									duration: 3000,
 								}}
-								whileHover={{ scale: 1.5 }}
+								whileHover={{
+									scale: 1.2,
+									backgroundColor: "#928C84",
+									color: "#FFF",
+								}}
 								whileTap={{
 									scale: 0.8,
 								}}
