@@ -17,7 +17,7 @@ const Gallery = () => {
 	const mobileGallery = useRef(null);
 	const { scrollYProgress } = useScroll({
 		target: refGallery,
-		offset: ["0.6 1", "0.80 1"],
+		offset: ["0.85 1", "0.95 1"],
 	});
 	const { scrollYProgress: mobileScroll } = useScroll({
 		target: mobileGallery,
@@ -31,8 +31,10 @@ const Gallery = () => {
 		setWidth(300 - latest * 300);
 
 		if (rem >= 10 && !isFullScreen) {
-			setTimeout(() => setIsFullScreen(true), 500);
-			setTimeout(() => setIsText(true), 1000);
+			setTimeout(() => {
+				setTimeout(() => setIsFullScreen(true), 500);
+				setTimeout(() => setIsText(true), 500);
+			}, 500);
 		} else if (rem < 10) {
 			setTimeout(() => setIsFullScreen(false), 50);
 			setTimeout(() => setIsText(false), 50);
