@@ -56,7 +56,7 @@ const OurJourney = () => {
 									started
 								</p>
 								<Image
-									src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/IrwanCLaudiaIMG2.gif"
+									src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gif/claudia_irwan_new.gif"
 									alt={`photo our journey`}
 									width="0"
 									height="0"
@@ -96,7 +96,7 @@ const OurJourney = () => {
 							</p>
 							<div className="flex gap-2 items-center my-2">
 								<Image
-									src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/IrwanCLaudiaIMG2.gif"
+									src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gif/claudia_irwan_new.gif"
 									alt={`photo our journey`}
 									width="0"
 									height="0"

@@ -28,12 +28,12 @@ const questions = [
 ];
 
 const images1 = [
-	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/qa_images_1.jpg",
-	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/qa_images_3.jpg",
+	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/qna_images_1.jpg",
+	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/qna_images_3.jpg",
 ];
 const images2 = [
-	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/qa_images_4.jpg",
-	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/qa_images_2.jpg",
+	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/qna_images_4.jpg",
+	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/qna_images_2.jpg",
 ];
 
 const dressCodes = [

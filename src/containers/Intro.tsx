@@ -46,7 +46,7 @@ const Intro = ({
 				>
 					<div className="z-10 h-screen w-full absolute">
 						<Image
-							src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/image_landing_page_desktop.jpg"
+							src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/landing_page_background_desktop.jpg"
 							alt="Background"
 							fill
 							className="object-cover"
