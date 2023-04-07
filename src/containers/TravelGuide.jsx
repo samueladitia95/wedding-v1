@@ -1,22 +1,16 @@
-import { useHorizontalScroll } from "@/utils/useHorizontalScroll";
 import Image from "next/image";
 
 const TravelGuide = () => {
-	const scrollRef = useHorizontalScroll();
-
 	return (
 		<>
 			<div className="bg-soil11 text-white font-circular">
-				<div className="container py-20 lg:py-64 xl:py-80 flex flex-col gap-14 sm:w-wide  lg:pl-48">
+				<div className="container py-20 lg:py-64 xl:py-80 flex flex-col gap-14 sm:w-wide">
 					<div className="uppercase">
 						<p className="font-safira text-center lg:text-left text-6xl">
 							travel guide
 						</p>
 					</div>
-					<div
-						ref={scrollRef}
-						className="flex flex-col justify-start gap-20 lg:flex-row lg:gap-10 sm:overflow-x-auto xl:w-tall scrollbar-hide"
-					>
+					<div className="flex flex-col justify-start gap-20 lg:flex-row lg:gap-16 sm:overflow-x-auto scrollbar-hide">
 						<div className="flex flex-col flex-shrink-0 items-center lg:items-stretch gap-5 text-center lg:text-left font-medium lg:w-80">
 							<Image
 								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/plane_travel_guide_1_icons.svg"
