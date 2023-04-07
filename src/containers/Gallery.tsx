@@ -172,7 +172,7 @@ const Gallery = () => {
 					}`}
 				/>
 				<div
-					className={`absolute justify-center text-center flex flex-col items-center h-screen gap-10 z-30 ${
+					className={`absolute justify-center text-center flex flex-col items-center h-screen z-30 ${
 						isTextMobile ? "opacity-100" : "opacity-0"
 					}`}
 				>
@@ -184,10 +184,13 @@ const Gallery = () => {
 						priority
 						className={`z-10 max-w-sm md:max-w-xl`}
 					/>
-					<p className="italic font-baskervville text-2xl md:text-3xl lg:-mt-24 xl:-mt-36 text-white">
+					<p className="italic font-baskervville text-2xl md:text-3xl text-white -mt-8 md:-mt-12">
 						Let’s us tell you our love journey
 					</p>
-					<button onClick={() => exportIntoView("our-journey")}>
+					<button
+						className="pt-16"
+						onClick={() => exportIntoView("our-journey")}
+					>
 						<Image
 							src={DownArrow}
 							alt="Down Arrow Button"
