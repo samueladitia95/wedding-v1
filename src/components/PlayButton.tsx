@@ -10,6 +10,7 @@ export default function PlayButton({ initPlaying = false }) {
 		const player = music as HTMLMediaElement;
 		if (music) {
 			if (isPlaying) {
+				player.muted = false;
 				player.play();
 			} else {
 				player.pause();
