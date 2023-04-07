@@ -17,7 +17,7 @@ const Gallery = () => {
 	const mobileGallery = useRef(null);
 	const { scrollYProgress } = useScroll({
 		target: refGallery,
-		offset: ["0.9 1", "0.95 1"],
+		offset: ["0.95 1", "1 1"],
 	});
 	const { scrollYProgress: mobileScroll } = useScroll({
 		target: mobileGallery,
@@ -25,17 +25,18 @@ const Gallery = () => {
 	});
 
 	useMotionValueEvent(scrollYProgress, "change", (latest) => {
-		setRatio(latest * 1.8 + 1);
 		const rem = Math.floor(latest * 10);
 		setTranslate(Math.floor(latest * 2));
 		setWidth(300 - latest * 300);
 
 		if (rem >= 10 && !isFullScreen) {
+			setRatio(latest * 1.8 + 1);
 			setTimeout(() => {
 				setTimeout(() => setIsFullScreen(true), 500);
 				setTimeout(() => setIsText(true), 500);
 			}, 500);
 		} else if (rem < 10) {
+			setRatio(1);
 			setTimeout(() => setIsFullScreen(false), 50);
 			setTimeout(() => setIsText(false), 50);
 		}
@@ -54,12 +55,12 @@ const Gallery = () => {
 			{/* Desktop */}
 			<div
 				ref={refGallery}
-				className="bg-soil11 lg:bg-soil8 text-soil1 font-circular hidden lg:block min-h-screen w-full transition-all duration-1000 ease-in"
+				className="bg-soil11 lg:bg-soil8 text-soil1 font-circular hidden lg:block min-h-screen w-full transition-all duration-700 ease-in"
 			>
 				<div className="pt-20">
 					<div className="flex justify-center items-center">
 						<div
-							className={`flex flex-col gap-4 transition-all duration-1000 ease-in ${
+							className={`flex flex-col gap-4 transition-all duration-700 ease-in ${
 								isFullScreen ? "pr-0" : "pr-12"
 							}`}
 							style={{
@@ -72,14 +73,14 @@ const Gallery = () => {
 								alt="gallery-side"
 								width={315 / ratio}
 								height={340}
-								className="rounded-4xl transition-all duration-1000 ease-in"
+								className="rounded-4xl transition-all duration-700 ease-in"
 							/>
 							<Image
 								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_4_+desktop.jpg"
 								alt="gallery-side"
 								width={315 / ratio}
 								height={340}
-								className="rounded-4xl transition-all duration-1000 ease-in"
+								className="rounded-4xl transition-all duration-700 ease-in"
 							/>
 						</div>
 						<motion.div className="flex justify-center items-center min-h-screen">
@@ -124,7 +125,7 @@ const Gallery = () => {
 						</motion.div>
 
 						<div
-							className={`flex flex-col gap-4 transition-all duration-1000 ease-in ${
+							className={`flex flex-col gap-4 transition-all duration-700 ease-in ${
 								isFullScreen ? "pl-0" : "pl-12"
 							}`}
 							style={{
@@ -137,14 +138,14 @@ const Gallery = () => {
 								alt="gallery-side"
 								width={315 / ratio}
 								height={340}
-								className="rounded-4xl transition-all duration-1000 ease-in"
+								className="rounded-4xl transition-all duration-700 ease-in"
 							/>
 							<Image
 								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_5_+desktop.jpg"
 								alt="gallery-side"
 								width={315 / ratio}
 								height={340}
-								className="rounded-4xl transition-all duration-1000 ease-in"
+								className="rounded-4xl transition-all duration-700 ease-in"
 							/>
 						</div>
 					</div>
