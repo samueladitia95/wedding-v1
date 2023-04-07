@@ -50,6 +50,7 @@ const Gallery = () => {
 
 	return (
 		<>
+			{/* Desktop */}
 			<div
 				ref={refGallery}
 				className="bg-soil11 lg:bg-soil8 text-soil1 font-circular hidden lg:block min-h-screen w-full transition-all duration-1000 ease-in"
@@ -149,9 +150,10 @@ const Gallery = () => {
 				</div>
 			</div>
 
+			{/* Mobile And Tablet */}
 			<motion.div
 				ref={mobileGallery}
-				className={`bg-soil11 flex justify-center items-start h-screen ${
+				className={`bg-soil11 flex justify-center items-start h-screen lg:hidden ${
 					isMobileAnimation ? "p-0" : "p-8"
 				}`}
 			>
