@@ -58,20 +58,39 @@ const Intro = ({
 			/>
 			{/* Background Animation */}
 			{introAnimation && (
-				<motion.div
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1, y: [1000, 0] }}
-					transition={{ delay: 0.5, duration: 0.7 }}
-				>
-					<div className="z-10 h-screen w-full absolute">
-						<Image
-							src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/landing_page_background_desktop_resize.jpg"
-							alt="Background"
-							fill
-							className="object-cover"
-						/>
-					</div>
-				</motion.div>
+				<>
+					<motion.div
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1, y: [1000, 0] }}
+						transition={{ delay: 0.5, duration: 0.7 }}
+						className="hidden md:block"
+					>
+						<div className="z-10 h-screen w-full absolute">
+							<Image
+								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/landing_page_background_desktop_resize.jpg"
+								alt="Background"
+								fill
+								className="object-cover"
+							/>
+						</div>
+					</motion.div>
+
+					<motion.div
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1, y: [1000, 0] }}
+						transition={{ delay: 0.5, duration: 0.7 }}
+						className="md:hidden"
+					>
+						<div className="z-10 h-screen w-full absolute">
+							<Image
+								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Mobile/landing_bg_phone.jpg"
+								alt="Background"
+								fill
+								className="object-cover"
+							/>
+						</div>
+					</motion.div>
+				</>
 			)}
 
 			<div className="bg-soil8 text-soil2 font-circular">
