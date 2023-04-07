@@ -55,7 +55,7 @@ const Intro = ({
 				</motion.div>
 			)}
 
-			<div className="bg-soil8 text-soil2 font-circular">
+			<div className="bg-soil8 text-soil2 font-circular z-10">
 				<div className={`bg-soil11`}>
 					{/* Flower Animation */}
 					<motion.span
