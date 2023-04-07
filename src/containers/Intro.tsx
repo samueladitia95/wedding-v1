@@ -8,6 +8,7 @@ import IntroGif from "../../public/intro.gif";
 import { motion } from "framer-motion";
 import PlayButton from "@/components/PlayButton";
 import { exportIntoView } from "@/utils/scrollIntoView";
+import { useScrollBlock } from "@/hooks/useScrollBlock";
 
 const duration = 2;
 
@@ -20,6 +21,7 @@ const Intro = ({
 }) => {
 	const [andText, setAndText] = useState<boolean>(true);
 	const [gifText, setGifText] = useState<boolean>(true);
+	const { allowScroll } = useScrollBlock();
 
 	useEffect(() => {
 		if (introAnimation) {
@@ -27,7 +29,7 @@ const Intro = ({
 				setAndText(false);
 				setTimeout(() => {
 					setGifText(false);
-				}, 4200);
+				}, 3700);
 			}, 500);
 		}
 	}, [introAnimation]);
@@ -124,7 +126,10 @@ const Intro = ({
 								className={`z-50 text-soil11 bg-soil4 rounded py-3 px-16 leading-7 ${
 									introAnimation ? "opacity-0" : ""
 								}`}
-								onClick={() => setIntroAnimation(true)}
+								onClick={() => {
+									allowScroll();
+									setIntroAnimation(true);
+								}}
 							>
 								Open Invitation
 							</motion.button>
@@ -137,6 +142,7 @@ const Intro = ({
 								animate={{ opacity: [0, 1, 0] }}
 								transition={{
 									duration: 2.7,
+									delay: 0.7,
 								}}
 								className={`justify-center items-center z-20 ${
 									!andText && gifText ? "flex" : "hidden"
@@ -169,7 +175,7 @@ const Intro = ({
 								<p>I HOLD YOU IN MY HEART,</p>
 								<p>FOR WE HAVE SHARED TOGETHER </p>
 								<p>GOD&apos;S BLESSINGS</p>
-								<p className="italic font-baskervville text-2xl mb-40">
+								<p className="normal-case italic font-baskervville text-3xl mb-40">
 									Philippians 1:7
 								</p>
 								<button onClick={() => exportIntoView("invitation")}>
