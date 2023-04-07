@@ -66,9 +66,9 @@ module.exports = {
 			},
 			backgroundImage: {
 				intro:
-					"url('https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/image_landing_page_desktop.jpg')",
+					"url('https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/landing_page_background_desktop.jpg')",
 				brideandgroom:
-					"url('https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_3_desktop.jpg')",
+					"url('https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_3_+desktop.jpg')",
 			},
 			transitionDuration: {
 				2000: "2000ms",
