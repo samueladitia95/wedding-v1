@@ -17,7 +17,7 @@ const Gallery = () => {
 	const mobileGallery = useRef(null);
 	const { scrollYProgress } = useScroll({
 		target: refGallery,
-		offset: ["0.85 1", "0.95 1"],
+		offset: ["0.9 1", "0.95 1"],
 	});
 	const { scrollYProgress: mobileScroll } = useScroll({
 		target: mobileGallery,
