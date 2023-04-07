@@ -85,7 +85,7 @@ const Gallery = () => {
 						</div>
 						<motion.div className="flex justify-center items-center min-h-screen">
 							<Image
-								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_3_+desktop.jpg"
+								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_3_desktop.png"
 								alt="Background"
 								height={1000}
 								width={700 * ratio}
@@ -160,7 +160,7 @@ const Gallery = () => {
 				}`}
 			>
 				<Image
-					src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_3_+desktop.jpg"
+					src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_3_desktop.png"
 					alt="Background"
 					height={1000}
 					width={700}
