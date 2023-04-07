@@ -72,7 +72,7 @@ module.exports = {
 			},
 			transitionDuration: {
 				2000: "2000ms",
-				5000: "5000ms",
+				3000: "3000ms",
 			},
 			fontSize: {
 				xxs: ["8px", "8px"],
