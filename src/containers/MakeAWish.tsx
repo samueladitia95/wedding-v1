@@ -80,7 +80,7 @@ const MakeAWish = ({ comments }: Prop) => {
 							and we can&apos;t wait to see you on our big day!
 						</p>
 					</div>
-					<div className="flex flex-col gap-14 md:w-narrow">
+					<div className="flex flex-col w-full gap-14 md:w-narrow">
 						<form
 							onSubmit={handleSubmit}
 							className="uppercase flex flex-col gap-6"
