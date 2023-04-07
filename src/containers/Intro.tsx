@@ -28,7 +28,7 @@ const Intro = ({
 				setAndText(false);
 				setTimeout(() => {
 					setGifText(false);
-				}, 5000);
+				}, 6500);
 			}, 500);
 		}
 	}, [introAnimation]);
@@ -142,9 +142,9 @@ const Intro = ({
 						{!andText && (
 							<motion.div
 								initial={{ opacity: 0 }}
-								animate={{ opacity: [0, 1, 1, 1, 0] }}
+								animate={{ opacity: [0, 1, 1, 1, 1, 1, 0] }}
 								transition={{
-									duration: 4.5,
+									duration: 6,
 									delay: 0.7,
 								}}
 								className={`justify-center items-center z-20 -mt-20 ${
