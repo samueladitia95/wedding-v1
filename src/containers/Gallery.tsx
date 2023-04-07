@@ -97,7 +97,7 @@ const Gallery = () => {
 								}`}
 							/>
 							<div
-								className={`absolute text-center flex flex-col items-center gap-10 z-30 ${
+								className={`absolute text-center flex flex-col items-center gap-10 z-30 -mt-24 ${
 									isText ? "opacity-100" : "opacity-0"
 								}`}
 							>
@@ -184,7 +184,7 @@ const Gallery = () => {
 						priority
 						className={`z-10 max-w-sm md:max-w-xl`}
 					/>
-					<p className="italic font-baskervville text-2xl md:text-3xl text-white -mt-8 md:-mt-12">
+					<p className="italic font-baskervville text-2xl md:text-3xl text-white -mt-8 ">
 						Let’s us tell you our love journey
 					</p>
 					<button
