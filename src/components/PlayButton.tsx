@@ -30,7 +30,7 @@ export default function PlayButton({ initPlaying = false }) {
 	return (
 		<motion.div
 			initial={{ rotate: 0, scale: 0 }}
-			animate={{ scale: 1 }}
+			animate={{ scale: 1, opacity: initPlaying ? 1 : 0 }}
 			transition={{
 				type: "spring",
 				stiffness: 260,

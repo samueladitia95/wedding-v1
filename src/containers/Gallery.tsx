@@ -9,13 +9,20 @@ const Gallery = () => {
 	const [ratio, setRatio] = useState<number>(1);
 	const [isFullScreen, setIsFullScreen] = useState<boolean>(false);
 	const [isText, setIsText] = useState<boolean>(false);
+	const [isTextMobile, setIsTextMobile] = useState<boolean>(false);
+	const [isMobileAnimation, setIsMobileAnimation] = useState<boolean>(false);
 	const [translate, setTranslate] = useState<number>(0);
 	const [width, setWidth] = useState<number>(300);
 
 	const refGallery = useRef(null);
+	const mobileGallery = useRef(null);
 	const { scrollYProgress } = useScroll({
 		target: refGallery,
 		offset: ["0.6 1", "0.80 1"],
+	});
+	const { scrollYProgress: mobileScroll } = useScroll({
+		target: mobileGallery,
+		offset: ["0.4 1", "0.80 1"],
 	});
 
 	useMotionValueEvent(scrollYProgress, "change", (latest) => {
@@ -30,6 +37,14 @@ const Gallery = () => {
 		} else if (rem < 10) {
 			setTimeout(() => setIsFullScreen(false), 50);
 			setTimeout(() => setIsText(false), 50);
+		}
+	});
+
+	useMotionValueEvent(mobileScroll, "change", (latest) => {
+		setIsMobileAnimation(latest > 0);
+		setTimeout(() => setIsTextMobile(latest > 0), 1000);
+		if (latest <= 0) {
+			setIsTextMobile(false);
 		}
 	});
 
@@ -134,42 +149,51 @@ const Gallery = () => {
 				</div>
 			</div>
 
-			<div className="bg-soil8 text-soil2 font-circular lg:hidden">
-				<div className="bg-brideandgroom bg-cover bg-center bg-no-repeat">
-					<div className="bg-black bg-opacity-50">
-						<div className="container pb-0 flex flex-col items-center gap-14 md:w-ultra-wide h-tall">
-							<div className="text-center pt-48 md:pt-0 2xl:-mt-20 pb-0 flex flex-col gap-10">
-								<div className="md:w-text-narrow uppercase font-safira text-4xl md:text-6xl leading-10 tracking-widest flex flex-col gap-2 md:hidden">
-									<p className="text-left ml-6">irwan</p>
-									<p>thomas</p>
-									<p className="text-left">burhan</p>
-									<p>&</p>
-									<p className="text-right">Claudia</p>
-									<p className="text-right mr-6">Narmada</p>
-								</div>
-								<Image
-									src={BrideAndGroomGif}
-									alt="Bride and groom"
-									width={900}
-									height={900}
-									priority
-									className="z-10 w-screen hidden md:block"
-								/>
-								<p className="italic font-baskervville text-2xl md:text-3xl text-white">
-									Let’s us tell you our love journey
-								</p>
-							</div>
-							<button onClick={() => exportIntoView("our-journey")}>
-								<Image
-									src={DownArrow}
-									alt="Down Arrow Button"
-									className="rounded-full w-12 h-12"
-								/>
-							</button>
-						</div>
-					</div>
+			<motion.div
+				ref={mobileGallery}
+				className={`bg-soil11 flex justify-center items-start h-screen ${
+					isMobileAnimation ? "p-0" : "p-8"
+				}`}
+			>
+				<Image
+					src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_3_desktop.jpg"
+					alt="Background"
+					height={1000}
+					width={700}
+					className={`object-cover w-screen transition-all duration-1000 ease-in ${
+						isMobileAnimation ? "h-screen rounded-none" : "h-56 rounded-4xl"
+					}`}
+				/>
+				<div
+					className={`absolute bg-black z-20 h-screen w-screen transition-all duration-1000 ease-in ${
+						isMobileAnimation ? "bg-opacity-50" : "bg-opacity-0"
+					}`}
+				/>
+				<div
+					className={`absolute justify-center text-center flex flex-col items-center h-screen gap-10 z-30 ${
+						isTextMobile ? "opacity-100" : "opacity-0"
+					}`}
+				>
+					<Image
+						src={BrideAndGroomGif}
+						alt="Bride and groom"
+						width={1000}
+						height={1000}
+						priority
+						className={`z-10 max-w-sm`}
+					/>
+					<p className="italic font-baskervville text-2xl md:text-3xl lg:-mt-24 xl:-mt-36 text-white">
+						Let’s us tell you our love journey
+					</p>
+					<button onClick={() => exportIntoView("our-journey")}>
+						<Image
+							src={DownArrow}
+							alt="Down Arrow Button"
+							className="rounded-full w-8 md:w-12 h-8 md:h-12"
+						/>
+					</button>
 				</div>
-			</div>
+			</motion.div>
 		</>
 	);
 };
