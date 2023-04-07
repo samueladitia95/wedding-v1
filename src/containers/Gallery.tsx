@@ -81,7 +81,7 @@ const Gallery = () => {
 								}`}
 							/>
 							<div
-								className={`absolute text-center flex flex-col gap-10 z-30 ${
+								className={`absolute text-center flex flex-col items-center gap-10 z-30 ${
 									isText ? "opacity-100" : "opacity-0"
 								}`}
 							>
@@ -100,7 +100,7 @@ const Gallery = () => {
 									<Image
 										src={DownArrow}
 										alt="Down Arrow Button"
-										className="rounded-full w-8 md:w-12 h-8 md:h-12 "
+										className="rounded-full w-8 md:w-12 h-8 md:h-12"
 									/>
 								</button>
 							</div>
