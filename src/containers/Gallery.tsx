@@ -67,14 +67,14 @@ const Gallery = () => {
 							}}
 						>
 							<Image
-								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_2_desktop.jpg"
+								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_2_desktop.jpg"
 								alt="gallery-side"
 								width={315 / ratio}
 								height={340}
 								className="rounded-4xl transition-all duration-1000 ease-in"
 							/>
 							<Image
-								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_5_desktop.jpg"
+								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_4_+desktop.jpg"
 								alt="gallery-side"
 								width={315 / ratio}
 								height={340}
@@ -83,7 +83,7 @@ const Gallery = () => {
 						</div>
 						<motion.div className="flex justify-center items-center min-h-screen">
 							<Image
-								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_3_desktop.jpg"
+								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_3_+desktop.jpg"
 								alt="Background"
 								height={1000}
 								width={700 * ratio}
@@ -132,14 +132,14 @@ const Gallery = () => {
 							}}
 						>
 							<Image
-								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_2_desktop.jpg"
+								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_2_desktop.jpg"
 								alt="gallery-side"
 								width={315 / ratio}
 								height={340}
 								className="rounded-4xl transition-all duration-1000 ease-in"
 							/>
 							<Image
-								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_5_desktop.jpg"
+								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_5_+desktop.jpg"
 								alt="gallery-side"
 								width={315 / ratio}
 								height={340}
@@ -158,7 +158,7 @@ const Gallery = () => {
 				}`}
 			>
 				<Image
-					src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/gallery_3_desktop.jpg"
+					src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_3_+desktop.jpg"
 					alt="Background"
 					height={1000}
 					width={700}
