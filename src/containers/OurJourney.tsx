@@ -36,9 +36,9 @@ const OurJourney = () => {
 		<>
 			<div
 				id="our-journey"
-				className="bg-soil15 text-white font-circular pt-24"
+				className="bg-soil15 text-white font-circular pt-20 pb-24"
 			>
-				<div className="container pb-28 lg:pt-2 flex flex-col items-center gap-14 lg:gap-44 md:w-ultra-wide">
+				<div className="container flex flex-col items-center gap-14 lg:gap-44 md:w-ultra-wide">
 					{/* Mobile and Table */}
 					<div
 						ref={ref3}
