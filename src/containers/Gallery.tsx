@@ -69,7 +69,7 @@ const Gallery = () => {
 							}}
 						>
 							<Image
-								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_2_desktop.jpg"
+								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_1_desktop.jpg"
 								alt="gallery-side"
 								width={315 / ratio}
 								height={340}
