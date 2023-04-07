@@ -32,7 +32,7 @@ const Gallery = () => {
 
 		if (rem >= 10 && !isFullScreen) {
 			setTimeout(() => setIsFullScreen(true), 500);
-			setTimeout(() => setIsText(true), 1500);
+			setTimeout(() => setIsText(true), 1000);
 		} else if (rem < 10) {
 			setTimeout(() => setIsFullScreen(false), 50);
 			setTimeout(() => setIsText(false), 50);
