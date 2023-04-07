@@ -212,7 +212,7 @@ const Rsvp = () => {
 
 						<button
 							type="submit"
-							className="rounded bg-soil7 text-white text-center w-full p-4 font-semibold shadow-md"
+							className="rounded bg-soil7 text-white text-center w-full p-4 font-semibold shadow-md hover:bg-soil21 transition-colors ease-in duration-50"
 						>
 							SUBMIT
 						</button>
