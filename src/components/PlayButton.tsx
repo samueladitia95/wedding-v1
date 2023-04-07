@@ -1,29 +1,15 @@
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 import { motion } from "framer-motion";
 
-const musicUrl = "/audio.mp3";
-export default function PlayButton({ initPlaying = false }) {
-	const [isPlaying, setIsPlaying] = useState<boolean>(initPlaying);
-
-	useEffect(() => {
-		const music = document.getElementById("music-player");
-		const player = music as HTMLMediaElement;
-		if (music) {
-			if (isPlaying) {
-				player.muted = false;
-				player.play();
-			} else {
-				player.pause();
-			}
-		}
-	}, [isPlaying]);
-
-	useEffect(() => {
-		if (initPlaying) {
-			setIsPlaying(true);
-		}
-	}, [initPlaying]);
-
+export default function PlayButton({
+	initPlaying = false,
+	isPlaying = false,
+	setIsPlaying,
+}: {
+	initPlaying: boolean;
+	isPlaying: boolean;
+	setIsPlaying: Dispatch<SetStateAction<boolean>>;
+}) {
 	const handleClick = () => {
 		setIsPlaying(!isPlaying);
 	};
@@ -47,7 +33,6 @@ export default function PlayButton({ initPlaying = false }) {
 			onClick={handleClick}
 			className="h-10 w-10 lg:h-14 lg:w-14 bg-soil20 rounded-full fixed left-5 lg:left-6 bottom-9 z-50 flex justify-center items-center cursor-pointer"
 		>
-			<audio id="music-player" src={musicUrl}></audio>
 			{!isPlaying ? (
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
