@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useRef, useState } from "react";
-import BrideAndGroomGif from "../../public/bridengroom.gif";
 import DownArrow from "../../public/down-arrow.svg";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { exportIntoView } from "@/utils/scrollIntoView";
@@ -102,14 +101,14 @@ const Gallery = () => {
 								}`}
 							>
 								<Image
-									src={BrideAndGroomGif}
+									src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/second_title.gif"
 									alt="Bride and groom"
 									width={1000}
 									height={1000}
 									priority
-									className={`z-10 max-w-lg xl:max-w-6xl`}
+									className={`z-10 max-w-lg xl:max-w-2xl`}
 								/>
-								<p className="italic font-baskervville text-2xl md:text-3xl lg:-mt-24 xl:-mt-36 text-white">
+								<p className="italic font-baskervville text-2xl md:text-3xl lg:-mt-20 text-white">
 									Let’s us tell you our love journey
 								</p>
 								<button onClick={() => exportIntoView("our-journey")}>
@@ -177,24 +176,24 @@ const Gallery = () => {
 					}`}
 				>
 					<Image
-						src={BrideAndGroomGif}
+						src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/second_title.gif"
 						alt="Bride and groom"
 						width={1000}
 						height={1000}
 						priority
 						className={`z-10 max-w-sm md:max-w-xl`}
 					/>
-					<p className="italic font-baskervville text-2xl md:text-3xl text-white -mt-8 ">
+					<p className="italic font-baskervville text-2xl md:text-3xl text-white -mt-4 ">
 						Let’s us tell you our love journey
 					</p>
 					<button
-						className="pt-16"
+						className="pt-12"
 						onClick={() => exportIntoView("our-journey")}
 					>
 						<Image
 							src={DownArrow}
 							alt="Down Arrow Button"
-							className="rounded-full w-8 md:w-12 h-8 md:h-12"
+							className="rounded-full w-12 h-12"
 						/>
 					</button>
 				</div>
