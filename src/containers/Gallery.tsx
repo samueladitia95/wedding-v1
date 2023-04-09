@@ -141,7 +141,7 @@ const Gallery = () => {
 								className="rounded-4xl transition-all duration-700 ease-in"
 							/>
 							<Image
-								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_5_+desktop.jpg"
+								src="https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/gallery_5_desktop.jpg"
 								alt="gallery-side"
 								width={315 / ratio}
 								height={340}

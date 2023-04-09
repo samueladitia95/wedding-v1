@@ -20,6 +20,9 @@ const familyDinnerCalendar =
 const radissonBluBaliUluwatuCoordinate =
 	"https://www.google.com/maps/place/Radisson+Blu+Bali+Uluwatu/@-8.8090744,115.1082337,17z/data=!3m1!4b1!4m9!3m8!1s0x2dd25ac456fe003f:0xaf85b08d7745dfc1!5m2!4m1!1i2!8m2!3d-8.8090744!4d115.1104224!16s%2Fg%2F11fy10v_fb";
 
+const menegaCafeCoordinate =
+	"https://www.google.com/maps/place/Menega+Cafe/@-8.2518624,115.3660977,8z/data=!4m6!3m5!1s0x2dd244f3501c9553:0x74c847860f37ca9!8m2!3d-8.7808331!4d115.1645264!16s%2Fg%2F1ptwcb_b2";
+
 type Schedule = {
 	icon: string;
 	title: string;
@@ -40,9 +43,9 @@ const schedules: Schedule[][] = [
 		{
 			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/welcome_dinner_icons.svg",
 			title: "family welcome dinner",
-			location: "radisson blu bali, uluwatu",
-			time: "18.00",
-			coordinate: radissonBluBaliUluwatuCoordinate,
+			location: "menega cafe, jimbaran",
+			time: "17.30",
+			coordinate: menegaCafeCoordinate,
 		},
 	],
 	[
