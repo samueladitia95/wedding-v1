@@ -8,7 +8,7 @@ const QrCode = () => {
 							wedding gift
 						</p>
 						<p className="mt-4 text-center tracking-wide lg:text-lg">
-							Your prayers is the best gift of all.
+							Your prayer is the best gift of all.
 						</p>
 						<p className="text-center tracking-wide lg:text-lg">
 							However if you want to give something extra, we would be happy to
