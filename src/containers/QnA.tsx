@@ -30,10 +30,14 @@ const questions = [
 const images1 = [
 	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/qna_images_1.jpg",
 	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/qna_images_3.jpg",
+	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/qna_images_5.jpg",
+	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/qna_images_7.jpg",
 ];
 const images2 = [
 	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/qna_images_4.jpg",
 	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/qna_images_2.jpg",
+	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/qna_images_6.jpg",
+	"https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/Desktop/qna_images_8.jpg",
 ];
 
 const dressCodes = [
@@ -63,7 +67,7 @@ const QnA = () => {
 									height="0"
 									sizes="100vw"
 									style={{ width: "100%", height: "auto" }}
-									className="rounded-4xl"
+									className={`${index > 1 ? "hidden lg:flex" : ""} rounded-4xl`}
 								/>
 							))}
 						</div>
@@ -78,7 +82,7 @@ const QnA = () => {
 									height="0"
 									sizes="100vw"
 									style={{ width: "100%", height: "auto" }}
-									className="rounded-4xl"
+									className={`${index > 1 ? "hidden lg:flex" : ""} rounded-4xl`}
 								/>
 							))}
 						</div>
