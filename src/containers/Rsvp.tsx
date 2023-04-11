@@ -1,7 +1,11 @@
 import { useState } from "react";
+import { useCookies } from "react-cookie";
 import { Rsvp } from "@/type";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Rsvp = () => {
+	const [rsvpSubmitCookie, setRsvpSubmitCookie] = useCookies(["rsvpCookie"]);
 	const [submitRsvp, setSubmitRsvp] = useState<Rsvp>({
 		name: "",
 		phone: "",
@@ -22,44 +26,105 @@ const Rsvp = () => {
 	const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 
-		const body = {
-			...submitRsvp,
-			isAttending: submitRsvp.isAttending === "true",
-			isNeedAccomodation: submitRsvp.isNeedAccomodation === "true",
-		};
-
 		try {
-			const response = await fetch("/api/rsvp", {
-				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify(body),
-			});
-
-			if (response.ok) {
-				setSubmitRsvp({
-					name: "",
-					phone: "",
-					email: "",
-					isAttending: "",
-					isNeedAccomodation: "",
+			if (
+				submitRsvp.name === "" ||
+				submitRsvp.email === "" ||
+				submitRsvp.phone === "" ||
+				submitRsvp.isAttending === "" ||
+				submitRsvp.isNeedAccomodation === ""
+			) {
+				toast.error("please fill all data in rsvp form", {
+					position: "bottom-right",
+					autoClose: 2000,
+					hideProgressBar: false,
+					closeOnClick: true,
+					pauseOnHover: true,
+					draggable: true,
+					progress: undefined,
+					theme: "light",
 				});
 
-				await fetch("https://api.sheetmonkey.io/form/hi4Pry5cpnMjDNpZb49Wbv", {
-					method: "POST",
-					headers: {
-						"Content-Type": "application/json",
-					},
-					body: JSON.stringify({
-						...body,
-						createdAt: "x-sheetmonkey-current-date-time",
-					}),
+				return;
+			}
+
+			const body = {
+				...submitRsvp,
+				isAttending: submitRsvp.isAttending === "true",
+				isNeedAccomodation: submitRsvp.isNeedAccomodation === "true",
+			};
+
+			const expirationDate = new Date();
+			expirationDate.setDate(expirationDate.getDate() + 7);
+
+			if (rsvpSubmitCookie.rsvpCookie) {
+				toast.error("you already submit the rsvp!", {
+					position: "bottom-right",
+					autoClose: 2000,
+					hideProgressBar: false,
+					closeOnClick: true,
+					pauseOnHover: true,
+					draggable: true,
+					progress: undefined,
+					theme: "light",
 				});
+
+				return;
 			} else {
-				console.error("Error:", response.statusText);
+				const response = await fetch("/api/rsvp", {
+					method: "POST",
+					headers: { "Content-Type": "application/json" },
+					body: JSON.stringify(body),
+				});
+
+				if (response.ok) {
+					await fetch(
+						"https://api.sheetmonkey.io/form/hi4Pry5cpnMjDNpZb49Wbv",
+						{
+							method: "POST",
+							headers: {
+								"Content-Type": "application/json",
+							},
+							body: JSON.stringify({
+								...body,
+								createdAt: "x-sheetmonkey-current-date-time",
+							}),
+						}
+					);
+
+					if (!rsvpSubmitCookie.rsvpCookie) {
+						setRsvpSubmitCookie("rsvpCookie", true, {
+							expires: expirationDate,
+						});
+					}
+
+					setSubmitRsvp({
+						name: "",
+						phone: "",
+						email: "",
+						isAttending: "",
+						isNeedAccomodation: "",
+					});
+
+					toast.success("rsvp submitted!", {
+						position: "bottom-right",
+						autoClose: 2000,
+						hideProgressBar: false,
+						closeOnClick: true,
+						pauseOnHover: true,
+						draggable: true,
+						progress: undefined,
+						theme: "light",
+					});
+				} else {
+					console.error("Error:", response.statusText);
+				}
 			}
 		} catch (error) {
 			console.error("Error:", error);
 		}
+
+		return;
 	};
 
 	return (
@@ -218,6 +283,20 @@ const Rsvp = () => {
 						</button>
 					</form>
 				</div>
+			</div>
+			<div>
+				<ToastContainer
+					position="bottom-right"
+					autoClose={5000}
+					hideProgressBar={false}
+					newestOnTop={false}
+					closeOnClick
+					rtl={false}
+					pauseOnFocusLoss
+					draggable
+					pauseOnHover
+					theme="light"
+				/>
 			</div>
 		</>
 	);
