@@ -1,16 +1,17 @@
 import { Comment, WishlistData } from "@/type";
 import { useEffect, useState } from "react";
 import { useFetch } from "../hooks/useFetch";
-// import { exportIntoView } from "@/utils/scrollIntoView";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 type Prop = {
 	comments: Comment[];
 };
 
 const MakeAWish = ({ comments }: Prop) => {
+	const [isShowMore, setShowMore] = useState<boolean>(false);
 	const [wishLimit, setWishLimit] = useState<number>(10);
 	const [wishlist, setWishlist] = useState<Comment[]>(comments);
-	const [isShowMore, setShowMore] = useState<boolean>(false);
 	const [submitWish, setSubmitWish] = useState<Comment>({
 		comment: "",
 		name: "",
@@ -43,22 +44,34 @@ const MakeAWish = ({ comments }: Prop) => {
 		event.preventDefault();
 
 		try {
-			const response = await fetch("/api/comments", {
-				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify(submitWish),
-			});
-			if (response.ok) {
-				setWishLimit(10);
-				setShowMore(true);
-				setSubmitWish({
-					name: "",
-					comment: "",
-					createdAt: "",
+			if (submitWish.name === "" || submitWish.comment === "") {
+				toast.error("Full Name and Wishes cannot be empty!", {
+					position: "bottom-right",
+					autoClose: 2000,
+					hideProgressBar: false,
+					closeOnClick: true,
+					pauseOnHover: true,
+					draggable: true,
+					progress: undefined,
+					theme: "light",
 				});
-				// exportIntoView("item-0");
 			} else {
-				console.error("Error:", response.statusText);
+				const response = await fetch("/api/comments", {
+					method: "POST",
+					headers: { "Content-Type": "application/json" },
+					body: JSON.stringify(submitWish),
+				});
+				if (response.ok) {
+					setWishLimit(10);
+					setShowMore(true);
+					setSubmitWish({
+						name: "",
+						comment: "",
+						createdAt: "",
+					});
+				} else {
+					console.error("Error:", response.statusText);
+				}
 			}
 		} catch (error) {
 			console.error("Error:", error);
@@ -153,6 +166,20 @@ const MakeAWish = ({ comments }: Prop) => {
 						</div>
 					</div>
 				</div>
+			</div>
+			<div>
+				<ToastContainer
+					position="bottom-right"
+					autoClose={5000}
+					hideProgressBar={false}
+					newestOnTop={false}
+					closeOnClick
+					rtl={false}
+					pauseOnFocusLoss
+					draggable
+					pauseOnHover
+					theme="light"
+				/>
 			</div>
 		</>
 	);
