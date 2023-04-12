@@ -48,7 +48,7 @@ const TravelGuide = () => {
 							<div className="text-sm font-epilogue flex flex-col gap-2 text-center lg:text-left">
 								<p>Colleagues</p>
 								<p>Radisson Blu Bali, Uluwatu</p>
-								<p>1 Nights (June 3 - June 4, 2023)</p>
+								<p>1 Night (June 3 - June 4, 2023)</p>
 							</div>
 						</div>
 
