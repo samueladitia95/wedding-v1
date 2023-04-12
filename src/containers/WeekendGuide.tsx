@@ -60,7 +60,7 @@ const schedules: Schedule[][] = [
 			icon: "https://digital-invitation-1.s3.ap-southeast-1.amazonaws.com/irwanclaudia/teapai_icons.svg",
 			title: "FAMILY TEA PAI CEREMONY",
 			location: "SIX SENSES ULUWATU, BALI",
-			time: "13:00",
+			time: "16:30",
 			coordinate: sixSensesCoordinate,
 		},
 		{
