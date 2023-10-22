@@ -71,54 +71,51 @@ const Rsvp = () => {
 
 				return;
 			} else {
-				const response = await fetch("/api/rsvp", {
+				// const response = await fetch("/api/rsvp", {
+				// 	method: "POST",
+				// 	headers: { "Content-Type": "application/json" },
+				// 	body: JSON.stringify(body),
+				// });
+
+				// if (response.ok) {
+				await fetch("https://api.sheetmonkey.io/form/hi4Pry5cpnMjDNpZb49Wbv", {
 					method: "POST",
-					headers: { "Content-Type": "application/json" },
-					body: JSON.stringify(body),
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({
+						...body,
+						createdAt: "x-sheetmonkey-current-date-time",
+					}),
 				});
 
-				if (response.ok) {
-					await fetch(
-						"https://api.sheetmonkey.io/form/hi4Pry5cpnMjDNpZb49Wbv",
-						{
-							method: "POST",
-							headers: {
-								"Content-Type": "application/json",
-							},
-							body: JSON.stringify({
-								...body,
-								createdAt: "x-sheetmonkey-current-date-time",
-							}),
-						}
-					);
-
-					if (!rsvpSubmitCookie.rsvpCookie) {
-						setRsvpSubmitCookie("rsvpCookie", true, {
-							expires: expirationDate,
-						});
-					}
-
-					setSubmitRsvp({
-						name: "",
-						phone: "",
-						email: "",
-						isAttending: "",
-						isNeedAccomodation: "",
+				if (!rsvpSubmitCookie.rsvpCookie) {
+					setRsvpSubmitCookie("rsvpCookie", true, {
+						expires: expirationDate,
 					});
-
-					toast.success("rsvp submitted!", {
-						position: "bottom-right",
-						autoClose: 2000,
-						hideProgressBar: false,
-						closeOnClick: true,
-						pauseOnHover: true,
-						draggable: true,
-						progress: undefined,
-						theme: "light",
-					});
-				} else {
-					console.error("Error:", response.statusText);
 				}
+
+				setSubmitRsvp({
+					name: "",
+					phone: "",
+					email: "",
+					isAttending: "",
+					isNeedAccomodation: "",
+				});
+
+				toast.success("rsvp submitted!", {
+					position: "bottom-right",
+					autoClose: 2000,
+					hideProgressBar: false,
+					closeOnClick: true,
+					pauseOnHover: true,
+					draggable: true,
+					progress: undefined,
+					theme: "light",
+				});
+				// } else {
+				// 	console.error("Error:", response.statusText);
+				// }
 			}
 		} catch (error) {
 			console.error("Error:", error);

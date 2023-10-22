@@ -1,4 +1,4 @@
-import { GetServerSideProps, NextPage } from "next";
+import { NextPage } from "next";
 import { Comment } from "@/type";
 
 import MakeAWish from "@/containers/MakeAWish";
@@ -15,16 +15,36 @@ import Head from "next/head";
 import Intro from "@/containers/Intro";
 import { useEffect, useState } from "react";
 
-type CommentResponse = {
-	status: string;
-	comments: Comment[];
-};
+// type CommentResponse = {
+// 	status: string;
+// 	comments: Comment[];
+// };
 
 type Prop = {
 	comments: Comment[];
 };
 
-export const Home: NextPage<Prop> = ({ comments }) => {
+console.log(new Date());
+
+const dummy: Comment[] = [
+	{
+		name: "Samuel",
+		comment: "Congrats",
+		createdAt: "Sun Oct 22 2023 08:30:31",
+	},
+	{
+		name: "Reza",
+		comment: "Congrats",
+		createdAt: "Sun Oct 22 2023 08:30:31",
+	},
+	{
+		name: "Monica",
+		comment: "Congrats",
+		createdAt: "Sun Oct 22 2023 08:30:31",
+	},
+];
+
+export const Home: NextPage<Prop> = ({ comments = dummy }) => {
 	const [introAnimation, setIntroAnimation] = useState<boolean>(false);
 	useEffect(() => {
 		window.history.scrollRestoration = "manual";
@@ -56,15 +76,15 @@ export const Home: NextPage<Prop> = ({ comments }) => {
 	);
 };
 
-export const getServerSideProps: GetServerSideProps<Prop> = async () => {
-	const data = await fetch(process.env.BASE_URL + "/api/comments");
-	const result: CommentResponse = await data.json();
+// export const getServerSideProps: GetServerSideProps<Prop> = async () => {
+// 	const data = await fetch(process.env.BASE_URL + "/api/comments");
+// 	const result: CommentResponse = await data.json();
 
-	return {
-		props: {
-			comments: result.comments,
-		},
-	};
-};
+// 	return {
+// 		props: {
+// 			comments: result.comments,
+// 		},
+// 	};
+// };
 
 export default Home;

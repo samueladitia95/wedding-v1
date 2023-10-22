@@ -56,22 +56,22 @@ const MakeAWish = ({ comments }: Prop) => {
 					theme: "light",
 				});
 			} else {
-				const response = await fetch("/api/comments", {
-					method: "POST",
-					headers: { "Content-Type": "application/json" },
-					body: JSON.stringify(submitWish),
+				// const response = await fetch("/api/comments", {
+				// 	method: "POST",
+				// 	headers: { "Content-Type": "application/json" },
+				// 	body: JSON.stringify(submitWish),
+				// });
+				// if (response.ok) {
+				setWishLimit(10);
+				setShowMore(true);
+				setSubmitWish({
+					name: "",
+					comment: "",
+					createdAt: "",
 				});
-				if (response.ok) {
-					setWishLimit(10);
-					setShowMore(true);
-					setSubmitWish({
-						name: "",
-						comment: "",
-						createdAt: "",
-					});
-				} else {
-					console.error("Error:", response.statusText);
-				}
+				// } else {
+				// console.error("Error:", response.statusText);
+				// }
 			}
 		} catch (error) {
 			console.error("Error:", error);
